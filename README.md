@@ -14,14 +14,14 @@
  * [Diagrama de Casos de Uso] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Diagrama.drawio)
 
 ###### Requisitos:
-[Requisitos] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Requisitos.md)
+* [Requisitos] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Requisitos.md)
 
 ###### Entrevista:
-[Áudio da Entrevista] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/AUDIO-ENTREVISTA.mp3)
-[Ata da Entrevista] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/entrevista.md)
+* [Áudio da Entrevista] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/AUDIO-ENTREVISTA.mp3)
+* [Ata da Entrevista] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/entrevista.md)
 
 ###### Proposta do Projeto:
-[Proposta] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/proposta%20projeto%20final.md)
+* [Proposta] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/proposta%20projeto%20final.md)
 
 
 
