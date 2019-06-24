@@ -22,7 +22,7 @@ sinopse VARCHAR(220) NOT NULL
  idusuario INT,
  foreign key (idusuario) REFERENCES usuario(idusuario),
  foreign key (idlivro) REFERENCES livro(idlivro)
- );    
+ );
  
  create table categoria(
  idcategoria INT NOT NULL PRIMARY KEY AUTO_INCREMENT,

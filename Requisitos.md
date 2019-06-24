@@ -10,7 +10,7 @@
 - [RNF 07](#rnf-07)
 
 ### RNF 01    
-+ O software deve conter as linguagens: HTML, CSS, JavaScript e PHP;
++ O software deve conter as linguagens: HTML, CSS, JavaScript, PHP e SQL;
 
 ### RNF 02
 + Deve possibilitar cadastro de diferentes usuários ao mesmo tempo;
@@ -22,10 +22,10 @@
 + Deve ter ligação com o banco de dados;
 
 ### RNF 05
-+ Deve possuir suporte para plataformas Web e Mobile;
++ Deve possuir suporte para plataformas Web;
 
 ### RNF 06
-+ Deve suportar o armazenamento de ao menos 15 mil livros;
++ Deve suportar o armazenamento de ao menos 5 mil livros;
 
 ### RNF 07
 + Deve rodar em tempo integral;
@@ -51,13 +51,9 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 
   	        1. Título;
   	        2. Autor;
-  	        3. Aquisição;
-  	        4. Observações;
-  	        5. Volume;
-  	        6. Edição;
-  	        7. Editora;
-  	        8. Exemplares;
-  	        9. Classificação;
+  	        3. Sinopse;
+  	        4. Edição;
+  	        5. Editora;
 
 
     + Informações do Usuário:
@@ -69,6 +65,7 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
   	        3. E-mail;   
   	        4. Senha;
 
+
     + Informações do sistema quanto ao moderador:
 
         * Inf
@@ -76,19 +73,15 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
   	        1. CPF;
   	        2. Nome;
   	        3. Telefone;
-	        4. Estado;
 	        5. Endereço;
   	        6. E-mail;
   	        7. Senha.
 
 ### RF 02
-+ Todas as informações do Usuário e dos Livros são guardadas em um banco de dados.
-
-### RF 03
 + O Moderador tem acesso a várias informações, para visualização, de todos os usuários, menos à senha.
 
 ### RF 04
-+ O Usuário terá acesso somente a suas respectivas informações informando e-mail e senha;
++ O Usuário terá acesso somente a suas respectivas informações, informando e-mail e senha.
 
 ### RF 05
 + O Moderador poderá ter acesso ao sistema informando e-mail e senha. 
@@ -96,17 +89,14 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 ### RF 06
 + Livros
 
-    * O Moderador gerencia os livros contidos na biblioteca: catalogando-os, emprestando-os ou excluindo-os dos registros.
+    * O Moderador gerencia os livros contidos na biblioteca catalogando-os, alterando suas informações ou excluindo-os dos registros;
     * O Moderador cadastra os livros da biblioteca e as informações são armazenadas em um banco de dados.
 
 ### RF 07
 + Os livros, após cadastrados no sistema, possuirão suas informações parcialmente disponibilizadas aos Usuários.
- 
-### RF 08
-+ Os dados do usuário serão coletados pelo algoritmo para uma melhor experiência com a biblioteca.
 
-### RF 09
+### RF 08
 + Os livros serão divididos em categorias e subcategorias.
 
-### RF 10
+### RF 09
 + O algoritmo fará recomendações por conteúdo baseada em leituras passadas.
