@@ -1,59 +1,47 @@
 <html>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<body>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
+  <head>
+    
+    <title>Cadastro de Usuários</title> <!-- nome na aba da página -->
+      <link rel="stylesheet" type="text/css" href="cadastrostyle.css"> <!-- hyperlink para a conexão com o CSS-->
 
-<form action="pagina.php" method="post">
-Nome: <br>
-<input type="text" name="nome"><br>
-Nome de Usuário: <br>
-<input type="text" name="nomedeusuario"><br>
-Email: <br>
-<input type="email" name="email"><br>
-Senha: <br>
-<input type="password" name="senha"><br>
-Confirmar senha: <br>
-<input type="password" name="senha"><br>
-Gêneros Favoritos:<br>
-<select>
-    <option value="aventura">Aventura</option>
-    <option value="crime">Crime</option>
-    <option value="drama">Drama</option>
-    <option value="fantasia">Fantasia</option>
-    <option value="horror">Horror</option>
-    <option value="comedia">Comédia</option>
-    <option value="poesia">Poesia</option>
-    <option value="romance">Romance</option>
-    <option value="scifi">Sci-Fi</option>
-    <option value="sobrenatural">Sobrenatural</option>
-    <option value="suspense">Suspense</option>
-    <option value="tragedia">Tragédia</option>
-    <option value="faroeste">Faroeste</option>
-    <option value="terror">Terror</option>
-    <option value="manga">Mangá</option>
-    <option value="biografia">Biografia</option>
-    <option value="economia">Economia</option>
-    <option value="religiao">Religião</option>
-    <option value="matematica">Matemática</option>
-    <option value="portugues">Português</option>
-    <option value="fisica">Física</option>
-    <option value="filosofia">Filosofia</option>
-    <option value="sociologia">Sociologia</option>
-    <option value="geografia">Geografia</option>
-    <option value="estrangeiro">Língua Estrangeira</option>
-    <option value="quimica">Química</option>
-    <option value="informatica">Informática</option>
-    <option value="biologia">Biologia</option>
-    <option value="historia">História</option>
-    <option value="esportes">Esportes</option>
-    <button type="button">Enviar</button>
-  </select>
+  </head>
+  
+    <body> <!-- tag pra início do corpo do site -->
+
+    <form action="pagina.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
+
+      <h1>Cadastro</h1> <!-- título no topo do formulário -->
+      <br>
+
+      <p class="nome"> <!-- classe referente ao campo do nome no formulário -->
+        <input type="text" placeholder="Nome completo:" name="nome" required="required"> <!-- caixa para inserção do nome -->
+      </p>
+
+      <p class="nomedeusuario"> <!-- classe referente ao nome de usuário no formulário -->
+        <input type="text" placeholder="Nome de usuário:" name="nomedeusuario" required="required"> <!-- espaço para inserção do nome de usuário no cadastro -->
+      </p>
+    
+
+      <p class="email"> <!-- classe referente ao campo do e-mail no formulário -->
+        <input type="email" placeholder="E-mail:" name="email" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->
+      </p>
+     
+
+      <p class="senha"> <!-- classe referente à senha no formulário -->
+        <input type="password" placeholder="Senha:" name="senha" required="required"> <!-- campo para colocar a senha do usuário -->
+        <br><br>
+        <input type="password" placeholder="Confirmar senha:" name="senha" required="required"> <!-- campo para a confirmação de senha no cadastro -->
+      </p>
+
+        <br><br>
+        <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
+          <input type="submit" name="enviar" value="Prosseguir >"> <!-- botão para prosseguir para a próxima fase do cadastro -->
+        </p>
+
+    </form> <!-- fechamento da tag form -->
 
 
 
-
-</form>
-
-
-
-</body>
+  </body><!-- fechamento da tag body -->
 </html>
