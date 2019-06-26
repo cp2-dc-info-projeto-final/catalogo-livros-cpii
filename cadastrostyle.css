@@ -13,11 +13,9 @@ form /* estilização da tag form do formulário */
         background: rgba(255,250,250,0.7); /* a cor do formulário em formato RGBA e a opacidade (0.7) */
         padding: 10px 10px 10px 20px; /* preenchimento do conteúdo do form */
         border-radius: 5px; /* forma arredondada da borda e seu tamanho */
-        position: relative; /* torna a posição do form relativa à página */
-        top: 20%;  /* função que distancia o elemento form do topo da página */
-        
-        
-        
+        text-align: left;
+        margin-top: 10%;
+
     } 
 
 h1 /* estilização do título do form (Cadastro) */
