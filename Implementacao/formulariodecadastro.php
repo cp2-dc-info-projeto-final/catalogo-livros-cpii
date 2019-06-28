@@ -1,4 +1,7 @@
 <html>
+<?php
+session_start();
+?>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
   <head>
     
@@ -12,6 +15,12 @@
     <form action="pagina.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Cadastro</h1> <!-- título no topo do formulário -->
+      <?php
+      if(isset($_SESSION['msg'])) {
+      echo $_SESSION['msg'];
+      unset($_SESSION['msg']);
+      }
+      ?>
       <br>
 
       <p class="nome"> <!-- classe referente ao campo do nome no formulário -->
