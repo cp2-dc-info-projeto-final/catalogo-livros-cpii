@@ -13,8 +13,8 @@ form /* estilização da tag form do formulário */
         background: rgba(0,0,0,0.9); /* a cor do formulário em formato RGBA e a opacidade (0.7) */
         padding: 10px 10px 10px 20px; /* preenchimento do conteúdo do form */
         border-radius: 3px; /* forma arredondada da borda e seu tamanho */
-        text-align: left;
-        margin-top: 5%;
+        text-align: left; 
+        margin-top: 5%; /* distância do form para o topo da página */
         
 
     } 
@@ -28,9 +28,9 @@ h1 /* estilização do título do form (Cadastro) */
 
 input /* estilização das textareas do formulário */
     {
-        background-color: #808080;
-        color: #FFFFFF;
-        font-size: 15px;
+        background-color: #808080; /* cor de fundo do input */
+        color: #FFFFFF; /* cor do texto do input */
+        font-size: 15px; /* tamanho da fonte do input */
         font-family: Arial, Helvetica, sans-serif;
         width: 350px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
@@ -41,10 +41,10 @@ input /* estilização das textareas do formulário */
 
     .autor input /* estilização das textareas do formulário */
     {
-        background-color: #808080;
-        color: #FFFFFF;
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: #808080; /* cor de fundo do input */
+        color: #FFFFFF; /* cor do texto do input */
+        font-size: 15px; /* tamanho da fonte do input */
+        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do input, por ordem de preferência */
         width: 260px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
@@ -54,10 +54,10 @@ input /* estilização das textareas do formulário */
     
     .editora input /* estilização das textareas do formulário */
     {
-        background-color: #808080;
-        color: #FFFFFF;
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
+        background-color: #808080; /* cor de fundo do input */
+        color: #FFFFFF; /* cor do texto do input */
+        font-size: 15px; /* tamanho da fonte do input */
+        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do input, por ordem de preferência */
         width: 260px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
@@ -68,11 +68,11 @@ input /* estilização das textareas do formulário */
     textarea
     {
         
-        background-color: #808080;
-        color: #FFFFFF;
-        font-size: 15px;
-        font-family: Arial, Helvetica, sans-serif;
-        height: 170px;
+        background-color: #808080; /* cor de fundo da textarea*/
+        color: #FFFFFF; /* cor do texto da textarea*/
+        font-size: 15px; /* tamanho da fonte da textarea*/
+        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte da textarea, por ordem de preferência*/
+        height: 170px; /* altura da textarea */
         width: 480px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
@@ -81,13 +81,10 @@ input /* estilização das textareas do formulário */
         
     }   
     
-    ::-webkit-input-placeholder{
-
-
-
+    ::-webkit-input-placeholder /* tag para alterar a cor dos placeholders da página */
+    { 
         color: rgba(211,211,211,1.00);
-        
-      }
+    }
 
 .enviar input /* estilização do botão prosseguir */
     {
@@ -99,6 +96,6 @@ input /* estilização das textareas do formulário */
         font-weight: bold; /* característica da fonte */
         border-radius: 5px; /* forma arredondada e tamanho da borda do botão */
         color: #FFFFFF; /* cor da fonte do botão */
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do botão, por ordem de preferência*/
 
     }
