@@ -45,7 +45,7 @@ input /* estilização das textareas do formulário */
         color: #FFFFFF; /* cor do texto do input */
         font-size: 15px; /* tamanho da fonte do input */
         font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do input, por ordem de preferência */
-        width: 260px; /* largura das textareas */
+        width: 350px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
         border-radius: 5px; /* forma arredondada e tamanho das bordas das textareas */
@@ -58,7 +58,7 @@ input /* estilização das textareas do formulário */
         color: #FFFFFF; /* cor do texto do input */
         font-size: 15px; /* tamanho da fonte do input */
         font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do input, por ordem de preferência */
-        width: 260px; /* largura das textareas */
+        width: 350px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
         border-radius: 5px; /* forma arredondada e tamanho das bordas das textareas */
