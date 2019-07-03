@@ -1,4 +1,7 @@
 <html>
+<?php
+session_start();
+?>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
   <head>
     
@@ -9,9 +12,18 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
-    <form> <!-- estrutura form que agrupa todo o forumulário -->
+    <form action="cadastrolivro.php" method="POST"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Adição de Livros</h1> <!-- título no topo do formulário -->
+
+      <?php
+      if(isset($_SESSION['msg'])) {
+      echo $_SESSION['msg'];
+      unset($_SESSION['msg']);
+      }
+      ?>
+
+      
       <br>
 
       <p class="titulo"> <!-- classe referente ao campo do título do livro no formulário -->

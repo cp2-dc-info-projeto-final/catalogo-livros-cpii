@@ -1,6 +1,6 @@
 <?php
 session_start();
-include_once("conexao.php");
+include_once("../conexao.php");
 $nome = filter_input(INPUT_POST,'nome');
 $nomedeusuario = filter_input(INPUT_POST,'nomedeusuario');
 $email = filter_input(INPUT_POST,'email');
