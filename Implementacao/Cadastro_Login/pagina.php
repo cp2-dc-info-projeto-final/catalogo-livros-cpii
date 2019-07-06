@@ -37,7 +37,7 @@ $sql = "SELECT idusuario FROM usuario WHERE email='$email'";
 $sql= "INSERT INTO usuario (nome, nomedeusuario, senha, email) VALUES ('$nome', '$nomedeusuario', '$hash', '$email')";
 if(mysqli_query($conn, $sql)){
     session_unset();
-    header("Location: login.html");
+    header("Location: formulariodelogin.php");
     exit();
 } else{
     die("Deu ruim no cadastro $sql. " . mysqli_error($conn));

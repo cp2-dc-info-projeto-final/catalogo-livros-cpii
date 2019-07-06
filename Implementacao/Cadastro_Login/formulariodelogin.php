@@ -9,7 +9,7 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
-    <form> <!-- estrutura form que agrupa todo o forumulário -->
+      <form action="login.php" method="post">
 
       <h1>Login</h1> <!-- título no topo do formulário -->
       <br>
@@ -25,7 +25,16 @@
         <br><br>
         <p class="entrar"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="entrar" value="Entrar"> <!-- botão para prosseguir para a próxima fase do cadastro -->
+          <?php
+        session_start();
+        if(array_key_exists('erro', $_SESSION) == true){
+            $erro = $_SESSION["erro"];
+            echo "<br><b>$erro</b>";
+            session_unset();
+        }
+    ?>
         </p>
+        <a href="formulariodecadastro.php">Cadastre-se</a>
 
     </form> <!-- fechamento da tag form -->
 
