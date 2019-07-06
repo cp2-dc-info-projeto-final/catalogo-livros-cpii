@@ -1,7 +1,5 @@
 <html>
-<?php
-session_start();
-?>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
   <head>
     
@@ -16,9 +14,11 @@ session_start();
 
       <h1>Cadastro</h1> <!-- título no topo do formulário -->
       <?php
-      if(isset($_SESSION['msg'])) {
-      echo $_SESSION['msg'];
-      unset($_SESSION['msg']);
+      session_start();
+      if(array_key_exists('erro', $_SESSION) == true){
+          $erro = $_SESSION["erro"];
+          echo "<br><b>$erro</b>";
+          session_unset();
       }
       ?>
       <br>
@@ -39,14 +39,17 @@ session_start();
 
       <p class="senha"> <!-- classe referente à senha no formulário -->
         <input type="password" placeholder="Senha:" name="senha" required="required"> <!-- campo para colocar a senha do usuário -->
-        <br><br>
-        <input type="password" placeholder="Confirmar senha:" name="senha" required="required"> <!-- campo para a confirmação de senha no cadastro -->
+        </p>
+        
+      <p class="confirmasenha">  
+        <input type="password" placeholder="Confirmar senha:" name="confirmasenha" required="required"> <!-- campo para a confirmação de senha no cadastro -->
       </p>
 
         <br><br>
         <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="enviar" value="Prosseguir"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>
+        
 
     </form> <!-- fechamento da tag form -->
 

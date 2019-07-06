@@ -1,24 +1,25 @@
 <?php
-session_start();
-include_once("../conexao.php");
-$titulo = filter_input(INPUT_POST,'titulo');
-$autor = filter_input(INPUT_POST,'autor');
-$editora = filter_input(INPUT_POST,'editora');
-$sinopse = filter_input(INPUT_POST,'sinopse');
+    $titulo = $_POST["titulo"];
+    $autor = $_POST["autor"];
+    $editora = $_POST["editora"];
+    $sinopse = $_POST["sinopse"];
+    $imagem=$_POST["imagem"];
 
-$result_livro= "INSERT INTO livro (titulo, autor, editora, sinopse) VALUES ('$titulo', '$autor', '$editora', '$sinopse')";
-mysqli_query($conn, $result_livro);
-$resultado_livro=mysqli_query($conn, $result_livro);
+    session_start();
 
-if (mysqli_insert_id($conn)){
-    $_SESSION['msg'] = "<p style='color:green;'>Livro cadastrado com sucesso</p>";
-    header("Location: adicaodelivros.php");
-}
-else{
-    $_SESSION['msg'] = "<p style='color:red;'>Erro: livro não foi cadastrado</p>";
-    header("Location: adicaodelivros.php");
-}
+    $conn = mysqli_connect("localhost", "root", "", "catalogo_de_livros");
+    if($conn === false){
+        die("Deu ruim mano!" . mysqli_connect_error());
+    }
 
-
-$conn->close();
-?>
+        $sql = "INSERT INTO livro (titulo, autor, editora, sinopse, imagem) VALUES
+            ('$titulo', '$autor', '$editora', '$sinopse', '$imagem')";
+            if(mysqli_query($conn, $sql)){
+                $msg="<p style='color:green;'>Livro cadastrado com sussesso</p>";
+                $_SESSION["msg"]=$msg;
+                header("Location: adicaodelivros.php");
+            }
+            else{
+                die("Algo deu errado $sql.". mysqli_error($connection));
+            }
+    

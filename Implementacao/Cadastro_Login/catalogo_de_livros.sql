@@ -6,14 +6,15 @@ idlivro INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 autor VARCHAR(80) NOT NULL,
 titulo VARCHAR(30) NOT NULL,
 editora VARCHAR(30) NOT NULL,
-sinopse VARCHAR(220) NOT NULL
+sinopse VARCHAR(220) NOT NULL,
+imagem VARCHAR(200) NOT NULL,
 );
 
  create table usuario(
  idusuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nomedeusuario VARCHAR(40) NOT NULL,
  nome VARCHAR(50) NOT NULL,
- senha VARCHAR (20) NOT NULL,
+ senha VARCHAR (250) NOT NULL,
  email VARCHAR (60) NOT NULL
 );
 
@@ -72,5 +73,4 @@ usuario int not null,
 livro int,
 foreign key (usuario) REFERENCES usuario(idusuario),
 foreign key (livro) REFERENCES livro(idlivro)
-);
 );

@@ -1,7 +1,5 @@
 <html>
-<?php
-session_start();
-?>
+
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
   <head>
     
@@ -15,13 +13,15 @@ session_start();
     <form action="cadastrolivro.php" method="POST"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Adição de Livros</h1> <!-- título no topo do formulário -->
-
       <?php
-      if(isset($_SESSION['msg'])) {
-      echo $_SESSION['msg'];
-      unset($_SESSION['msg']);
-      }
-      ?>
+        session_start();
+        if(array_key_exists('msg', $_SESSION) == true){
+            $msg = $_SESSION["msg"];
+            echo "<br><b>$msg</b>";
+            session_unset();
+        }
+    ?>
+      
 
       
       <br>
@@ -43,6 +43,10 @@ session_start();
       <p class="sinopse"> <!-- classe referente à sinopse no formulário -->
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>
+
+      <p class="imagem">
+        <input type="text" placeholder="Endereço da imagem" name="imagem" required="required"></textarea>
+    </p>
 
         <br><br>
         <p class="enviar"> <!-- classe referente ao botão de enviar no formulário -->
