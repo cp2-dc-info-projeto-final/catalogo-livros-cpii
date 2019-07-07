@@ -22,19 +22,19 @@ if($conn === false){
     die("Deu ruim mano!" . mysqli_connect_error());
 }
 
-$sql = "SELECT idusuario FROM usuario WHERE email='$email'";
-    $result = mysqli_query($connection, $sql);
+$sql1 = "SELECT idusuario FROM usuario WHERE email='$email'";
+    $result = mysqli_query($conn, $sql1);
     $erro = "";
     
     if (mysqli_num_rows($result) > 0) {
-        $erro = "E-mail indisponível";        
+        $erro = "<p style='color:red;'>E-mail indisponível</p>";        
         $_SESSION["erro"] = $erro;
         header("Location: formulariodecadastro.php");
         exit();
     }
 
 
-$sql= "INSERT INTO usuario (nome, nomedeusuario, senha, email) VALUES ('$nome', '$nomedeusuario', '$hash', '$email')";
+$sql2= "INSERT INTO usuario (nome, nomedeusuario, senha, email) VALUES ('$nome', '$nomedeusuario', '$hash', '$email')";
 if(mysqli_query($conn, $sql)){
     session_unset();
     header("Location: formulariodelogin.php");

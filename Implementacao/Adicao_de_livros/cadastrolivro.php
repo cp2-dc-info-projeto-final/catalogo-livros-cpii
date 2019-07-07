@@ -22,4 +22,4 @@
             else{
                 die("Algo deu errado $sql.". mysqli_error($connection));
             }
-    
+?>    

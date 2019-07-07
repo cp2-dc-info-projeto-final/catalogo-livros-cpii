@@ -1,20 +1,20 @@
 <?php
-    $nomedeusuario = $_POST["nomeudesuario"];
+
+$conn = mysqli_connect("localhost", "root", "", "catalogo_de_livros");
+    $nomedeusuario = $_POST["nomedeusuario"];
     $senha = $_POST["senha"];
-    $connection = mysqli_connect("localhost", "root", "", "catalogo_de_livros");
- 
-    // Check connection
-    if($connection === false){
+    
+    if($conn === false){
         die("Deu ruim mano!" . mysqli_connect_error());
     }
     session_start();
     
     $sql = "SELECT senha,nome FROM usuario WHERE nomedeusuario='$nomedeusuario'";
-    $result = mysqli_query($connection, $sql);
+    $result = mysqli_query($conn, $sql);
     $erro = "";
     
     if (mysqli_num_rows($result) > 0) {
-        // output data of each row
+        
         while($row = mysqli_fetch_assoc($result)) {
             $hash = $row["senha"];
             if (password_verify($senha, $hash)) {
@@ -23,18 +23,18 @@
                 header("Location: home.php");
                 exit();
             } else {
-                $erro = "Senha incorreta";        
+                $erro = "<p style='color:red;'>Senha incorreta</p>";        
                 $_SESSION["erro"] = $erro;
-                header("Location: formLogin.php");
+                header("Location: formulariodelogin.php");
                 exit();
             }
         }
     } else {
-        $erro = "Login inexistente";
+        $erro = "<p style='color:red;'>Login inexistente</p>";
         $_SESSION["erro"] = $erro;
         header("Location: formulariodelogin.php");
         exit();
     }        
-    mysqli_close($connection);
+    mysqli_close($conn);
     
 ?>

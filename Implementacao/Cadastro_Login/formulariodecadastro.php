@@ -10,7 +10,7 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
-    <form action="pagina.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
+    <form action="cadastro.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Cadastro</h1> <!-- título no topo do formulário -->
       <?php
@@ -45,10 +45,12 @@
         <input type="password" placeholder="Confirmar senha:" name="confirmasenha" required="required"> <!-- campo para a confirmação de senha no cadastro -->
       </p>
 
-        <br><br>
+        <br>
         <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="enviar" value="Prosseguir"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>
+        <a href="formulariodelogin.php">Login</a>
+
         
 
     </form> <!-- fechamento da tag form -->
