@@ -3,7 +3,7 @@
     $autor = $_POST["autor"];
     $editora = $_POST["editora"];
     $sinopse = $_POST["sinopse"];
-    $imagem=$_POST["imagem"];
+    $imagem = $_POST["imagem"];
 
     session_start();
 
@@ -20,6 +20,6 @@
                 header("Location: adicaodelivros.php");
             }
             else{
-                die("Algo deu errado $sql.". mysqli_error($connection));
+                die("Algo deu errado $sql.". mysqli_error($conn));
             }
 ?>    

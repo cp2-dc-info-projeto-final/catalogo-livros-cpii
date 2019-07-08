@@ -7,7 +7,7 @@ autor VARCHAR(80) NOT NULL,
 titulo VARCHAR(30) NOT NULL,
 editora VARCHAR(30) NOT NULL,
 sinopse VARCHAR(220) NOT NULL,
-imagem VARCHAR(200) NOT NULL,
+imagem VARCHAR(400) NOT NULL
 );
 
  create table usuario(
