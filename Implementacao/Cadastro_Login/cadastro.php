@@ -35,7 +35,7 @@ $sql1 = "SELECT idusuario FROM usuario WHERE email='$email'";
 
 
 $sql2= "INSERT INTO usuario (nome, nomedeusuario, senha, email) VALUES ('$nome', '$nomedeusuario', '$hash', '$email')";
-if(mysqli_query($conn, $sql)){
+if(mysqli_query($conn, $sql2)){
     session_unset();
     header("Location: formulariodelogin.php");
     exit();
