@@ -23,14 +23,14 @@ $conn = mysqli_connect("localhost", "root", "", "catalogo_de_livros");
                 header("Location: home.php");
                 exit();
             } else {
-                $erro = "<p style='color:red;'>Senha incorreta</p>";        
+                $erro = "<p style='color:red;'>Algum campo está incorreto.</p>";        
                 $_SESSION["erro"] = $erro;
                 header("Location: formulariodelogin.php");
                 exit();
             }
         }
     } else {
-        $erro = "<p style='color:red;'>Login inexistente</p>";
+        $erro = "<p style='color:red;'>Algum campo está incorreto.</p>";
         $_SESSION["erro"] = $erro;
         header("Location: formulariodelogin.php");
         exit();
