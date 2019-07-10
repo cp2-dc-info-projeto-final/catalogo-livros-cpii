@@ -46,3 +46,23 @@ input, textarea /* estilização das textareas do formulário */
         font-family: Arial, Helvetica, sans-serif;
 
     }
+
+    .imagem input 
+    {
+        color: #1C1C1C; /* cor da fonte do botão */
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    a:link, a:visited {
+        text-decoration: none
+        
+        }
+    a:hover {
+        text-decoration: underline; 
+        color: #00BFFF
+        
+        }
+    a:active {
+        text-decoration: none
+        
+        }

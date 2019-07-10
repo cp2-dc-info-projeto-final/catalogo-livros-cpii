@@ -45,14 +45,14 @@
       </p>
 
       <p class="imagem">
-        <input type="text" placeholder="Endereço da imagem" name="imagem" required="required"></textarea>
+        <input type="file" placeholder="Endereço da imagem" name="imagem" required="required" accept="image/*"></textarea>
     </p>
 
         <br><br>
         <p class="enviar"> <!-- classe referente ao botão de enviar no formulário -->
           <input type="submit" name="enviar" value="Enviar"> <!-- botão para enviar o livro ao banco de dados -->
         </p>
-
+        
     </form> <!-- fechamento da tag form -->
 
 
