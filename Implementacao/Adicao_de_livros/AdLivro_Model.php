@@ -17,7 +17,7 @@ if (mysqli_num_rows($result)>0) {
 $sql2= "INSERT INTO usuario (titulo, autor, editora, sinopse, imagem) VALUES 
 ('$titulo', '$autor', '$editora', '$sinopse', '$imagem')";
 
-if (mysqli_query($conn, $sql)){
+if (mysqli_query($conn, $sql2)){
 
     return true;
 
