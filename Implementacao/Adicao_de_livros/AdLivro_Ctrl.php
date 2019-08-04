@@ -9,7 +9,6 @@
 
     session_start();
 
-    $conn = mysqli_connect("localhost", "root", "", "catalogo_de_livros");
     if (cadastra_livro($titulo, $autor, $editora, $sinopse, $imagem)==true)
     {
         session_unset();
