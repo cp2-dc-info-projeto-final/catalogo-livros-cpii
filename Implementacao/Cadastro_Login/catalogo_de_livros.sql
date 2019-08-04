@@ -12,10 +12,9 @@ imagem VARCHAR(400) NOT NULL
 
  create table usuario(
  idusuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- nomedeusuario VARCHAR(40) NOT NULL,
  nome VARCHAR(50) NOT NULL,
- senha VARCHAR (250) NOT NULL,
- email VARCHAR (60) NOT NULL
+ email VARCHAR (60) NOT NULL,
+ senha VARCHAR (250) NOT NULL
 );
 
  create table usuariolivro (

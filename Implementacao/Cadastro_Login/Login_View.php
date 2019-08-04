@@ -9,7 +9,7 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
-      <form action="login.php" method="post">
+      <form action="Login_Ctrl.php" method="post">
 
       <h1>Login</h1> <!-- título no topo do formulário -->
       <br>
@@ -22,8 +22,8 @@
         }
     ?>
 
-      <p class="nomedeusuario"> <!-- classe referente ao nome de usuário no formulário -->
-        <input type="text" placeholder="Nome de usuário:" name="nomedeusuario" required="required"> <!-- espaço para inserção do nome de usuário no cadastro -->
+      <p class="email"> <!-- classe referente ao nome de usuário no formulário -->
+        <input type="email" placeholder="E-mail:" name="email" required="required"> <!-- espaço para inserção do nome de usuário no cadastro -->
       </p>
 
       <p class="senha"> <!-- classe referente à senha no formulário -->

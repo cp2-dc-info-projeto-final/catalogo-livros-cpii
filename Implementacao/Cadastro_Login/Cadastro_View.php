@@ -10,7 +10,7 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
-    <form action="cadastro.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
+    <form action="cadastro_Ctrl.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Cadastro</h1> <!-- título no topo do formulário -->
       <?php
@@ -27,10 +27,6 @@
         <input type="text" placeholder="Nome completo:" name="nome" required="required"> <!-- caixa para inserção do nome -->
       </p>
 
-      <p class="nomedeusuario"> <!-- classe referente ao nome de usuário no formulário -->
-        <input type="text" placeholder="Nome de usuário:" name="nomedeusuario" required="required"> <!-- espaço para inserção do nome de usuário no cadastro -->
-      </p>
-    
 
       <p class="email"> <!-- classe referente ao campo do e-mail no formulário -->
         <input type="email" placeholder="E-mail:" name="email" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->

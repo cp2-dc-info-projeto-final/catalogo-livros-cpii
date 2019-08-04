@@ -61,9 +61,8 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
         * Informações do sistema quanto a usuários:
 
   	        1. Nome;
-  	        2. Telefone;
-  	        3. E-mail;   
-  	        4. Senha;
+  	        2. E-mail;   
+  	        3. Senha;
 
 
     + Informações do sistema quanto ao moderador:
@@ -80,23 +79,23 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 ### RF 02
 + O Moderador tem acesso a várias informações, para visualização, de todos os usuários, menos à senha.
 
-### RF 04
+### RF 03
 + O Usuário terá acesso somente a suas respectivas informações, informando e-mail e senha.
 
-### RF 05
+### RF 04
 + O Moderador poderá ter acesso ao sistema informando e-mail e senha. 
 
-### RF 06
+### RF 05
 + Livros
 
     * O Moderador gerencia os livros contidos na biblioteca catalogando-os, alterando suas informações ou excluindo-os dos registros;
     * O Moderador cadastra os livros da biblioteca e as informações são armazenadas em um banco de dados.
 
-### RF 07
+### RF 06
 + Os livros, após cadastrados no sistema, possuirão suas informações parcialmente disponibilizadas aos Usuários.
 
-### RF 08
-+ Os livros serão divididos em categorias e subcategorias.
+### RF 07
++ Os livros serão divididos em categorias.
 
-### RF 09
+### RF 08
 + O algoritmo fará recomendações por conteúdo baseada em leituras passadas.

@@ -1,4 +1,6 @@
 <?php
+ require "AdLivro_Model.php";
+
     $titulo = $_POST["titulo"];
     $autor = $_POST["autor"];
     $editora = $_POST["editora"];
@@ -8,16 +10,20 @@
     session_start();
 
     $conn = mysqli_connect("localhost", "root", "", "catalogo_de_livros");
-    if cadastra_livro($titulo, $autor, $editora, $sinopse, $imagem)==true{
+    if (cadastra_livro($titulo, $autor, $editora, $sinopse, $imagem)==true)
+    {
         session_unset();
         $msg="<p style='color:green;'>Livro cadastrado com sucesso</p>";
         $_SESSION["msg"]= $msg;
-        header("Location: Adicaodelivros_View.php");
+        header("Location: AdLivro_View.php");
         
-    } else {
-        $msg="<p style='color:red;'>Erro ao cadastrar o livro</p>";
+        
+        
+    } 
+    else {
+        $msg="<p style='color:red;'>Já existe um livro cadastrado com este nome</p>";
         $_SESSION["msg"]= $msg;
-        header("Location: Adicaodelivros_View.php");
+        header("Location: AdLivro_View.php");
 
     }
 

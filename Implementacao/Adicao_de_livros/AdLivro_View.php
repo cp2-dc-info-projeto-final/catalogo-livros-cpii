@@ -10,7 +10,7 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
-    <form action="cadastrolivro.php" method="POST"> <!-- estrutura form que agrupa todo o forumulário -->
+    <form action="AdLivro_Ctrl.php" method="POST"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Adição de Livros</h1> <!-- título no topo do formulário -->
       <?php
