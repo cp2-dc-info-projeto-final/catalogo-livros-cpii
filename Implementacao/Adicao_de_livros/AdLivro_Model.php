@@ -5,10 +5,7 @@ function cadastra_livro($titulo, $autor, $editora, $sinopse, $imagem){
     if ($conn===false){
         die ("Falha na conexão!" . mysqli_connect_error());
     }
-$sql= "SELECT idlivro FROM livro WHERE titulo='$titulo'";
 
-$result=mysqli_query($conn, $sql);
-$erro = "";
 
 $sql= "INSERT INTO livro (autor, titulo, editora, sinopse, imagem) VALUES 
 ('$autor', '$titulo', '$editora', '$sinopse', '$imagem')";
