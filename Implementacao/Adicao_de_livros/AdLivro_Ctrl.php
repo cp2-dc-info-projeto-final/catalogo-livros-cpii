@@ -5,7 +5,7 @@
     $autor = $_POST["autor"];
     $editora = $_POST["editora"];
     $sinopse = $_POST["sinopse"];
-    $imagem = $_POST["imagem"];
+    $imagem = $_FILE["imagem"];
 
     session_start();
 
@@ -20,7 +20,7 @@
         
     } 
     else {
-        $msg="<p style='color:red;'>Já existe um livro cadastrado com este nome</p>";
+        $msg="<p style='color:red;'>Erro ao cadastrar o livro</p>";
         $_SESSION["msg"]= $msg;
         header("Location: AdLivro_View.php");
 

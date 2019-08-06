@@ -10,11 +10,6 @@ $sql= "SELECT idlivro FROM livro WHERE titulo='$titulo'";
 $result=mysqli_query($conn, $sql);
 $erro = "";
 
-if (mysqli_num_rows($result)>0) {
-
-    return false;
-}
-
 $sql= "INSERT INTO livro (autor, titulo, editora, sinopse, imagem) VALUES 
 ('$autor', '$titulo', '$editora', '$sinopse', '$imagem')";
 
