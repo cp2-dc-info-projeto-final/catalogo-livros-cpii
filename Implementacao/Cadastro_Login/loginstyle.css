@@ -84,14 +84,14 @@ input, textarea /* estilização das textareas do formulário */
 
 .entrar input /* estilização do botão prosseguir */
     {
-        background-color: #E0FFFF; /* cor de fundo do botão */
+        background-color: rgb(46, 46, 46); /* cor de fundo do botão */
         opacity: 1; /* opacidade do botão */
         height: 43px; /* altura do botão */
         width: 170px; /* largura do botão */
         margin-left: 25%; /* margem para a esquerda do botão */       
         font-weight: bold; /* característica da fonte */
         border-radius: 5px; /* forma arredondada e tamanho da borda do botão */
-        color: #1C1C1C; /* cor da fonte do botão */
+        color: rgb(255, 255, 255); /* cor da fonte do botão */
         font-family: Arial, Helvetica, sans-serif;
 
     }
@@ -124,7 +124,7 @@ a:active {
 .cadastro
     {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 20;
+        font-size: 17;
         color: black;
         display: inline-block;
         text-decoration: none;
