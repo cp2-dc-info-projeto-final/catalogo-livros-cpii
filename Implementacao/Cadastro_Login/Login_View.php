@@ -45,7 +45,7 @@
         <p class="entrar"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="entrar" value="Entrar"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>
-        <a href="formulariodecadastro.php">Cadastre-se</a>
+        <a href="Cadastro_View.php">Cadastre-se</a>
 
     </form> <!-- fechamento da tag form -->
 
