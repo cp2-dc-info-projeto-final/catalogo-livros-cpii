@@ -33,7 +33,7 @@ body /* estilização do corpo do site como um todo */
     {
         padding: 25px 10px;
         display: inline-block;
-        margin-left: 1050px;
+        margin-left: 75%;
         color: white;
         text-decoration: none;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -57,12 +57,13 @@ body /* estilização do corpo do site como um todo */
         font-size: 16px; /* tamanho padrão da fonte */
         max-width: 350px; /* largura do conteúdo no geral */
         height: 445px;
-        margin-left: 899px; /* margem da tag */
+        margin-left: 65%; /* margem da tag */
         background: rgba(255,250,250,0.7); /* a cor do formulário em formato RGBA e a opacidade (0.7) */
         padding: 10px 10px 10px 20px; /* preenchimento do conteúdo do form */
         border-radius: 5px; /* forma arredondada da borda e seu tamanho */
         text-align: left;
         margin-top: 10%;
+        
 
     } 
 
