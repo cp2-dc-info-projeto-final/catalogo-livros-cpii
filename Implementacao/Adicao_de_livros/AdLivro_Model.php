@@ -7,16 +7,22 @@ function cadastra_livro($titulo, $autor, $editora, $sinopse, $imagem){
     }
 
 
-$sql= "INSERT INTO livro (autor, titulo, editora, sinopse, imagem) VALUES 
-('$autor', '$titulo', '$editora', '$sinopse', '$imagem')";
+ <!--  -->
+$sql="SELECT idlivro FROM livro WHERE sinopse='$sinopse'";
+$result=(mysqli_query($conn, $sql);
 
-if (mysqli_query($conn, $sql)){
-    $id=mysqli_insert_id($conn);
+if ((mysqli_num_rows($result)>0){
+    return false;
 
-    $_UP["pasta"]="../Imagens_home/".$id."/";
-    mkdir($_UP["pasta"], 0777, true);
+    
+} else{
+    $sql= "INSERT INTO livro (autor, titulo, editora, sinopse, imagem) VALUES ('$autor', '$titulo', '$editora', '$sinopse', '$imagem')";
+    
 
-    return true;
+}
+
+
+    
 } else{
 
     die("Erro ao efetuar o cadastro." . mysqli_error($conn));

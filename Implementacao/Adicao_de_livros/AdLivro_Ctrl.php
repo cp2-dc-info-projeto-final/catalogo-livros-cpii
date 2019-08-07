@@ -5,7 +5,7 @@
     $autor = $_POST["autor"];
     $editora = $_POST["editora"];
     $sinopse = $_POST["sinopse"];
-    $imagem = $_FILE["imagem"];
+    $imagem = $_FILES["imagem"]["name"];
 
     session_start();
 
