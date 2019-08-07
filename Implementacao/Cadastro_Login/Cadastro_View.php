@@ -45,7 +45,7 @@
         <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="enviar" value="Prosseguir"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>
-        <a href="formulariodelogin.php">Login</a>
+        <a href="Login_View.php">Login</a>
 
         
 
