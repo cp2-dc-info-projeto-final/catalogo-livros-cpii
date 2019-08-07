@@ -46,7 +46,7 @@
           <input type="submit" name="entrar" value="Entrar"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>
         <br>
-          <a class="cadastro" href="Cadastro_View.php">Cadastre-se</a>
+          <a class="cadastro" href="Cadastro_View.php">Cadastro</a>
           
 
     </form> <!-- fechamento da tag form -->

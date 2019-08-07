@@ -3,56 +3,48 @@ body /* estilização do corpo do site como um todo */
         background-color: rgba(28,28,28,0.8); /* imagem de fundo da tela de cadastro */
         background-repeat: no-repeat; /* função para não repetir a imagem */
         background-size: 100% 100%;  /* função que preenche a imagem por toda a tela */
-        margin: 0;
+        margin: 0; /* sem bordas no corpo do site */
         
     }
 
 
-    #menu
+#menu /* Estilização da parte exterior do menu superior */
     {
-        margin: 0;
+        margin: 0; 
         padding: 0;
     }
 
-    #menu ul
+#menu ul /* Estilização dos campos do menu superior*/
     {
         margin: 0;
         padding: 0;
-        background-color: rgba(28,28,28,0.3);
-        list-style: none;
+        background-color: rgba(28,28,28,0.3); 
+        list-style: none; /* remove o padrão de lista vertical dos itens do menu */
 
 
     }
 
-    #menu ul li
-    {
-        display: inline;
-    }
-
-    #menu ul li a 
+#menu ul li a /* Estilização da palavra "Cadastre-se" no menu */
     {
         padding: 25px 10px;
-        display: inline-block;
-        margin-left: 75%;
+        display: inline-block; /* Remove o sublinhado do item */
+        margin-left: 75%; /* Posição quanto à margem da página, horizontalmente */
         color: white;
         text-decoration: none;
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 22px;
     }
 
-    #menu ul li a:hover
+#menu ul li a:hover /* Função da mudança de cor ao passar o mouse pela palavra do menu superior */
     {
         color: #DCDCDC;
     }
 
-    #menu ul li a .cadastro
-    {
-        color: #000000;
-    }
 
 
 
-    form /* estilização da tag form do formulário */
+
+form /* estilização da tag form do formulário */
     {
         font-size: 16px; /* tamanho padrão da fonte */
         max-width: 350px; /* largura do conteúdo no geral */
@@ -96,32 +88,15 @@ input, textarea /* estilização das textareas do formulário */
 
     }
    
-.senha input
+.senha input /* Estilização do campo senha */
     {
         margin: 26px;
         margin-left: 0px;
     }
 
-a:link, a:visited {
-        text-decoration: none
-        
-        }
 
 
-a:hover {
-        text-decoration: underline; 
-        color: #00BFFF
-        
-        }
-
-
-a:active {
-        text-decoration: none
-        
-        }
-
-
-.cadastro
+.cadastro /* Estilização do hyperlink para a página de cadastro no furmulário de login */
     {
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         font-size: 17;
@@ -130,7 +105,7 @@ a:active {
         text-decoration: none;
     }
 
-.cadastro:hover
+.cadastro:hover /* Função de mudança de cor ao passar o mouse no hyperlink para o cadastro */
     {
         color: gray;
     }
