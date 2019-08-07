@@ -11,7 +11,7 @@
 
       <div id="menu">
           <ul>
-            <li><a href = ""> Cadastre-se </a></li>
+            <li><a href = "Cadastro_View.php"> Cadastre-se </a></li>
     
           </ul>
     
@@ -45,7 +45,9 @@
         <p class="entrar"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="entrar" value="Entrar"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>
-        <a href="Cadastro_View.php">Cadastre-se</a>
+        <br>
+          <a class="cadastro" href="Cadastro_View.php">Cadastre-se</a>
+          
 
     </form> <!-- fechamento da tag form -->
 
