@@ -9,6 +9,15 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
+      <div id="menu">
+          <ul>
+            <li><a href = ""> Cadastre-se </a></li>
+    
+          </ul>
+    
+    
+        </div>
+
       <form action="Login_Ctrl.php" method="post">
 
       <h1>Login</h1> <!-- título no topo do formulário -->
@@ -21,6 +30,8 @@
             session_unset();
         }
     ?>
+
+    
 
       <p class="email"> <!-- classe referente ao nome de usuário no formulário -->
         <input type="email" placeholder="E-mail:" name="email" required="required"> <!-- espaço para inserção do nome de usuário no cadastro -->

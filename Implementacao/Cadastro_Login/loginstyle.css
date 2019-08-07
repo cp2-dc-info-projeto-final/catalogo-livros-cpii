@@ -1,11 +1,58 @@
 body /* estilização do corpo do site como um todo */
     { 
-        background-image: url("backgroundlogin.jpg"); /* imagem de fundo da tela de cadastro */
+        background-color: rgba(28,28,28,0.8); /* imagem de fundo da tela de cadastro */
         background-repeat: no-repeat; /* função para não repetir a imagem */
-        background-size: 100% 100%  /* função que preenche a imagem por toda a tela */
+        background-size: 100% 100%;  /* função que preenche a imagem por toda a tela */
+        margin: 0;
+        
     }
 
-form /* estilização da tag form do formulário */
+
+    #menu
+    {
+        margin: 0;
+        padding: 0;
+    }
+
+    #menu ul
+    {
+        margin: 0;
+        padding: 0;
+        background-color: rgba(28,28,28,0.3);
+        list-style: none;
+
+
+    }
+
+    #menu ul li
+    {
+        display: inline;
+    }
+
+    #menu ul li a 
+    {
+        padding: 25px 10px;
+        display: inline-block;
+        margin-left: 1050px;
+        color: white;
+        text-decoration: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 21px;
+    }
+
+    #menu ul li a:hover
+    {
+        color: #DCDCDC;
+    }
+
+    #menu ul li a .cadastro
+    {
+        color: #000000;
+    }
+
+
+
+    form /* estilização da tag form do formulário */
     {
         font-size: 16px; /* tamanho padrão da fonte */
         max-width: 350px; /* largura do conteúdo no geral */
