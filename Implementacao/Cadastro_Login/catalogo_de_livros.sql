@@ -2,16 +2,17 @@ use catalogo_de_livros;
 
 
 create table livro(
-idlivro INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 autor VARCHAR(80) NOT NULL,
 titulo VARCHAR(30) NOT NULL,
 editora VARCHAR(30) NOT NULL,
 sinopse VARCHAR(220) NOT NULL,
-imagem VARCHAR(400) NOT NULL
+imagem VARCHAR(400) NOT NULL,
+classificacao VARCHAR(100) NOT NULL 
 );
 
  create table usuario(
- idusuario INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nome VARCHAR(50) NOT NULL,
  email VARCHAR (60) NOT NULL,
  senha VARCHAR (250) NOT NULL
@@ -26,7 +27,7 @@ imagem VARCHAR(400) NOT NULL
  );
  
  create table categoria(
- idcategoria INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nome VARCHAR (20) NOT NULL
  );
 
@@ -45,7 +46,7 @@ imagem VARCHAR(400) NOT NULL
  );
 
 create table moderador (
-idmoderador INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 CPF varchar (11) NOT NULL,
 telefone varchar (11) NOT NULL,
 idusuario int,
@@ -55,7 +56,7 @@ foreign key (idendereco) REFERENCES endereco (id)
 );
 
 create table endereco (
-idendereco INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 estado varchar(30) NOT NULL,
 cidade varchar (40) NOT NULL,
 bairro varchar (40) NOT NULL,

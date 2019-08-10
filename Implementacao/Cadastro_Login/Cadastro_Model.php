@@ -7,7 +7,7 @@
         die("Falha na conexão". mysqli_connect_error());
  }
 
-    $sql="SELECT idusuario FROM usuario WHERE email='$email'";
+    $sql="SELECT id FROM usuario WHERE email='$email'";
 
     $result=mysqli_query($conn, $sql);
 
