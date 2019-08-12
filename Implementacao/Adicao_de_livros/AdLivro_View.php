@@ -10,14 +10,14 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
-    <form action="AdLivro_Ctrl.php" method="POST"> <!-- estrutura form que agrupa todo o forumulário -->
+    <form action="AdLivro_Ctrl.php" method="POST" enctype="multipart/form-data"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Adição de Livros</h1> <!-- título no topo do formulário -->
       <?php
         session_start();
         if(array_key_exists('msg', $_SESSION) == true){
             $msg = $_SESSION["msg"];
-            echo "<br><b>$msg</b>";
+            echo "$msg";
             session_unset();
         }
     ?>
@@ -38,17 +38,41 @@
       <p class="editora"> <!-- classe referente ao campo da editora do livro no formulário -->
         <input type="text" placeholder="Editora:" name="editora" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->
       </p>
-     
 
-      <p class="sinopse"> <!-- classe referente à sinopse no formulário -->
+      <p class="arquivo">
+        <input type="file" placeholder="Imagem:" name="arquivo" required="required" accept="image/*"></textarea>
+    </p>
+
+    <p class="classificacao"> <!-- classe referente ao campo da editora do livro no formulário -->
+        <input type="text" placeholder="Classificação" name="classificacao" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->
+      </p>
+
+    <div class="generos" style="width:200px;"> 
+      <select name="generos">
+        <option value="generozero">Selecione o Gênero do Livro</option>
+        <option value="biografia">Biografia</option>
+        <option value="classicos">Clássicos</option>
+        <option value="conto">Conto</option>
+        <option value="drama">Drama</option>
+        <option value="didaticos">Didáticos</option>
+        <option value="economia">Economia</option>
+        <option value="fantasia">Fantasia</option>
+        <option value="ficcao">Ficção</option>
+        <option value="filosofia">Filosofia</option>
+        <option value="horror">Horror</option>
+        <option value="hq">HQs</option>
+        <option value="humor">Humor</option>
+        <option value="manga">Mangá</option>
+        <option value="romance">Romance</option>
+        <option value="suspense">Suspense</option>
+      </select>
+    </div>  
+
+
+    <p class="sinopse"> <!-- classe referente à sinopse no formulário -->
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>
 
-      <p class="imagem">
-        <input type="file" placeholder="Endereço da imagem" name="imagem" required="required" accept="image/*"></textarea>
-    </p>
-
-        <br><br>
         <p class="enviar"> <!-- classe referente ao botão de enviar no formulário -->
           <input type="submit" name="enviar" value="Enviar"> <!-- botão para enviar o livro ao banco de dados -->
         </p>

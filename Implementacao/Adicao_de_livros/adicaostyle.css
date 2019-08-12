@@ -1,7 +1,7 @@
 body /* estilização do corpo do site como um todo */
     { 
         background-image: url("backgroundlivros.jpg"); /* imagem de fundo da tela de cadastro */       
-        background-repeat: no-repeat; /* função para não repetir a imagem */
+        ; /* função para não repetir a imagem */
         background-size: 100% 100%  /* função que preenche a imagem por toda a tela */
     }
 
@@ -38,6 +38,8 @@ input /* estilização das textareas do formulário */
         border-radius: 5px; /* forma arredondada e tamanho das bordas das textareas */
         border-color: #808080;
     }
+          
+
 
     .autor input /* estilização das textareas do formulário */
     {
