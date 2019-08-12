@@ -7,5 +7,19 @@
 
   </head>
 
+  <body> <!-- tag pra início do corpo do site -->
+     
+   <form action="Pesquis_Ctrl.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
+    
+     <h1>Pesquisa de livros</h1>
 
+     <br>
+     
+     <p class="palavra_pesquis">
+         <input type="text" placeholder="Livro para ser pesquisado:" name="palavra_pesquis">
+     </p>
+
+     
+
+  </body><!-- fechamento da tag body --> 
 </html>
