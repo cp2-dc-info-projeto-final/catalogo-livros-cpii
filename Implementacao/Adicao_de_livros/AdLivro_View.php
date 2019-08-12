@@ -47,6 +47,27 @@
         <input type="text" placeholder="Classificação" name="classificacao" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->
       </p>
 
+    <div class="generos" style="width:200px;"> 
+      <select name="generos">
+        <option value="generozero">Selecione o Gênero do Livro</option>
+        <option value="biografia">Biografia</option>
+        <option value="classicos">Clássicos</option>
+        <option value="conto">Conto</option>
+        <option value="drama">Drama</option>
+        <option value="didaticos">Didáticos</option>
+        <option value="economia">Economia</option>
+        <option value="fantasia">Fantasia</option>
+        <option value="ficcao">Ficção</option>
+        <option value="filosofia">Filosofia</option>
+        <option value="horror">Horror</option>
+        <option value="hq">HQs</option>
+        <option value="humor">Humor</option>
+        <option value="manga">Mangá</option>
+        <option value="romance">Romance</option>
+        <option value="suspense">Suspense</option>
+      </select>
+    </div>  
+
 
     <p class="sinopse"> <!-- classe referente à sinopse no formulário -->
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
