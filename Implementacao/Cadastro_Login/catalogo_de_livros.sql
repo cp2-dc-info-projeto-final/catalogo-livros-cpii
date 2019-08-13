@@ -6,9 +6,11 @@ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 autor VARCHAR(80) NOT NULL,
 titulo VARCHAR(30) NOT NULL,
 editora VARCHAR(30) NOT NULL,
-sinopse VARCHAR(220) NOT NULL,
+sinopse VARCHAR(700) NOT NULL,
 imagem VARCHAR(400) NOT NULL,
-classificacao VARCHAR(100) NOT NULL 
+classificacao VARCHAR(100) NOT NULL,
+genero VARCHAR (100),
+foreign key (idcategoria) REFERENCES categoria (idlivro), 
 );
 
  create table usuario(
@@ -26,24 +28,19 @@ classificacao VARCHAR(100) NOT NULL
  foreign key (idlivro) REFERENCES livro(idlivro)
  );
  
- create table categoria(
+ create table genero(
  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- nome VARCHAR (20) NOT NULL
+ nome VARCHAR (20) NOT NULL,
+ foreign key (idlivro) REFERENCES livro (idlivro)
  );
 
- create table categoriausuario(
+ create table generousuario(
  idusuario INT,
  idcategoria INT,
  foreign key (idusuario) REFERENCES usuario(idusuario),
- foreign key (idcategoria) REFERENCES categoria(idcategoria)
+ foreign key (idgenero) REFERENCES categoria(idgenero)
  );
  
- create table categorialivro(
- idcategoria INT,
- idlivro INT,
- foreign key (idcategoria) REFERENCES categoria (idlivro),
- foreign key (idcategoria) REFERENCES livro (idlivro)
- );
 
 create table moderador (
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
