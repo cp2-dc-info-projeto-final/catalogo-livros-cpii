@@ -49,22 +49,14 @@
 
     <div class="generos" style="width:200px;"> 
       <select name="generos">
-        <option value="generozero">Selecione o Gênero do Livro</option>
-        <option value="biografia">Biografia</option>
-        <option value="classicos">Clássicos</option>
-        <option value="conto">Conto</option>
-        <option value="drama">Drama</option>
-        <option value="didaticos">Didáticos</option>
-        <option value="economia">Economia</option>
-        <option value="fantasia">Fantasia</option>
-        <option value="ficcao">Ficção</option>
-        <option value="filosofia">Filosofia</option>
-        <option value="horror">Horror</option>
-        <option value="hq">HQs</option>
-        <option value="humor">Humor</option>
-        <option value="manga">Mangá</option>
-        <option value="romance">Romance</option>
-        <option value="suspense">Suspense</option>
+      <?php
+        //require "o controle que pega os generos"
+        // $generos = funcao_pega_generos();
+
+        // foreach ($generos as $genero) {
+        //  echo "<option value="$genero['id']">$genero['nome']</option>"
+        }
+      ?>        
       </select>
     </div>  
 

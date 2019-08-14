@@ -14,9 +14,9 @@ titulo VARCHAR(30) NOT NULL,
 editora VARCHAR(30) NOT NULL,
 sinopse VARCHAR(700) NOT NULL,
 imagem VARCHAR(400) NOT NULL,
-classificacao VARCHAR(100) NOT NULL,
-idcategoria INT,
-foreign key (idcategoria) REFERENCES genero (id)
+classificacao VARCHAR(100) NOT NULL UNIQUE,
+idgenero INT,
+foreign key (idgenero) REFERENCES genero (id)
 );
 
 drop table if exists usuario;
@@ -77,3 +77,27 @@ livro int,
 foreign key (usuario) REFERENCES usuario(idusuario),
 foreign key (livro) REFERENCES livro(idlivro)
 );
+
+INSERT INTO genero (nome) VALUES
+('Biografia'),
+('Clássicos'),
+('Suspense'),
+('Conto'),
+('Drama'),
+('Economia'),
+('Fantasia'),
+('Ficção'),
+('Didático'),
+('Filosofia'),
+('Horror'),
+('HQs'),
+('Humor'),
+('Mangá'),
+('Romance'),
+('Ciências'),
+('História'),
+('Matemática'),
+('Geografia'),
+('Poesia'),
+('Sociologia'),
+('Línguas');
