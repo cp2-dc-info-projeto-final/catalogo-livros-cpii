@@ -55,7 +55,7 @@
 
         // foreach ($generos as $genero) {
         //  echo "<option value="$genero['id']">$genero['nome']</option>"
-        }
+        
       ?>        
       </select>
     </div>  
