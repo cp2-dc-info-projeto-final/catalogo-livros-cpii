@@ -11,11 +11,8 @@
 
       <div id="menu">
           <ul>
-            <li><a href = "Cadastro_View.php"> Cadastre-se </a></li>
-    
+            <li><a href = "Cadastro_View.php"> Cadastre-se </a></li>   
           </ul>
-    
-    
         </div>
 
       <form action="Login_Ctrl.php" method="post">
