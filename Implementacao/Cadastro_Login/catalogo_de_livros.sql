@@ -1,6 +1,12 @@
 use catalogo_de_livros;
 
+drop table if exists genero;
+ create table genero(
+ id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
+ nome VARCHAR (20) NOT NULL
+ );
 
+drop table if exists livro;
 create table livro(
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 autor VARCHAR(80) NOT NULL,
@@ -9,10 +15,11 @@ editora VARCHAR(30) NOT NULL,
 sinopse VARCHAR(700) NOT NULL,
 imagem VARCHAR(400) NOT NULL,
 classificacao VARCHAR(100) NOT NULL,
-genero VARCHAR (100),
-foreign key (idcategoria) REFERENCES categoria (idlivro), 
+idcategoria INT,
+foreign key (idcategoria) REFERENCES genero (id)
 );
 
+drop table if exists usuario;
  create table usuario(
  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nome VARCHAR(50) NOT NULL,
@@ -20,28 +27,25 @@ foreign key (idcategoria) REFERENCES categoria (idlivro),
  senha VARCHAR (250) NOT NULL
 );
 
+drop table if exists usuariolivro;
  create table usuariolivro (
  
  idlivro INT,
  idusuario INT,
- foreign key (idusuario) REFERENCES usuario(idusuario),
- foreign key (idlivro) REFERENCES livro(idlivro)
- );
- 
- create table genero(
- id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- nome VARCHAR (20) NOT NULL,
- foreign key (idlivro) REFERENCES livro (idlivro)
+ foreign key (idusuario) REFERENCES usuario(id),
+ foreign key (idlivro) REFERENCES livro(id)
  );
 
+drop table if exists generousuario;
  create table generousuario(
  idusuario INT,
- idcategoria INT,
- foreign key (idusuario) REFERENCES usuario(idusuario),
- foreign key (idgenero) REFERENCES categoria(idgenero)
+ idgenero INT,
+ foreign key (idusuario) REFERENCES usuario(id),
+ foreign key (idgenero) REFERENCES genero(id)
  );
  
 
+drop table if exists moderador;
 create table moderador (
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 CPF varchar (11) NOT NULL,
@@ -52,6 +56,7 @@ foreign key (idusuario) REFERENCES usuario (id),
 foreign key (idendereco) REFERENCES endereco (id)
 );
 
+drop table if exists endereco;
 create table endereco (
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 estado varchar(30) NOT NULL,
@@ -61,6 +66,7 @@ logradouro varchar (50) NOT NULL,
 numero varchar (05) NOT NULL
 ); 
 
+drop table if exists acao;
 create table acao (
 
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
