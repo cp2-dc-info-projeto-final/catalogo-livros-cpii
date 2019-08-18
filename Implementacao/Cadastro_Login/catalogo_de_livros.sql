@@ -15,8 +15,14 @@ editora VARCHAR(30) NOT NULL,
 sinopse VARCHAR(700) NOT NULL,
 imagem VARCHAR(400) NOT NULL,
 classificacao VARCHAR(100) NOT NULL UNIQUE,
-idgenero INT,
-foreign key (idgenero) REFERENCES genero (id)
+);
+
+drop table if exists genero_livro;
+create table genero_livro(
+    idlivro INT,
+    idgenero INT,
+    foreign key (idlivro) REFERENCES livro(id),
+    foreign key (idgenero) REFERENCES genero(id)
 );
 
 drop table if exists usuario;
@@ -27,8 +33,8 @@ drop table if exists usuario;
  senha VARCHAR (250) NOT NULL
 );
 
-drop table if exists usuariolivro;
- create table usuariolivro (
+drop table if exists lista_usuario;
+ create table lista_usuario (
  
  idlivro INT,
  idusuario INT,
@@ -36,8 +42,8 @@ drop table if exists usuariolivro;
  foreign key (idlivro) REFERENCES livro(id)
  );
 
-drop table if exists generousuario;
- create table generousuario(
+drop table if exists genero_usuario;
+ create table genero_usuario(
  idusuario INT,
  idgenero INT,
  foreign key (idusuario) REFERENCES usuario(id),
