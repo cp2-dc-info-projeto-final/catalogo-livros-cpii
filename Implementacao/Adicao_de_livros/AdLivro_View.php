@@ -47,23 +47,21 @@
         <input type="text" placeholder="Classificação" name="classificacao" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->
       </p>
 
-    <div class="generos" style="width:200px;"> 
-      <select name="generos">
-      <?php
-        //require "o controle que pega os generos"
-        // $generos = funcao_pega_generos();
-
-        // foreach ($generos as $genero) {
-        //  echo "<option value="$genero['id']">$genero['nome']</option>"
-        
-      ?>        
-      </select>
-    </div>  
-
 
     <p class="sinopse"> <!-- classe referente à sinopse no formulário -->
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>
+      <!-- <div class="generos" style="with:200px"> 
+      <select name="generos">
+      <?php
+       /* require "Mostra_generos.php";
+       $generos = Mostra_generos();
+         foreach ($generos as $genero) {
+         echo "<option value=".$genero["id"].">".$genero["nome"]."</option>";
+         }
+      */?>        
+      </select>
+        </div>  -->
 
         <p class="enviar"> <!-- classe referente ao botão de enviar no formulário -->
           <input type="submit" name="enviar" value="Enviar"> <!-- botão para enviar o livro ao banco de dados -->

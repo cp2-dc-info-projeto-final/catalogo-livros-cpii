@@ -1,7 +1,7 @@
 <?php
 function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $genero, $sinopse){
 
-    $conn=mysqli_connect("localhost", "root", "", "catalogo_de_livros");
+    include_once "../Implementacao/conexao.php";
 
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
