@@ -10,6 +10,12 @@
   
     <body> <!-- tag pra início do corpo do site -->
 
+    <div id="menu">
+          <ul>
+            <li><a href = "Login_View.php"> Login </a></li>   
+          </ul>
+        </div>
+
     <form action="cadastro_Ctrl.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Cadastro</h1> <!-- título no topo do formulário -->
@@ -45,7 +51,7 @@
         <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="enviar" value="Prosseguir"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>
-        <a href="Login_View.php">Login</a> 
+        <a class="login" href="Login_View.php">Login</a> 
 
         
 
