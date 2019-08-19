@@ -1,7 +1,7 @@
 body /* estilização do corpo do site como um todo */
     { 
                 margin: 0; /* sem bordas no corpo do site */
-                background-color: rgba(17, 17, 17, 0.8);
+                background-image: url("backgroundlogin.jpg"); /* imagem de fundo da tela de cadastro */ 
     }
 
 #menu /* Estilização da parte exterior do menu superior */
@@ -50,14 +50,14 @@ body /* estilização do corpo do site como um todo */
 .slogan #titulo
     {
         font-size: 50px;
-        color: rgb(231, 231, 231);
+        color: rgb(255, 255, 255);
          
     }
 
 .slogan #subtitulo
     {
         font-size: 23px;
-        color: rgb(14, 14, 14);
+        color: rgb(199, 199, 199);
         display: block;
         
         
