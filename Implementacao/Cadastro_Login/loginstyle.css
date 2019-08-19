@@ -1,12 +1,8 @@
 body /* estilização do corpo do site como um todo */
     { 
-        background-color: rgba(28,28,28,0.8); /* imagem de fundo da tela de cadastro */
-        background-repeat: no-repeat; /* função para não repetir a imagem */
-        background-size: 100% 100%;  /* função que preenche a imagem por toda a tela */
-        margin: 0; /* sem bordas no corpo do site */
-        
+                margin: 0; /* sem bordas no corpo do site */
+                background-image: url("backgroundlogin.jpg"); /* imagem de fundo da tela de cadastro */ 
     }
-
 
 #menu /* Estilização da parte exterior do menu superior */
     {
@@ -18,7 +14,7 @@ body /* estilização do corpo do site como um todo */
     {
         margin: 0;
         padding: 0;
-        background-color: rgba(28,28,28,0.3); 
+        background-color: rgba(28,28,28,0.7); 
         list-style: none; /* remove o padrão de lista vertical dos itens do menu */
 
 
@@ -40,8 +36,32 @@ body /* estilização do corpo do site como um todo */
         color: #DCDCDC;
     }
 
+.slogan
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: 7%;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: absolute;
+        vertical-align: baseline;
+        float: left; width: 35%;
+        margin-top: 7%;
+    }
 
+.slogan #titulo
+    {
+        font-size: 50px;
+        color: rgb(255, 255, 255);
+         
+    }
 
+.slogan #subtitulo
+    {
+        font-size: 23px;
+        color: rgb(199, 199, 199);
+        display: block;
+        
+        
+    }    
 
 
 form /* estilização da tag form do formulário */
@@ -49,12 +69,14 @@ form /* estilização da tag form do formulário */
         font-size: 16px; /* tamanho padrão da fonte */
         max-width: 350px; /* largura do conteúdo no geral */
         height: 445px;
-        margin-left: 65%; /* margem da tag */
+        margin-left: 60%; /* margem da tag */
         background: rgba(255,250,250,0.7); /* a cor do formulário em formato RGBA e a opacidade (0.7) */
         padding: 10px 10px 20px 20px; /* preenchimento do conteúdo do form */
         border-radius: 5px; /* forma arredondada da borda e seu tamanho */
         text-align: left;
-        margin-top: 10%;
+        margin-top: 5%;
+        float: right; width: 40%;
+        margin-right: 10%;
         
 
     } 

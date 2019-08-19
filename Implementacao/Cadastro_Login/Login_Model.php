@@ -1,7 +1,7 @@
 <?php
  
  function autentica($email, $senha) {
-     $conn = mysqli_connect("localhost", "root", "", "catalogo_de_livros");
+     include_once"../Implementacao/conexao.php";
      if ($conn===false){
          die("Erro de conexão".mysqli_connect_error());
      }
