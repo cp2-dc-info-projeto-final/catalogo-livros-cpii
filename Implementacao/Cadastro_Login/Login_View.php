@@ -15,6 +15,9 @@
           </ul>
         </div>
 
+    
+     
+
       <form action="Login_Ctrl.php" method="post">
 
       <h1>Login</h1> <!-- título no topo do formulário -->
@@ -48,6 +51,14 @@
 
     </form> <!-- fechamento da tag form -->
 
+    <div class="slogan">
+      <p id="titulo">
+        Um acervo completo de livros!
+      </p>
+      <p id="subtitulo">
+        O catálogo de livros CPII proporciona uma infinidade de obras de acordo com seus gostos. Cadastre-se e experimente a nossa vasta coleção de títulos filtrando seus próprios gêneros, e ainda salve os que mais gostar!
+      </p>
+    </div>
 
 
   </body><!-- fechamento da tag body -->
