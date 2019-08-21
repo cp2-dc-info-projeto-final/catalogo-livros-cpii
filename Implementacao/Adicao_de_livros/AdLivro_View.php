@@ -1,6 +1,6 @@
 <html>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
+    <meta http-equiv="Content-Type" charset="UTF-8" content="text/html"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
   <head>
     
     <title>Adição de Livros</title> <!-- nome na aba da página -->
@@ -51,17 +51,17 @@
     <p class="sinopse"> <!-- classe referente à sinopse no formulário -->
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>
-      <!-- <div class="generos" style="with:200px"> 
+      <div class="generos" style="with:200px"> 
       <select name="generos">
       <?php
-       /* require "Mostra_generos.php";
+        require "Mostra_generos.php";
        $generos = Mostra_generos();
          foreach ($generos as $genero) {
          echo "<option value=".$genero["id"].">".$genero["nome"]."</option>";
          }
-      */?>        
+      ?>        
       </select>
-        </div>  -->
+        </div>  
 
         <p class="enviar"> <!-- classe referente ao botão de enviar no formulário -->
           <input type="submit" name="enviar" value="Enviar"> <!-- botão para enviar o livro ao banco de dados -->
