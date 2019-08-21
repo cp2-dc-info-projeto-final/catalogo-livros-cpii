@@ -9,12 +9,12 @@ drop table if exists genero;
 drop table if exists livro;
 create table livro(
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-autor VARCHAR(80) NOT NULL,
-titulo VARCHAR(30) NOT NULL,
+autor VARCHAR(80)  NOT NULL,
+titulo VARCHAR(30)  NOT NULL,
 editora VARCHAR(30) NOT NULL,
 sinopse VARCHAR(700) NOT NULL,
 imagem VARCHAR(400) NOT NULL,
-classificacao VARCHAR(100) NOT NULL UNIQUE,
+classificacao VARCHAR(100) NOT NULL UNIQUE
 );
 
 drop table if exists genero_livro;
@@ -28,8 +28,8 @@ create table genero_livro(
 drop table if exists usuario;
  create table usuario(
  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- nome VARCHAR(50) NOT NULL,
- email VARCHAR (60) NOT NULL,
+ nome VARCHAR(50)  NOT NULL,
+ email VARCHAR (60)  NOT NULL,
  senha VARCHAR (250) NOT NULL
 );
 
@@ -54,8 +54,8 @@ drop table if exists genero_usuario;
 drop table if exists moderador;
 create table moderador (
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-CPF varchar (11) NOT NULL,
-telefone varchar (11) NOT NULL,
+CPF varchar (11)  NOT NULL,
+telefone varchar (11)  NOT NULL,
 idusuario int,
 idendereco int,
 foreign key (idusuario) REFERENCES usuario (id),
@@ -77,7 +77,7 @@ create table acao (
 
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 datahorario datetime,
-descricao varchar (40),
+descricao varchar (40) ,
 usuario int not null,
 livro int,
 foreign key (usuario) REFERENCES usuario(idusuario),
