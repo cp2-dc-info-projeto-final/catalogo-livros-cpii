@@ -32,8 +32,7 @@
     
      <h1>Pesquisa de livros</h1>
      <br><br>
-     <p class="pesquisar">
-     <input type="submit" name="pesquisar" value="Pesquisar"> 
+     
         </p>
 
      <br>

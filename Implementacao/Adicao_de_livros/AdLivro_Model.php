@@ -1,7 +1,7 @@
 <?php
 function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $genero, $sinopse){
 
-    include_once "../Implementacao/conexao.php";
+    include_once "../conexao.php";
 
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
@@ -13,8 +13,8 @@ function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $gen
 
     if ($result) {
         if (mysqli_num_rows($result)==0){
-            $sql="INSERT INTO livro (titulo, autor, editora, imagem, classificacao, idgenero, sinopse) VALUES
-            ('$titulo', '$autor', '$editora', '$imagem', '$classificacao', $genero, '$sinopse')";
+            $sql="INSERT INTO livro (titulo, autor, editora, imagem, classificacao, sinopse) VALUES
+            ('$titulo', '$autor', '$editora', '$imagem', '$classificacao', '$sinopse')";
     
             if (mysqli_query($conn, $sql)) {
                 $id=mysqli_insert_id($conn);  
