@@ -1,7 +1,11 @@
 <html>
      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
    <head>
-
+   <script scr="js/jquery.js">
+    $('#buscar').click(function () (
+      buscar($("$palavra").val())
+    });
+   </script>
    <title>Pesquisa de livros</title> <!-- nome na aba da página -->
       <link rel="stylesheet" type="text/css" href="pesquis_style.css"> <!-- hyperlink para a conexão com o CSS-->
 
@@ -45,10 +49,14 @@
    <input type="checkbox" name="Sociologia" value="21" /> Sociologia
    <input type="checkbox" name="Línguas" value="22" /> Línguas
 
-   <p class="palavra_pesquis">
-         <input type="text" placeholder="Procurar:" name="palavra_pesquis">
+   <div class="palavra_pesquis">
+         <input type="text" class="form-control" id="palavra"  placeholder="Procurar:">
+         <span class="input-group-btn">
+               <button type="button" onclick="loadDoc()">Pesquisar</button>
+         </span>
+   </div>
      </p>
-   <div>PLACEHOLDER DE AREA DE INFORMAÇÕES</div>
+   <div id="dados">PLACEHOLDER DE AREA DE INFORMAÇÕES</div>
 
   </body><!-- fechamento da tag body --> 
 </html>
