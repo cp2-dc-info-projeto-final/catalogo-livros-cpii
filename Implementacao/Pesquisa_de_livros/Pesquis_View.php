@@ -67,7 +67,8 @@
          </span>
    </div>
      </p>
-   <div id="$dados"></div>
-
+     
+   <div id="dados"></div>
+   
   </body><!-- fechamento da tag body --> 
 </html>

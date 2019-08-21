@@ -2,14 +2,14 @@
   
 
 
-    include_once "../Implementacao/conexao.php";
+    include_once "../conexao.php";
 
 
 
-  $sql= "SELECT titulo, autor, sinopse FROM livro JOIN genero on genero.nome";
+
   
 
-  function buscar(livro){
+  function buscar ($livro){
 
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
@@ -20,15 +20,19 @@
     $qtd = mysql_num_rows($query);
     $get = $query->fetch_array();
     if ($qtd > 0) {
-        $dados = $get['nome'];
+      $dados = get['$nome'];
+    }else { 
+      echo "Nenhum resultado encontrado.";
     }
    
+    mysqli_close($conn);
 
+    return $dados;
    
     
-?>
+  }
 
-<!---    $.ajax
+/*    $.ajax
           ({
             type: "POST"
             dataType:"html"
@@ -42,12 +46,12 @@
                $("#dados").html(msg);
             }
           }); 
----->
 
-?>
 
-<script>
-     var $filterCheckboxes = $('input[type="checkbox"]');
+
+
+
+   <script var $filterCheckboxes = $('input[type="checkbox"]');
 
      $filterCheckboxes.on('change'. function() {
 
@@ -57,5 +61,5 @@
          
        })
      })
-   </script>
-
+   /script> */
+?>
