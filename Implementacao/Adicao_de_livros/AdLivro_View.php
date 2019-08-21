@@ -52,7 +52,7 @@
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>
       <div class="generos" style="with:200px"> 
-      <select name="generos">
+      <select name="generos" multiple>
       <?php
         require "Mostra_generos.php";
        $generos = Mostra_generos();
