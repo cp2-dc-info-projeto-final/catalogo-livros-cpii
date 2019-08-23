@@ -6,7 +6,6 @@ session_start();
     $autor = $_POST["autor"];
     $editora = $_POST["editora"];
     $classificacao=$_POST["classificacao"];
-    $genero=$_POST["generos"];
     $sinopse = $_POST["sinopse"];
     $imagem = $_FILES["arquivo"]["name"];
     

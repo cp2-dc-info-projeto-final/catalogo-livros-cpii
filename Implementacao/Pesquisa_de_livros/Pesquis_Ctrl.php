@@ -1,12 +1,11 @@
-<?php header('Content-Type': text/html charset=utf-8); ?> <!--- corrige o problema de acentuação --->
-<?php
+<?php  
 session_start();
  require ("Pesquis_Model.php");
 
-    $palavra_pesquis = $_POST["Palavra pesquisada"];< 
-    require "Pesquis_Model.php"
+    $titulo_pesquisado = $_GET["Palavra pesquisada"];
+    $dados =(buscar($titulo_pesquisado))
     
-    $dados = buscar($livro);
+     buscar($titulo_pesquisado);
     
  
 

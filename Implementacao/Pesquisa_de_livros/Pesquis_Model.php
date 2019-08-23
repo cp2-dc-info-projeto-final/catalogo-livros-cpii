@@ -1,22 +1,26 @@
 <?php
-  
-
-
-    include_once "../conexao.php";
-
-
-
-
-  
+  include_once ('conexao.php');
 
   function buscar ($livro){
 
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
       }
+      $sql = "SELECT * FROM livro WHERE nome LIKE '%$titulo_pesquisado%'";
+      $query = mysqli_query($conn, $sql);
+      if (mysqli_num_rows($query) > 0) {
+        $dados = [];
+        while ($dados=mysqli_fetch_array($query)){
+          $dados["titulo"]=$query
+        }
+        
+  
 
-    $sql = "SELECT * FROM livro WHERE nome LIKE '%$palavra%'";
-    $query = mysql_query($sql);
+  
+
+  /*
+
+    
     $qtd = mysql_num_rows($query);
     $get = $query->fetch_array();
     if ($qtd > 0) {
@@ -30,7 +34,7 @@
     return $dados;
    
     
-  }
+  }*/
 
 /*    $.ajax
           ({
