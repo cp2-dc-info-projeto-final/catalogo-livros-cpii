@@ -5,7 +5,45 @@
     
     <title>Adição de Livros</title> <!-- nome na aba da página -->
       <link rel="stylesheet" type="text/css" href="adicaostyle.css"> <!-- hyperlink para a conexão com o CSS-->
+      <script src="../js/jquery.js"></script>
+      <script>
+        function adiciona_genero() {
+          var gen = $('#select-genero option:selected').text();
+          var found = false;
 
+          $('.div-genero span').each(function() {
+              
+              var currentElement = $(this);
+
+              var value = currentElement.html(); // if it is an input/select/textarea field
+              if (value == gen) {
+                found = true;
+              }
+              // TODO: do something with the value
+          });
+
+          if (!found) {
+            $('#generos-selecionados').append("<div class='div-genero'><span>" + gen + "</span><div class=\"btn-adicionar-x\" onclick=\"remove_genero('" + gen + "')\">X</div><input type='hidden' name='"+gen+"' value='"+gen+"'></div>");
+          }
+          
+        }
+
+        function remove_genero(gen) {
+
+          $('.div-genero span').each(function() {
+              
+              var currentElement = $(this);
+
+              var value = currentElement.html(); // if it is an input/select/textarea field
+              if (value == gen) {
+                currentElement.parent().remove();
+              }
+              // TODO: do something with the value
+          });
+
+        }
+      </script>
+        
   </head>
   
     <body> <!-- tag pra início do corpo do site -->
@@ -52,6 +90,7 @@
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>
       <div class="generos" style="with:200px"> 
+      <input type="button" id="btn-genero" onclick="adiciona_genero()" value="Adiciona Genero">
       <select id="select-genero" name="generos">
       <?php
         require "Mostra_generos.php";
@@ -62,20 +101,10 @@
       ?>        
       </select>
          <div id="generos-selecionados">
+
          </div>
       <!--btn add-->
-        </div>  
-
-        <!-- 
-          <script type="text/javascript" src"js/jquery.js">
-
-          function () {
-            $gen = $('#select-genero').selected;
-
-            $('#generos-selecionados').innerHTML += "<label>$gen</label>";
-          }
-         </script>
-        -->
+        </div>         
 
         <p class="enviar"> <!-- classe referente ao botão de enviar no formulário -->
           <input type="submit" name="enviar" value="Enviar"> <!-- botão para enviar o livro ao banco de dados -->

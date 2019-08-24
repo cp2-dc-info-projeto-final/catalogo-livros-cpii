@@ -88,7 +88,7 @@ input /* estilização das textareas do formulário */
         color: rgba(211,211,211,1.00);
     }
 
-.enviar input /* estilização do botão prosseguir */
+.enviar input, .btn /* estilização do botão prosseguir */
     {
         background-color: #B22222; /* cor de fundo do botão */
         opacity: 1; /* opacidade do botão */
@@ -100,4 +100,35 @@ input /* estilização das textareas do formulário */
         color: #FFFFFF; /* cor da fonte do botão */
         font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do botão, por ordem de preferência*/
 
+    }
+    .div-genero
+    {
+        background-color: #808080;
+        padding: 7px;
+        border-color: #808080;
+        border-radius: 5px;
+        margin: 7px;
+        width: 80px;
+    }
+
+    #btn-genero
+    {
+        width: 150px;
+        height: 40px;
+    }
+
+    #btn-genero span, div
+    {
+        display: inline-block;
+    }
+
+    .btn-adicionar-x
+    {
+        color: #B22222;
+        margin-left: 2px;
+    }
+
+    #generos-selecionados
+    {
+        display: block;
     }
