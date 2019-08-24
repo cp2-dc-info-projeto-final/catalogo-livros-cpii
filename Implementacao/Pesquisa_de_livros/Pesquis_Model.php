@@ -1,69 +1,36 @@
 <?php
-  include_once ('conexao.php');
+  include_once ('../conexao.php');
 
-  function buscar ($livro){
+  function buscar($chave){
 
+    $conn = get_connection();
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
-      }
-      $sql = "SELECT * FROM livro WHERE nome LIKE '%$titulo_pesquisado%'";
-      $query = mysqli_query($conn, $sql);
-      if (mysqli_num_rows($query) > 0) {
-        $dados = [];
-        while ($dados=mysqli_fetch_array($query)){
-          $dados["titulo"]=$query
-        }
-        
-  
-
-  
-
-  /*
-
-    
-    $qtd = mysql_num_rows($query);
-    $get = $query->fetch_array();
-    if ($qtd > 0) {
-      $dados = get['$nome'];
-    }else { 
-      echo "Nenhum resultado encontrado.";
     }
-   
-    mysqli_close($conn);
-
-    return $dados;
-   
+    $sql = "SELECT titulo, autor, sinopse, imagem FROM livro WHERE 
+    titulo LIKE '%$chave%'
+    OR autor LIKE '%$chave%'
+    OR sinopse LIKE '%$chave%'";
     
-  }*/
+    $livros = [];
 
-/*    $.ajax
-          ({
-            type: "POST"
-            dataType:"html"
-            url: page
-            beforeSend: function(){
-                        $("#dados").html("Carregando...");
-            },
-            data: (palvra:palavra),
-            success: function(msg)
-            {
-               $("#dados").html(msg);
-            }
-          }); 
+    if ($query = mysqli_query($conn, $sql))
+    {
+      if (mysqli_num_rows($query) > 0) {
+        while ($row=mysqli_fetch_assoc($query)){
+          $livro["titulo"]=$row['titulo'];
+          $livro["autor"]=$row['autor'];
+          $livro["sinopse"]=$row['sinopse'];
+          $livro["imagem"]=$row['imagem'];
+          array_push($livros, $livro);
+        }
+      }
+    } else {
+      die("Falha na consulta" . mysqli_error($conn));
+    }
 
-
-
-
-
-   <script var $filterCheckboxes = $('input[type="checkbox"]');
-
-     $filterCheckboxes.on('change'. function() {
-
-       var selectedFilters = {};
-
-       $filterCheckboxes.filter(':checked').each(function(){
-         
-       })
-     })
-   /script> */
+    mysqli_close($conn);
+    return $livros;
+  }
+  
 ?>

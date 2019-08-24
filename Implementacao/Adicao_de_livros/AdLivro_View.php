@@ -93,8 +93,7 @@
       <input type="button" id="btn-genero" onclick="adiciona_genero()" value="Adiciona Genero">
       <select id="select-genero" name="generos">
       <?php
-        require "Mostra_generos.php";
-       $generos = Mostra_generos();
+        require "Gen_Ctrl.php";
          foreach ($generos as $genero) {
          echo "<option value=".$genero["id"].">".$genero["nome"]."</option>";
          }

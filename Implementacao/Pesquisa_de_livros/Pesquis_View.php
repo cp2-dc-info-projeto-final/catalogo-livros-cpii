@@ -28,7 +28,7 @@
   <body> <!-- tag pra início do corpo do site -->
   
 
-   <form action="Pesquis_Ctrl.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
+   <form action="Pesquis_View.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
     
      <h1>Pesquisa de livros</h1>
      <br><br>
@@ -37,7 +37,7 @@
 
      <br>
      
-   <input type="checkbox" name="Biografia" value="c1" /> Biografia
+  <!-- <input type="checkbox" name="Biografia" value="c1" /> Biografia
    <input type="checkbox" name="Clássicos" value="c2" /> Clássicos
    <input type="checkbox" name="Suspense" value="c3" /> Suspense
    <input type="checkbox" name="Conto" value="c4" /> Conto
@@ -58,17 +58,31 @@
    <input type="checkbox" name="Geografia" value="c19" /> Geografia
    <input type="checkbox" name="Poesia" value="c20" /> Poesia
    <input type="checkbox" name="Sociologia" value="c21" /> Sociologia
-   <input type="checkbox" name="Línguas" value="c22" /> Línguas
+   <input type="checkbox" name="Línguas" value="c22" /> Línguas -->
 
    <div class="titulo_pesquisado">
-         <input type="text" class="form-control" id="$palavra"  placeholder="Buscar por...">
+         <input type="text" class="form-control" id="$palavra" name="chave" placeholder="Buscar por...">
          <span class="input-group-btn">
-               <button type="button" onclick="loadDoc()">Pesquisar</button>
+               <input type="submit" value="Pesquisar">
          </span>
    </div>
      </p>
      
-   <div id="dados"></div>
+   <div id="resultado">
+    <?php 
+      require "Pesquis_Ctrl.php";
+
+      if (isset($_GET["chave"])) {
+        $chave = $_GET["chave"];
+
+        $resultado = buscar_livros($chave);
+        foreach ($resultado as $livro) {
+          echo $livro['titulo'] . "<br>";
+          echo "<img src='../".$livro['imagem']."'/>";
+        }
+      }
+    ?>
+   </div>
    
   </body><!-- fechamento da tag body --> 
 </html>
