@@ -6,7 +6,6 @@ session_start();
     $autor = $_POST["autor"];
     $editora = $_POST["editora"];
     $classificacao=$_POST["classificacao"];
-    $genero=$_POST["generos"];
     $sinopse = $_POST["sinopse"];
     $imagem = $_FILES["arquivo"]["name"];
     
@@ -18,7 +17,7 @@ session_start();
     
         mkdir('../Cadastro_Login/Imagens_home/'.$insert_id.'/', 755, true);
         move_uploaded_file($_FILES["arquivo"]["tmp_name"],'../Cadastro_Login/Imagens_home/'.$insert_id.'/'.$imagem);
-        $msg="<p style='color:green;'>Livro cadastrado com sucesso".$insert_id."</p>";
+        $msg="<p style='color:green;'>Livro cadastrado com sucesso</p>";
         $_SESSION["msg"]= $msg;
         header("Location: AdLivro_View.php");
         

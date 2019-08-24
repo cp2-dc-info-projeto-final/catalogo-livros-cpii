@@ -1,35 +1,42 @@
 <?php
-  
+  include_once ('conexao.php');
 
-  function buscar(palavra){
-
-    include_once "../Implementacao/conexao.php";
-
-
-
-  $sql= "SELECT titulo, autor, sinopse FROM livro JOIN genero on genero.nome";
-  
-
-  function buscar(livro){
+  function buscar ($livro){
 
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
       }
-
-        $sql = "SELECT * FROM livro WHERE nome LIKE '%$palavra%'";
-        $query = mysql_query($sql);
-        $qtd = mysql_num_rows($query);
-        $get = $query->fetch_array();
-        if ($qtd > 0) {
-          $dados = $get['nome'];
+      $sql = "SELECT * FROM livro WHERE nome LIKE '%$titulo_pesquisado%'";
+      $query = mysqli_query($conn, $sql);
+      if (mysqli_num_rows($query) > 0) {
+        $dados = [];
+        while ($dados=mysqli_fetch_array($query)){
+          $dados["titulo"]=$query
         }
-    var page = "Pesquis_Ctrl.php"
+        
+  
 
+  
+
+  /*
+
+    
+    $qtd = mysql_num_rows($query);
+    $get = $query->fetch_array();
+    if ($qtd > 0) {
+      $dados = get['$nome'];
+    }else { 
+      echo "Nenhum resultado encontrado.";
+    }
+   
+    mysqli_close($conn);
+
+    return $dados;
    
     
-?>
+  }*/
 
-<!---    $.ajax
+/*    $.ajax
           ({
             type: "POST"
             dataType:"html"
@@ -43,12 +50,12 @@
                $("#dados").html(msg);
             }
           }); 
----->
 
-?>
 
-<script>
-     var $filterCheckboxes = $('input[type="checkbox"]');
+
+
+
+   <script var $filterCheckboxes = $('input[type="checkbox"]');
 
      $filterCheckboxes.on('change'. function() {
 
@@ -58,5 +65,5 @@
          
        })
      })
-   </script>
-
+   /script> */
+?>

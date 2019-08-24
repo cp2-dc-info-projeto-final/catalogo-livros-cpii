@@ -28,12 +28,11 @@
   <body> <!-- tag pra início do corpo do site -->
   
 
-   <form action="Pesquis_Ctrl.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
+   <form action="Pesquis_Ctrl.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
     
      <h1>Pesquisa de livros</h1>
      <br><br>
-     <p class="pesquisar">
-     <input type="submit" name="pesquisar" value="Pesquisar"> 
+     
         </p>
 
      <br>
@@ -61,14 +60,15 @@
    <input type="checkbox" name="Sociologia" value="c21" /> Sociologia
    <input type="checkbox" name="Línguas" value="c22" /> Línguas
 
-   <div class="palavra_pesquis">
+   <div class="titulo_pesquisado">
          <input type="text" class="form-control" id="$palavra"  placeholder="Buscar por...">
          <span class="input-group-btn">
                <button type="button" onclick="loadDoc()">Pesquisar</button>
          </span>
    </div>
      </p>
-   <div id="$dados"></div>
-
+     
+   <div id="dados"></div>
+   
   </body><!-- fechamento da tag body --> 
 </html>

@@ -52,7 +52,7 @@
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>
       <div class="generos" style="with:200px"> 
-      <select name="generos" multiple>
+      <select id="select-genero" name="generos">
       <?php
         require "Mostra_generos.php";
        $generos = Mostra_generos();
@@ -61,7 +61,21 @@
          }
       ?>        
       </select>
+         <div id="generos-selecionados">
+         </div>
+      <!--btn add-->
         </div>  
+
+        <!-- 
+          <script type="text/javascript" src"js/jquery.js">
+
+          function () {
+            $gen = $('#select-genero').selected;
+
+            $('#generos-selecionados').innerHTML += "<label>$gen</label>";
+          }
+         </script>
+        -->
 
         <p class="enviar"> <!-- classe referente ao botão de enviar no formulário -->
           <input type="submit" name="enviar" value="Enviar"> <!-- botão para enviar o livro ao banco de dados -->
