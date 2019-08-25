@@ -2,7 +2,7 @@
 function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $genero, $sinopse){
 
     include_once "../conexao.php";
-
+    $conn = get_connection();
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
     }
@@ -17,7 +17,10 @@ function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $gen
             ('$titulo', '$autor', '$editora', '$imagem', '$classificacao', '$sinopse')";
     
             if (mysqli_query($conn, $sql)) {
-                $id=mysqli_insert_id($conn);  
+                $id=mysqli_insert_id($conn);
+                $sql="UPDATE livro SET imagem='Cadastro_Login/Imagens_home/$id/$imagem'
+                WHERE livro.id=$id";
+                mysqli_query($conn, $sql);  
                 return $id;
             } else {
                 die("Erro ao efetuar o cadastro" . mysqli_error($conn));
@@ -38,7 +41,7 @@ function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $gen
 
 function mostra_generos(){
     include_once "../conexao.php";
-
+    $conn = get_connection();
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
     }

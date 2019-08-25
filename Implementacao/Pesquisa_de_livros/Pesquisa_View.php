@@ -21,14 +21,14 @@
     });
    </script> --->
    <title>Pesquisa de livros</title> <!-- nome na aba da página -->
-      <link rel="stylesheet" type="text/css" href="pesquis_style.css"> <!-- hyperlink para a conexão com o CSS-->
+      <link rel="stylesheet" type="text/css" href="pesquisa_style.css"> <!-- hyperlink para a conexão com o CSS-->
 
   </head>
 
   <body> <!-- tag pra início do corpo do site -->
   
 
-   <form action="Pesquis_View.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
+   <form action="Pesquisa_View.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
     
      <h1>Pesquisa de livros</h1>
      <br><br>
@@ -70,7 +70,7 @@
      
    <div id="resultado">
     <?php 
-      require "Pesquis_Ctrl.php";
+      require "Pesquisa_Ctrl.php";
 
       if (isset($_GET["chave"])) {
         $chave = $_GET["chave"];

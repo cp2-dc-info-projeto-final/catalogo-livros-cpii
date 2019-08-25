@@ -13,7 +13,7 @@ autor VARCHAR(80)  NOT NULL,
 titulo VARCHAR(30)  NOT NULL,
 editora VARCHAR(30) NOT NULL,
 sinopse VARCHAR(700) NOT NULL,
-imagem VARCHAR(400) NOT NULL,
+imagem VARCHAR(400),
 classificacao VARCHAR(100) NOT NULL UNIQUE
 );
 

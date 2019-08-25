@@ -1,6 +1,6 @@
 <?php
 session_start();
- require ("AdLivro_Model.php");
+ require ("Gen_ctrl.php");
 
     $titulo = $_POST["titulo"];
     $autor = $_POST["autor"];
