@@ -84,11 +84,6 @@
         <input type="file" placeholder="Imagem:" name="arquivo" required="required" accept="image/*"></textarea>
     </p>
 
-    <p class="classificacao"> <!-- classe referente ao campo da editora do livro no formulário -->
-        <input type="text" placeholder="Classificação" name="classificacao" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->
-      </p>
-
-
     <p class="sinopse"> <!-- classe referente à sinopse no formulário -->
         <textarea placeholder="Sinopse:" name="sinopse" style="resize: none" required="required"></textarea> <!-- campo para colocar a senha do usuário -->
       </p>

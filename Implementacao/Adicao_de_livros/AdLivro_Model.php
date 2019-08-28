@@ -1,5 +1,5 @@
 <?php
-function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $genero, $sinopse){
+function cadastra_livro($titulo, $autor, $editora, $imagem, $sinopse){
 
     include_once "../conexao.php";
     $conn = get_connection();
@@ -7,14 +7,10 @@ function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $gen
         die("Falha na conexão". mysqli_connect_error());
     }
 
-    $sql="SELECT id FROM livro WHERE classificacao='$classificacao'";
-
-    $result=mysqli_query($conn, $sql);
-
-    if ($result) {
-        if (mysqli_num_rows($result)==0){
-            $sql="INSERT INTO livro (titulo, autor, editora, imagem, classificacao, sinopse) VALUES
-            ('$titulo', '$autor', '$editora', '$imagem', '$classificacao', '$sinopse')";
+    
+        
+            $sql="INSERT INTO livro (titulo, autor, editora, imagem, sinopse) VALUES
+            ('$titulo', '$autor', '$editora', '$imagem', '$sinopse')";
     
             if (mysqli_query($conn, $sql)) {
                 $id=mysqli_insert_id($conn);
@@ -26,12 +22,9 @@ function cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $gen
                 die("Erro ao efetuar o cadastro" . mysqli_error($conn));
             }
     
-        } else {
-            return null;
-        }
-    } else {
-        die("Erro ao efetuar o cadastro" . mysqli_error($conn));
-    }
+        
+        
+     
     
     mysqli_close($conn);
   
@@ -58,14 +51,20 @@ function mostra_generos(){
     mysqli_close($conn);
     return $generos;
     }
-function associa_genero($id_livro, $id_genero){
+function associa_genero($livro_id, $genero_id){
     include_once "../conexao.php";
     $conn = get_connection();
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
     }
     
-    $sql= "INSERT INTO genero_livro(id_livro, id_genero) VALUES ($id_livro, $id_genero )"
+    $sql= "INSERT INTO genero_livro(idlivro, idgenero) VALUES ($livro_id, $genero_id )";
+    if (!mysqli_query($conn, $sql))
+    {
+        die("Erro ao associar gênero" . mysqli_error($conn));
+    }
+    mysqli_close($conn);
+    
 }
 
 ?>
