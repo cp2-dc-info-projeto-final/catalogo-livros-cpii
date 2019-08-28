@@ -7,10 +7,7 @@ session_start();
     $editora = $_POST["editora"];
     $classificacao=$_POST["classificacao"];
     $sinopse = $_POST["sinopse"];
-    $imagem = $_FILES["arquivo"]["name"];
-    
-    
-    
+    $imagem = $_FILES["arquivo"]["name"];    
     
     $insert_id = cadastra_livro($titulo, $autor, $editora, $imagem, $classificacao, $genero, $sinopse);
     if (!is_null($insert_id))
@@ -28,6 +25,15 @@ session_start();
         $_SESSION["msg"]= $msg;
         header("Location: AdLivro_View.php");
         
+    }
+
+    
+    $generos = buscaGeneros();
+
+    foreach ($generos as $genero) {
+        if (isset($_POST[$genero['nome']])) {
+            associa_genero($insert_id, $genero['id']);
+        }
     }
  session_unsset();
     

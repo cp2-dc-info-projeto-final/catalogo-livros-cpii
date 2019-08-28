@@ -1,8 +1,9 @@
 <html>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <head>
     
+    <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
     <title>Login</title> <!-- nome na aba da página -->
       <link rel="stylesheet" type="text/css" href="loginstyle.css"> <!-- hyperlink para a conexão com o CSS-->
 

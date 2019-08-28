@@ -3,22 +3,40 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta charset="utf-8">
-        <link rel="stylesheet" type="text/css" href="HomeStyle.css"> <!-- hyperlink para a conexão com o CSS-->
-        <link href="bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="HomeStyle.css">
     <title>    
       Home
     </title>
   </head>
 
-  <div class="bg-light border-right" id="sidebar-wrapper">
-      <div class="sidebar-heading">Menu </div>
-      <div class="list-group list-group-flush">
-        <a href="#" class="list-group-item list-group-item-action bg-light">Pesquisar</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Livros Favoritos</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Perfil</a>
-        <a href="#" class="list-group-item list-group-item-action bg-light">Sair</a>
+  <body>
+    <div id="wrapper">
+      <div id="info">
+        <div id="info-content">
+          <h1>Multi level <strong>CSS-only push menu</strong></h1>
+        </div>
       </div>
-    </div>
+    
+      <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
+      <div class="menu">
+        <label class="menu-toggle" for="menu"><span>Toggle</span></label>
+        <ul>
+          <li>
+            <a href="#">Pesquisar</a>
+          </li>
+          <li>
+            <a href="#">Livros Favoritos</a>
+          </li>
+          <li>      
+              <a href="#">Perfil</a>
+          </li>
+          <li>
+              <a href="#">Sair</a>
+          </li>     
+        </ul>
+      </div>
+    </div><!-- #wrapper -->
+  </body>
     
 
 

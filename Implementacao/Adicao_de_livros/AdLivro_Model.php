@@ -58,7 +58,15 @@ function mostra_generos(){
     mysqli_close($conn);
     return $generos;
     }
-
+function associa_genero($id_livro, $id_genero){
+    include_once "../conexao.php";
+    $conn = get_connection();
+    if($conn===false){
+        die("Falha na conexão". mysqli_connect_error());
+    }
+    
+    $sql= "INSERT INTO genero_livro(id_livro, id_genero) VALUES ($id_livro, $id_genero )"
+}
 
 ?>
  

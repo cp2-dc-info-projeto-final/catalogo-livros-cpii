@@ -1,42 +1,44 @@
 <html>
 
     <meta http-equiv="Content-Type" charset="UTF-8" content="text/html"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <title>Adição de Livros</title> <!-- nome na aba da página -->
       <link rel="stylesheet" type="text/css" href="adicaostyle.css"> <!-- hyperlink para a conexão com o CSS-->
       <script src="../js/jquery.js"></script>
       <script>
         function adiciona_genero() {
-          var gen = $('#select-genero option:selected').text();
+          var genName = $('#select-genero option:selected').text();
+          var genId = $('#select-genero option:selected').attr("value");
           var found = false;
 
           $('.div-genero span').each(function() {
               
               var currentElement = $(this);
 
-              var value = currentElement.html(); // if it is an input/select/textarea field
-              if (value == gen) {
+              var value = currentElement.attr("value"); // if it is an input/select/textarea field
+              if (value == genId) {
                 found = true;
               }
               // TODO: do something with the value
           });
 
           if (!found) {
-            $('#generos-selecionados').append("<div class='div-genero'><span>" + gen + "</span><div class=\"btn-adicionar-x\" onclick=\"remove_genero('" + gen + "')\">X</div><input type='hidden' name='"+gen+"' value='"+gen+"'></div>");
+            $('#generos-selecionados').append("<div class='div-genero'><span>" + genName + "</span><div class=\"btn-adicionar-x\" onclick=\"remove_genero('" + genName + "')\">X</div><input type='hidden' name='" +genName+ "' value='"+genId+"'></div>");
           }
           
         }
 
-        function remove_genero(gen) {
+        function remove_genero(genName) {
 
           $('.div-genero span').each(function() {
               
               var currentElement = $(this);
 
-              var value = currentElement.html(); // if it is an input/select/textarea field
-              if (value == gen) {
+              var value = currentElement.text(); // if it is an input/select/textarea field
+              if (value == genName) {
                 currentElement.parent().remove();
               }
               // TODO: do something with the value
