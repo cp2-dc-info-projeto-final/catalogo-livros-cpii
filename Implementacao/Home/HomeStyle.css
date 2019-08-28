@@ -11,6 +11,7 @@
   }
 
 label {
+  
   cursor: pointer;
   outline: none
 }  
@@ -27,7 +28,8 @@ label {
 }    
 
 
-label.menu-toggle { 
+label.menu-toggle {
+   
     position: absolute;    
     right: -60px;
     width: 60px;
@@ -62,6 +64,7 @@ label.menu-toggle {
 
 /* hide inputs */          
 .menu-checkbox {
+  background: url(imagemenu.png);
   display: none
 }
 
@@ -72,6 +75,7 @@ label.menu-toggle {
     
 /* fade in checked menu */    
 .menu-checkbox:checked + .menu{
+
   transform: translate3d(0, 0, 0)
 }
     
