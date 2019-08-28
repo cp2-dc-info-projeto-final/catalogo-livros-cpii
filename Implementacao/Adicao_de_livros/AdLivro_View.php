@@ -1,6 +1,7 @@
 <html>
 
     <meta http-equiv="Content-Type" charset="UTF-8" content="text/html"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <head>
     
     <title>Adição de Livros</title> <!-- nome na aba da página -->
