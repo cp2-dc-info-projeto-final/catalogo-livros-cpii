@@ -1,36 +1,37 @@
 *{
   margin: 0;
-  padding: 0
-  }
+  padding: 0;
+}
 
 #wrapper{
   position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden
+  overflow: hidden;
+}
+
+label{
+  cursor: pointer
+}
+  
+  a:focus{
+    outline: none
   }
 
-label {
-  
-  cursor: pointer;
-  outline: none
-}  
 
 .menu{
   position: absolute;
   top: 0;
   left: 0;
-  background: #fff;
+  background: rgb(37, 37, 37);
   width: 240px;
   height: 100%;
   transform: translate3d(-240px, 0, 0);
-  transition: transform 0.35s
-}    
-
-
-label.menu-toggle {
-   
-    position: absolute;    
+  transition: transform 0.35s;
+}
+      
+  label.menu-toggle  {
+    position: absolute;   
     right: -60px;
     width: 60px;
     height: 60px;
@@ -38,56 +39,54 @@ label.menu-toggle {
     display: block;
     padding: 0;
     text-indent: -9999px;
-    background: #fff
-}
+    background: rgb(37, 37, 37) url(imagemenu.png) 50% 50% / 25px 25px no-repeat;
+  }
+  
   
   ul
     li
-      > label {
-        color: black;
-        }
       
-        a {
+  a, label{
         display: block;
         text-align: center;
-        padding: 10px 20px;
+        padding: 15px 20px;
+        font-size: 18px;
+        font-family: Arial, Helvetica, sans-serif;
         line-height: 60px;
         text-decoration: none;
-        color: #000;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-       }
-
-        a:hover {
+        color: rgb(209, 209, 209);
+  }
+        
+        
+        a:hover{
           color: #666
-      }
+  }
 
 /* hide inputs */          
-.menu-checkbox {
-  background: url(imagemenu.png);
+.menu-checkbox{
   display: none
 }
 
 /* hide navigation icon for sublabels */    
 .menu .menu label.menu-toggle{
   background: none
-}
-    
+}    
+
+
 /* fade in checked menu */    
 .menu-checkbox:checked + .menu{
-
   transform: translate3d(0, 0, 0)
 }
+
     
     
 /* for show */
-html, body {
+html, body{
   height: 100%
 }
 
-
 body{
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(37, 37, 37)
 }
 
 p{
@@ -95,24 +94,24 @@ p{
 }
 
 
-#info {
+#info{
   display: table;
-  background-color: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.4);
   height: 100%;
   width: 100%;
 }
-  
+ 
+
 #info-content{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
-    text-transform: uppercase;;
+    text-transform: uppercase;
     color: #fff;
     font-size: 12px;
 }
 
-
-    h1{      
+    h1{     
       color: #fff;
       border: 3px solid #fff;
       text-align: center;
@@ -121,10 +120,8 @@ p{
       font-weight: normal;
       padding: 20px;
       margin: 10px;
-      display: inline-block; 
-    }     
-      
-      strong{
+      display: inline-block;
         display: block;
-        font-size: 26px
-      }
+        font-size: 26px;
+    }
+  
