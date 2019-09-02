@@ -1,7 +1,8 @@
 <?php
 
  function Cadastra_Usuario($nome, $email, $senha){
-    include_once"../Implementacao/conexao.php";
+    include_once "../conexao.php";
+ $conn=get_connection();
 
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());

@@ -1,7 +1,8 @@
 <?php
  
  function autentica($email, $senha) {
-     include_once"../Implementacao/conexao.php";
+     include_once "../conexao.php";
+     $conn=get_connection();
      if ($conn===false){
          die("Erro de conexão".mysqli_connect_error());
      }

@@ -14,7 +14,7 @@ function cadastra_livro($titulo, $autor, $editora, $imagem, $sinopse){
     
             if (mysqli_query($conn, $sql)) {
                 $id=mysqli_insert_id($conn);
-                $sql="UPDATE livro SET imagem='Cadastro_Login/Imagens_home/$id/$imagem'
+                $sql="UPDATE livro SET imagem='Imagens_Livros/$id/$imagem'
                 WHERE livro.id=$id";
                 mysqli_query($conn, $sql);  
                 return $id;

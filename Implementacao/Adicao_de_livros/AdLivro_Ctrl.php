@@ -19,8 +19,9 @@ session_start();
             }
         }
      
-        mkdir('../Cadastro_Login/Imagens_home/'.$insert_id.'/', 755, true);
-        move_uploaded_file($_FILES["arquivo"]["tmp_name"],'../Cadastro_Login/Imagens_home/'.$insert_id.'/'.$imagem);
+        mkdir('../Imagens_Livros/'.$insert_id.'/', 755, true);
+        move_uploaded_file
+        ($_FILES["arquivo"]["tmp_name"],'../Imagens_Livros/'.$insert_id.'/'.$imagem);
         $msg="<p style='color:green;'>Livro cadastrado com sucesso</p>";
         $_SESSION["msg"]= $msg;
         header("Location: AdLivro_View.php");

@@ -7,7 +7,7 @@
     if (autentica($email, $senha)== true){
         session_unset();
         $_SESSION["nome"]= $row["nome"];
-        header("Location:home.php");
+        header("Location:../home.php");
         exit();
     } else{
         $erro= "<p style='color:red;'>Login ou senha incorretos</p>";
