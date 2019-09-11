@@ -80,7 +80,7 @@
         $resultado = buscar_livros($chave);
         foreach ($resultado as $livro) {
           echo $livro['titulo'] . "<br>";
-          echo "<img src='../".$livro['imagem']."'/>";
+          echo "<img src='../".$livro['imagem']."'/><br>";
         }
       }
     ?>
