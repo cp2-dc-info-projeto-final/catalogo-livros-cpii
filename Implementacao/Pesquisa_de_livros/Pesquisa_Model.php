@@ -10,6 +10,7 @@
     $sql = "SELECT titulo, autor, sinopse, imagem FROM livro WHERE 
     titulo LIKE '%$chave%'
     OR autor LIKE '%$chave%'
+    OR editora LIKE '%$chave%'
     OR sinopse LIKE '%$chave%'";
     
     $livros = [];
