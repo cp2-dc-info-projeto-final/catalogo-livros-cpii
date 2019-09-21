@@ -113,8 +113,7 @@
 **Pré-condições:** Ter um cadastro no sistema e estar logado
 
 **Fluxo Principal:**
-1. O usuário/moderador acessa o gênero informado no cadastro de seu perfil e os altera, com exceção da senha;
-
+1. O usuário/moderador acessa o gênero informado no cadastro de seu perfil e o altera
 
 ### CDU 09 - Gerenciamento do Acervo
 
