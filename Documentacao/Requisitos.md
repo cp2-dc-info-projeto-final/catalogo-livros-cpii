@@ -69,12 +69,9 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 
         * Inf
 
-  	        1. CPF;
-  	        2. Nome;
-  	        3. Telefone;
-	        5. Endereço;
-  	        6. E-mail;
-  	        7. Senha.
+  	        1. Nome;
+  	        2. E-mail;
+  	        3. Senha.
 
 ### RF 02
 + O Moderador tem acesso a várias informações, para visualização, de todos os usuários, menos à senha.
@@ -99,3 +96,9 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 
 ### RF 08
 + O algoritmo fará recomendações por conteúdo baseada em leituras passadas.
+
+### RF 09
++ O moderador poderá cadastrar outros moderadores.
+
+### RF 10
++ O limite máximo de moderadores cadastrados no banco de dados é 2 pessoas ou 5% dos usuários.

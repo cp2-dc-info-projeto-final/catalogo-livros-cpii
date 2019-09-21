@@ -20,8 +20,8 @@ drop table if exists genero_livro;
 create table genero_livro(
     id_livro INT,
     id_genero INT,
-    foreign key (id_livro) REFERENCES livro(id),
-    foreign key (id_genero) REFERENCES genero(id)
+    FOREIGN KEY (id_livro) REFERENCES livro(id),
+    FOREIGN KEY (id_genero) REFERENCES genero(id)
 );
 
 drop table if exists usuario;
@@ -29,7 +29,10 @@ drop table if exists usuario;
  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nome VARCHAR(50)  NOT NULL,
  email VARCHAR (60)  NOT NULL,
- senha VARCHAR (250) NOT NULL
+ senha VARCHAR (250) NOT NULL,
+ moderador BOOLEAN NOT NULL,
+ id_genero INT,
+ FOREIGN KEY (id_genero) REFERENCES genero(id)
 );
 
 drop table if exists lista_usuario;
@@ -37,50 +40,19 @@ drop table if exists lista_usuario;
  
  idlivro INT,
  idusuario INT,
- foreign key (idusuario) REFERENCES usuario(id),
- foreign key (idlivro) REFERENCES livro(id)
- );
-
-drop table if exists genero_usuario;
- create table genero_usuario(
- idusuario INT,
- idgenero INT,
- foreign key (idusuario) REFERENCES usuario(id),
- foreign key (idgenero) REFERENCES genero(id)
+ FOREIGN KEY (idusuario) REFERENCES usuario(id),
+ FOREIGN KEY (idlivro) REFERENCES livro(id)
  );
  
-
-drop table if exists moderador;
-create table moderador (
-id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-CPF varchar (11)  NOT NULL,
-telefone varchar (11)  NOT NULL,
-idusuario int,
-idendereco int,
-foreign key (idusuario) REFERENCES usuario (id),
-foreign key (idendereco) REFERENCES endereco (id)
-);
-
-drop table if exists endereco;
-create table endereco (
-id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-estado varchar(30) NOT NULL,
-cidade varchar (40) NOT NULL,
-bairro varchar (40) NOT NULL,
-logradouro varchar (50) NOT NULL,
-numero varchar (05) NOT NULL
-); 
-
 drop table if exists acao;
 create table acao (
-
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-datahorario datetime,
-descricao varchar (40) ,
-usuario int not null,
-livro int,
-foreign key (usuario) REFERENCES usuario(idusuario),
-foreign key (livro) REFERENCES livro(idlivro)
+datahorario DATETIME,
+descricao VARCHAR (100) ,
+id_usuario INT NOT NULL,
+id_livro INT NOT NULL,
+FOREIGN KEY (id_usuario) REFERENCES usuario(id),
+FOREIGN KEY (id_livro) REFERENCES livro(id)
 );
 
 INSERT INTO genero (nome) VALUES

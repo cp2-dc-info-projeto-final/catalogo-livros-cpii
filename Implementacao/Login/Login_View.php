@@ -25,11 +25,10 @@
       <h1>Login</h1> <!-- título no topo do formulário -->
       <br>
       <?php
-        session_start();
-        if(array_key_exists('erro', $_SESSION) == true){
-            $erro = $_SESSION["erro"];
-            echo "$erro";
-            session_unset();
+      session_start();
+      if (array_key_exists('erro', $_SESSION) == true){
+        $erro = $_SESSION["erro"];
+        echo "$erro";
         }
     ?>
 

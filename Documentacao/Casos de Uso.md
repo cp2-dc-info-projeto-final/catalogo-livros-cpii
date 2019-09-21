@@ -21,7 +21,7 @@
 
 **Fluxo Principal:**
 1. O usuário vai para a área de cadastro através da tela de login;
-2. Usuário informa nome; nome de usuário; e-mail; senha e gêneros favoritos de livros, segundo as opções disponíveis;
+2. Usuário informa nome; nome de usuário; e-mail; senha e gênero favorito de livro, segundo as opções disponíveis;
 3. O sistema verifica a validade das informações. Sendo válidas, o cadastro é efetuado.
 
 **Fluxo Alternativo:** 
@@ -36,17 +36,11 @@
 
 **Fluxo Principal:**
 1. Um moderador previamente cadastrado vai para a área de cadastro de moderadores através da tela de login;
-2. O moderador informa nome; registro; e-mail; senha e gêneros favoritos de livros, segundo as opções disponíveis no sistema;
-3. O sistema verifica a validade das informações. Sendo válidas, o mesmo direciona o moderador para uma tela de cadastro de outros moderadores;
-4. São informados nome, registro, e-mail e senha do novo moderador;
-5. O sistema verifica a validade das informações. Sendo as elas aceitas, um novo moderador é cadastrado.
+2. O moderador clica em um botão para tornar moderador um usuário comum; 
+3. O sistema verifica se já foram cadastrados todos os moderadores possíveis dentro do limite. Havendo espaço para mais um moderador, o usuário comum se torna moderador;
 
 **Fluxo Alternativo 1:** 
-1. Alguma informação do moderador já existente não é encontrada no sistema. Neste caso, o software retorna uma mensagem de erro informando qual campo não é válido.
-
-**Fluxo Alternativo 2:** 
-1. Alguma informação do novo moderador não é válida. Neste caso, o software retorna uma mensagem de erro informando qual campo precisa ser preenchido novamente. 
-
+1. O limite de moderadores foi atingido, neste caso, isto é notificado a quem ao moderador já cadastrado.
 
 ### CDU 03 - Login
 
@@ -119,8 +113,7 @@
 **Pré-condições:** Ter um cadastro no sistema e estar logado
 
 **Fluxo Principal:**
-1. O usuário/moderador acessa os dados informados no cadastro de seu perfil e os altera, com exceção da senha;
-2. Há, também, a opção de adicionar ou mudar uma foto de perfil.
+1. O usuário/moderador acessa o gênero informado no cadastro de seu perfil e os altera, com exceção da senha;
 
 
 ### CDU 09 - Gerenciamento do Acervo

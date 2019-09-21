@@ -20,7 +20,7 @@
         return false;
     } 
 
-    $sql="INSERT INTO usuario (nome, email, senha) VALUES ('$nome', '$email', '$hash')";
+    $sql="INSERT INTO usuario (nome, email, senha, moderador) VALUES ('$nome', '$email', '$hash', false)";
     if (mysqli_query($conn, $sql)){
         return true;
 
