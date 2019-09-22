@@ -23,6 +23,7 @@
           $livro["autor"]=$row['autor'];
           $livro["sinopse"]=$row['sinopse'];
           $livro["imagem"]=$row['imagem'];
+          $livro["editora"]=$row['editora'];
           array_push($livros, $livro);
         }
       }
