@@ -6,6 +6,7 @@ Class Livro{
     private $editora;
     private $sinopse;
     private $imagem;
+    private $genero;
 
     public function getId(){
         return $this->id;
@@ -37,6 +38,12 @@ Class Livro{
     public function setImagem($imagem){
         $this->imagem=$imagem;
     }
+    public function setGenero($genero){
+        $this->genero=$genero;
+    }
+    public function getGenero(){
+        return $this->genero;
+    }
     public function salvar(){
         $conn= ConnectionFactory::getConnection();
         try{
@@ -44,7 +51,7 @@ Class Livro{
             VALUES (:titulo, :editora, :sinopse )');
             $stmt->bindValue(':titulo', $this->getTitulo());
             $stmt->bindValue(':editora', $this->getEditora());
-            $stmt->bindValue('sinopse', $this->getSinopse());
+            $stmt->bindValue(':sinopse', $this->getSinopse());
 
             $stmt->execute();
             $this->setId($conn, lastInsertId());
@@ -53,6 +60,20 @@ Class Livro{
             die("Erro ao cadastrar o livro! ".$e->getMessage());
         }
         $conn=null;
+    }
+
+    public function associa_genero($livro_id, $genero_id){
+        $conn= ConnectionFactory::getConnection();
+        $stmt=$conn->prepare("INSERT INTO genero_livro(idlivro, idgenero) VALUES ($livro_id, $genero_id)");
+        try{
+            $stmt->execute();
+        }
+        catch (PDOException $e){
+            die("Erro " .$e->getMessage());
+        }
+        finally{
+            $conn=null;
+        }
     }
 
     
