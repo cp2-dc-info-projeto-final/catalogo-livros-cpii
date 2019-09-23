@@ -7,7 +7,7 @@
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
     }
-    $sql = "SELECT titulo, autor, sinopse, imagem FROM livro WHERE 
+    $sql = "SELECT titulo, autor, sinopse, imagem, editora FROM livro WHERE 
     titulo LIKE '%$chave%'
     OR autor LIKE '%$chave%'
     OR editora LIKE '%$chave%'
