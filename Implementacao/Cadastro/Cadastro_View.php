@@ -16,7 +16,7 @@
           <ul>
             <li><a href = "../Login/Login_View.php"> Login </a></li>   
           </ul>
-        </div>
+    </div>
 
     <form action="Cadastro_Ctrl.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
 

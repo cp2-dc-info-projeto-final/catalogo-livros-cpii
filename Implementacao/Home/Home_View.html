@@ -5,260 +5,142 @@
   <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
-  <link rel="stylesheet" type="text/css" href="HomeStyle.css">
-  <link rel="stylesheet" type="text/css" href="Carousel.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/index.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/heroic-features.css" rel="stylesheet">
+  
   <title>
     Home
   </title>
 </head>
 
 <body>
-  <div id="wrapper">
-    <div id="info">
-      <div id="info-content">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Catálogo de Livros</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Pesquisar
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Editar Informações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Livros Salvos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sair</a>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
 
-    <input type="checkbox" id="menu" name="menu" class="menu-checkbox">
-    <div class="menu">
-      <label class="menu-toggle" for="menu"><span>Toggle</span></label>
-      <ul>
-        <li>
-          <a href="#">Pesquisar</a>
-        </li>
-        <li>
-          <a href="#">Livros Favoritos</a>
-        </li>
-        <li>
-          <a href="#">Perfil</a>
-        </li>
-        <li>
-          <a href="#">Sair</a>
-        </li>
-      </ul>
+  
+
+    <div class="contain">
+
+
+      <div class="slider">
+          <h3>Teste de Design</h3>
+          <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
+            <i class="fa fa-caret-left" aria-hidden="true"></i>
+          </span>
+    
+          <div id="scroller" class="row">
+            <div class="row__inner">
+    
+              <div class="gui-card">
+                <div class="gui-card__media">
+                  <img class="gui-card__img" src="acao.jpg" alt=""  />
+                </div>
+                <div class="gui-card__details">
+                  <div class="gui-card__title">
+                    Ação Humana
+                  </div>
+                </div>
+              </div>
+    
+              <div class="gui-card">
+                <div class="gui-card__media">
+                  <img class="gui-card__img" src="cortico.jpg" alt=""  />
+                </div>
+                <div class="gui-card__details">
+                  <div class="gui-card__title">
+                    O Cortiço
+                  </div>
+                </div>
+              </div>
+    
+              <div class="gui-card">
+                <div class="gui-card__media">
+                  <img class="gui-card__img" src="messi.jpg" alt=""  />
+                </div>
+                <div class="gui-card__details">
+                  <div class="gui-card__title">
+                    A Biografia de Lionel Messi
+                  </div>
+                </div>
+              </div>
+    
+              <div class="gui-card">
+                <div class="gui-card__media">
+                  <img class="gui-card__img" src="senhor.jpg" alt=""  />
+                </div>
+                <div class="gui-card__details">
+                  <div class="gui-card__title">
+                    Senhor dos Anéis
+                  </div>
+                </div>
+              </div>
+    
+              <div class="gui-card">
+                <div class="gui-card__media">
+                  <img class="gui-card__img" src="xmen.jpg" alt=""  />
+                </div>
+                <div class="gui-card__details">
+                  <div class="gui-card__title">
+                    A Saga da Fênix Negra
+                  </div>
+                </div>
+              </div>
+    
+              <div class="gui-card">
+                <div class="gui-card__media">
+                  <img class="gui-card__img" src="xmen.jpg" alt=""  />
+                </div>
+                <div class="gui-card__details">
+                  <div class="gui-card__title">
+                    A Saga da Fênix Negra
+                  </div>
+                </div>
+              </div>
+
+                  
+    
+              
+    
+            </div>
+    
+          </div>
+          <span onmouseover="scrollDireita()" onmouseout="clearScroll()"  class="handle handleNext active">
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+          </span>
+        </div>
+    
     </div>
-  </div>
 
-  <div class="contain">
-  
-    <div class="row">
-      <div class="row__inner">
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="naruto.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Naruto
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="ocaminhodaservidao.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              O Caminho da Servidão
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="keynes.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              A Teoria Geral do Emprego, do Juro e da Moeda
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="messi.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              A Biografia de Lionel Messi
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="cortico.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              O Cortiço
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-6.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-8.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-10.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-11.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-12.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-13.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-14.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-15.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-16.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-18.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-        <div class="tile">
-          <div class="tile__media">
-            <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-19.jpg" alt=""  />
-          </div>
-          <div class="tile__details">
-            <div class="tile__title">
-              Top Gear
-            </div>
-          </div>
-        </div>
-  
-      </div>
-    </div>
-  
-  </div>
-
-
-  <script type="text/javascript" src="carousel.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

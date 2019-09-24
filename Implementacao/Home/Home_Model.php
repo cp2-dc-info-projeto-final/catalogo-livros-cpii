@@ -1,5 +1,6 @@
 <?php
 require "../conexao.php";
+organiza_livros_generos($id_genero);
 function organiza_livros_generos($id_genero){
     $conn=get_connection();
 
@@ -10,13 +11,14 @@ function organiza_livros_generos($id_genero){
     ON l.id=k.id_livro JOIN genero AS g ON k.id_genero=g.id WHERE id_genero=$id_genero";
     $result=mysqli_query($conn, $sql);
     $livros= [];
-    while($row=msqli_fetch_assoc($result)){
+
+    while($row=mysqli_fetch_assoc($result)){
         $livro["titulo"]=$row['titulo'];
           $livro["autor"]=$row['autor'];
           $livro["sinopse"]=$row['sinopse'];
           $livro["imagem"]=$row['imagem'];
           $livro["editora"]=$row['editora'];
-          array_push($livros, $livro);
+          array_push($livros, $livro);   
     }
     return $livros;
 
