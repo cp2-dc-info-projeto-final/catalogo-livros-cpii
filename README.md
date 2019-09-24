@@ -10,7 +10,8 @@
     O indicador de livros possui o objetivo de armazenar os títulos presentes na biblioteca do Colégio Pedro II no campus Duque de Caxias — além de outros variados. Além deste, o software fornece indicações de obras com base nas preferências do usuário.
 
 ###### Casos de Uso:
- * <https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Casos%20de%20Uso.md> 
+ * <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Casos%20de%20Uso.md">Casos de Uso</a>
+ 
  * [Diagrama de Casos de Uso] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Diagrama.drawio)
 
 ###### Requisitos:
