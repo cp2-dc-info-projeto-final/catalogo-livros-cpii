@@ -2,7 +2,7 @@
 
 ### Visão Geral do Projeto:
 
-O sistema consiste em uma plataforma de livros baseado no acervo existente no Colégio Pedro II Campus Duque de Caxias, onde o usuário receberá recomendações baseadas em seu gosto pessoal e avaliações de outros internautas.
+O sistema consiste em uma plataforma de livros baseado no acervo existente no Colégio Pedro II Campus Duque de Caxias, onde o usuário receberá recomendações baseadas em seu gosto pessoal.
 
 ### Objetivos:
 
@@ -10,11 +10,9 @@ Criar uma interface amigável e intuitiva, fazendo o usuário acessar todas as f
 
 ### Principais Funcionalidades:
 
-- Apresentar uma listagem dos principais livros existentes na biblioteca do Colégio Pedro II Campus Duque de Caxias, tais como outros títulos  
-- Categorizar os títulos utilizando diferentes critérios
-- Ser capaz de executar consultas considerando especificações do usuário  
-- Realizar indicações de obras com base nas pesquisas feitas no programa
-- Efetuar indicações de títulos baseadas avaliações gerais de outros usuários 
+- Apresentar uma listagem dos principais livros existentes na biblioteca do Colégio Pedro II Campus Duque de Caxias, tais como outros títulos;  
+- Categorizar os títulos com base em seus gêneros;
+- Ser capaz de executar consultas ao acervo do software;   
 
 ### Stakeholder:
 * Nome: Allan
