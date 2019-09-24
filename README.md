@@ -12,18 +12,17 @@
 ###### Casos de Uso:
  * <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Casos%20de%20Uso.md">Casos de Uso</a>
  
- * [Diagrama de Casos de Uso] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Diagrama.drawio)
+ * <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/diagrama%20casos%20de%20uso.png">Diagrama de Casos de Uso</a>
 
 ###### Requisitos:
-* [Requisitos] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Requisitos.md)
+* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md">Requisitos</a>
 
 ###### Entrevista:
-* [Áudio da Entrevista] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/AUDIO-ENTREVISTA.mp3)
-* [Ata da Entrevista] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/entrevista.md)
+* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3">Áudio da Entrevista</a>
+* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md">Ata da Entrevista</a>
 
 ###### Proposta do Projeto:
-* [Proposta] (https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/proposta%20projeto%20final.md)
-
+* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md">Proposta do Projeto</a>
 
 
 
