@@ -56,28 +56,28 @@ FOREIGN KEY (id_livro) REFERENCES livro(id)
 );
 
 INSERT INTO genero (nome) VALUES
-('Biografia'), --1
-('Clássicos'), --2
-('Suspense'),  --3
-('Conto'),     --4
-('Drama'),     --5
-('Economia'),  --6
-('Fantasia'),  --7
-('Ficção'),    --8
-('Didático'),  --9
-('Filosofia'), --10
-('Horror'),    --11
-('HQs'),       --12
-('Humor'),     --13
-('Mangá'),     --14
-('Romance'),   --15
-('Ciências'),  --16
-('História'),  --17
-('Matemática'),--18
-('Geografia'), --19
-('Poesia'),    --20
-('Sociologia'),--21
-('Línguas');   --22
+('Biografia'), /*1*/
+('Clássicos'), /*2*/
+('Suspense'),  /*3*/
+('Conto'),     /*4*/
+('Drama'),     /*5*/
+('Economia'),  /*6*/
+('Fantasia'),  /*7*/
+('Ficção'),    /*8*/
+('Didático'),  /*9*/
+('Filosofia'), /*10*/
+('Horror'),    /*11*/
+('HQs'),       /*12*/
+('Humor'),     /*13*/
+('Mangá'),     /*14*/
+('Romance'),   /*15*/
+('Ciências'),  /*16*/
+('História'),  /*17*/
+('Matemática'),/*18*/
+('Geografia'), /*19*/
+('Poesia'),    /*20*/
+('Sociologia'),/*21*/
+('Línguas');   /*22*/
 
 INSERT INTO livro (titulo, autor, editora, imagem, sinopse)
 VALUES 
@@ -102,7 +102,7 @@ VALUES
 ('O universo numa casca de noz', 'Stephen Hawking', 'Arx', 'Imagens_Livros/18/noz.jpg', 'Após o enorme sucesso de Uma breve história do tempo, a Intrínseca traz a luxuosa reedição de O universo numa casca de noz, na qual Stephen Hawking se vale de ilustrações, fotos e esquemas detalhados para mostrar grandes descobertas no campo da física teórica. Tudo isso, é claro, com sua conhecida clareza, elucidando temas complexos por meio de conceitos e ideias do dia a dia, como a inflação, as cartas de baralho e as linhas ferroviárias, e permeado com seu peculiar senso de humor.O livro traz muito da personalidade de Hawking, um dos maiores nomes da ciência atual e figura bem conhecida por suas ideias provocadoras e seu carisma. Ele guiará o leitor através do microcosmo quântico e do macrocosmo universal, discutindo as extraordinárias leis que regem o cosmos e as principais teorias hoje debatidas — o que também conta a saga de Hawking e dos físicos mais importantes de todos os tempos atrás do grande objetivo da ciência: a Teoria de Tudo. Para isso, serão apresentados conceitos caros à física teórica, como a supergravidade, a teoria quântica, a teoria-M, a holografia e a dualidade. Também são abordadas as propostas mais relevantes que desafiam o nosso entendimento atual de como funciona o universo.Com astronautas engolidos por buracos negros, viajantes do tempo, o debate sobre a origem do universo (e de todos nós), seu possível fim e a existência de vida em outras galáxias, além de curiosos questionamentos sobre o futuro biológico e tecnológico da humanidade em si, O universo numa casca de noz é leitura obrigatória para aqueles que querem se aventurar no que há de mais instigante hoje na física e para os que almejam ver como muitas vezes a teoria pode ser muito mais extraordinária do que a ficção científica.Lançado originalmente em 2001 e relançado no Brasil agora pela Intrínseca, O universo numa casca de noz ganhou revisão técnica atualizada do professor Amâncio Friaça, astrônomo do Instituto de Astronomia, Geofísica e Ciências Atmosféricas da Universidade de São Paulo.Uma breve história do tempo, relançado pela intrínseca em 2015, já vendeu no Brasil mais de 60 mil exemplares.' ),
 ('Gaia: Alerta final', 'James Lovelock', 'Intrínseca', 'Imagens_Livros/19/gaia.jpg', 'Em Gaia: alerta final, Lovelock adverte que os problemas ambientais do século XXI são ainda mais ameaçadores do que havia denunciado. As calotas polares estão derretendo rapidamente, e a escassez de água e os desastres naturais se tornaram mais comuns que em qualquer outra época da história recente. Por isso as civilizações de muitos países estarão em perigo, e a vida, tal como conhecemos, corre sérios riscos. Além disso, quase todas as previsões já feitas para a velocidade das mudanças climáticas se basearam em estimativas que, segundo revelam agora observadores profissionais, estavam abaixo da verdadeira rapidez e dos impactos dessas mudanças. Continuamos obcecados pelas ideias "verdes" convencionais que, acreditamos, irão salvar nosso mundo. Mas Lovelock argumenta que somente a Teoria de Gaia, concebida por ele há mais de quarenta anos, poderá de fato nos ajudar a entender esta crise. A Terra abriga pessoas e animais em excesso - essa é a raiz do problema. Nesse livro Lovelock explica o que poderia ser feito para amenizar os problemas gerados pela mudança climática, mas considera improvável que adotemos essas soluções. Isso incluiria, entre outras medidas, reduzir a população, mudar a maneira de produzir alimentos e aplicar soluções de geoengenharia para desacelerar o aquecimento global, e assim tornar habitáveis espaços em alguns continentes. "Nosso desejo de manter as coisas como estão provavelmente nos impedirá de nos salvarmos", alerta. Difícil imaginar uma mensagem mais importante para a humanidade. James Lovelock é um observador ativo e celebrado pelas conclusões precisas sobre o meio ambiente e as ameaças à Terra desde os anos 60. Foi o primeiro a constatar o acúmulo de CFCs e de outros gases no ar. Esse é seu último aviso.'),
 ('A grande história da evolução', 'Richard Dawkins', 'Cia. das Letras', 'Imagens_Livros/20/evolucao.jpg', 'A grande história da evolução é uma peregrinação ao longo da árvore genealógica da vida. Partindo de onde estamos hoje, passamos por quarenta entroncamentos onde nos deparamos com ancestrais e peregrinos que vêm de outros ramos. O ponto de chegada situa-se há 4 bilhões de anos, na origem da vida.' ),
-('One Piece', 'Eiichiro Oda', 'Conrad','', 'Era uma vez um grande pirata, conhecido como o maior pirata de todos os tempos, Gol D. Roger. Ele conseguiu fama, poder, dinheiro. Só que um dia ele foi capturado pelas forças da Marinha. Antes de ser decapitado ele disse "Vocês querem meu tesouro? Tudo bem. Meu maior tesouro, One Piece, está no final da Grande Linha". Assim começou a Era dos Piratas. Todo mundo se dirige para a Grande Linha, pois diz a lenda que quem conseguir o One Piece será o maior pirata de todos os tempos.O mundo é divido em quatro partes. A ilha que Gol D. Roger colocou o One Piece fica no meio, e o único jeito de chegar nela é indo pela Grande Linha, um lugar onde somente os melhores sobrevivem.Nossa história segue para um vilarejo onde um pirata chamado Shanks está com seu grupo. Um garoto do vilarejo, Monkey D. Luffy, quer virar pirata do grupo de Shanks. Depois de tanto gritar ele fica com fome, e abre uma caixinha que Shanks tinha guardado, e acha uma fruta. Ele a come e a acha gostosa. Ele não sabia que essa era uma Akuma no Mi (fruta do diabo), a Gomu Gomu no Mi, Fruta da Borracha. Com isso ele ganhou o poder de se esticar que nem borracha, só que ele nunca mais iria poder nadar. Depois de ser sequestrado, Shanks o salva, perdendo um braço, e é quando Ruffy entende o que é um pirata. Shanks dá para Ruffy seu chapéu de palha, e espera que Ruffy um dia devolva ele, e como um pirata. Vários anos depois, Ruffy parte de sua cidade para ser o maior pirata, indo atrás de uma tripulação e de um barco.')
+('One Piece', 'Eiichiro Oda', 'Conrad','', 'Era uma vez um grande pirata, conhecido como o maior pirata de todos os tempos, Gol D. Roger. Ele conseguiu fama, poder, dinheiro. Só que um dia ele foi capturado pelas forças da Marinha. Antes de ser decapitado ele disse "Vocês querem meu tesouro? Tudo bem. Meu maior tesouro, One Piece, está no final da Grande Linha". Assim começou a Era dos Piratas. Todo mundo se dirige para a Grande Linha, pois diz a lenda que quem conseguir o One Piece será o maior pirata de todos os tempos.O mundo é divido em quatro partes. A ilha que Gol D. Roger colocou o One Piece fica no meio, e o único jeito de chegar nela é indo pela Grande Linha, um lugar onde somente os melhores sobrevivem.Nossa história segue para um vilarejo onde um pirata chamado Shanks está com seu grupo. Um garoto do vilarejo, Monkey D. Luffy, quer virar pirata do grupo de Shanks. Depois de tanto gritar ele fica com fome, e abre uma caixinha que Shanks tinha guardado, e acha uma fruta. Ele a come e a acha gostosa. Ele não sabia que essa era uma Akuma no Mi (fruta do diabo), a Gomu Gomu no Mi, Fruta da Borracha. Com isso ele ganhou o poder de se esticar que nem borracha, só que ele nunca mais iria poder nadar. Depois de ser sequestrado, Shanks o salva, perdendo um braço, e é quando Ruffy entende o que é um pirata. Shanks dá para Ruffy seu chapéu de palha, e espera que Ruffy um dia devolva ele, e como um pirata. Vários anos depois, Ruffy parte de sua cidade para ser o maior pirata, indo atrás de uma tripulação e de um barco.');
 
 
 
@@ -137,7 +137,7 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (17, 17),
 (18, 16),
 (19, 16),
-(20, 16),
+(20, 16)
 
 
 
