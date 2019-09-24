@@ -6,7 +6,7 @@ Class Livro{
     private $editora;
     private $sinopse;
     private $imagem;
-    private $genero;
+    private $genero=[];
 
     public function getId(){
         return $this->id;
@@ -47,9 +47,10 @@ Class Livro{
     public function salvar(){
         $conn= ConnectionFactory::getConnection();
         try{
-            $stmt=$conn->prepare('INSERT INTO livro (titulo, editora, sinopse) 
-            VALUES (:titulo, :editora, :sinopse )');
+            $stmt=$conn->prepare('INSERT INTO livro (titulo, autor, editora, sinopse) 
+            VALUES (:titulo, :autor :editora, :sinopse )');
             $stmt->bindValue(':titulo', $this->getTitulo());
+            $stmt->bindValue(':autor', $this->getTitulo());
             $stmt->bindValue(':editora', $this->getEditora());
             $stmt->bindValue(':sinopse', $this->getSinopse());
 

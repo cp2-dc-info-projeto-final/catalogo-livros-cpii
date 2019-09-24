@@ -1,8 +1,6 @@
 <?php
 
 Class Genero{
-    private $id;
-    private $nome;
 
     public function transporta_generos(){
         $conn= ConnectionFactory::getConnection();
@@ -12,7 +10,8 @@ Class Genero{
         try{
         $stmt->execute();
         while ($row=$stmt->fetch()){
-            $genero=new Genero($row['id'], $row['nome']);
+            $genero['id']=$row['id'];
+            $genero['nome']=$row['nome'];
             array_push($generos, $genero);
         }
         return $generos;
