@@ -6,7 +6,7 @@
     session_unset();
     if (autentica($email, $senha)== true){
         $moderador=moderador($email);
-        header("Location:../Home/Home_View.html");
+        header("Location:../Home/Home_View.php");
         exit();
     } else{
         
