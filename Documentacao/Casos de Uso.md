@@ -2,16 +2,15 @@
 
 ## Sumário
 - [CDU 01](#cdu-01---cadastro-de-usuários)
-- [CDU 02](#cdu-02---cadastro-de-moderadores)
-- [CDU 03](#cdu-03---login)
-- [CDU 04](#cdu-04---indicação-de-livros)
-- [CDU 05](#cdu-05---pesquisa-de-livros)
-- [CDU 06](#cdu-06---lista-de-livros-interessantes)
-- [CDU 07](#cdu-07---consulta-da-lista-de-livros-interessantes)
-- [CDU 08](#cdu-08---alteração-de-perfil)
-- [CDU 09](#cdu-09---gerenciamento-do-acervo)
-- [CDU 10](#cdu-10---adição-de-títulos)
-- [CDU 11](#cdu-11---remoção-de-títulos)
+- [CDU 02](#cdu-02---login)
+- [CDU 03](#cdu-03---indicação-de-livros)
+- [CDU 04](#cdu-04---pesquisa-de-livros)
+- [CDU 05](#cdu-05---lista-de-livros-interessantes)
+- [CDU 06](#cdu-06---consulta-da-lista-de-livros-interessantes)
+- [CDU 07](#cdu-07---alteração-de-perfil)
+- [CDU 08](#cdu-08---gerenciamento-do-acervo)
+- [CDU 09](#cdu-09---adição-de-títulos)
+- [CDU 10](#cdu-10---remoção-de-títulos)
 
 
 
@@ -28,21 +27,7 @@
 1. Alguma informação não é válida. Logo, o sistema retorna uma mensagem de erro sinalizando o campo a ser preenchido corretamente.
 
 
- ### CDU 02 - Cadastro de Moderadores
-
-**Atores:** Moderadores
-
-**Pré-condições:** Ser um moderador do sistema
-
-**Fluxo Principal:**
-1. Um moderador previamente cadastrado vai para a área de cadastro de moderadores através da tela de login;
-2. O moderador clica em um botão para tornar moderador um usuário comum; 
-3. O sistema verifica se já foram cadastrados todos os moderadores possíveis dentro do limite. Havendo espaço para mais um moderador, o usuário comum se torna moderador;
-
-**Fluxo Alternativo 1:** 
-1. O limite de moderadores foi atingido, neste caso, isto é notificado a quem ao moderador já cadastrado.
-
-### CDU 03 - Login
+### CDU 02 - Login
 
 **Atores:** Usuários e Moderadores
 
@@ -56,17 +41,17 @@
 1. Algum campo de login não foi preenchido com uma informação existente no banco de dados. Neste caso, uma mensagem é exposta sinalizando o erro.
 
 
-### CDU 04 - Indicação de Livros
+### CDU 03 - Indicação de Livros
 
 **Atores:** Usuários e Moderadores
 
 **Pré-condições:** Ter um cadastro no sistema e estar logado no mesmo
 
 **Fluxo Principal:**
-1. Após efetuar o login, o usuário ou moderador é direcionado para uma página inicial onde recebe indicações de livros baseados em seus gêneros preferidos previamente informados. As buscas recentes do usuário em questão também influenciam os resultados. Há também a opção de selecionar os livros que aparecem e ver informações sobre o mesmo
+1. Após efetuar o login, o usuário ou moderador é direcionado para uma página inicial onde recebe indicações de livros baseados em seu gênero preferido previamente informado. Há também a opção de selecionar os livros que aparecem e ver informações sobre o mesmo
 
 
-### CDU 05 - Pesquisa de Livros
+### CDU 04 - Pesquisa de Livros
 
 **Atores**: Usuários e Moderadores
 
@@ -76,13 +61,12 @@
 1. O usuário ou moderador, após efetuar o login no software, possui a opção de pesquisar por livros previamente armazenados no sistema;
 2. O usuário ou moderador digita, no campo adequado, o nome da obra que deseja encontrar informações sobre;
 3. Se o título constar no banco de dados, o sistema retornará o mesmo, com informações sobre o livro;
-4. É possível, do mesmo modo, pesquisar por livros de uma mesma categoria, com a ferramenta de filtro.
 
 **Fluxo Alternativo:**
-1. Caso a obra não seja encontrada no sistema, uma mensagem informando isso aparecerá.
+1. Caso a obra não seja encontrada no sistema, nenhuma obra aparecerá na tela.
 
 
-### CDU 06 - Lista de Livros Interessantes
+### CDU 05 - Lista de Livros Salvos
 
 **Atores:** Usuários e Moderadores
 
@@ -92,7 +76,7 @@
 1. Ao clicar em um livro, o usuário/moderador tem a opção de enviá-lo a uma lista de livros de seu interesse para futuras consultas pessoais.
 
 
-### CDU 07 - Consulta da Lista de Livros Interessantes
+### CDU 06 - Consulta da Lista de Livros Salvos
 
 **Atores:** Usuários e Moderadores
 
@@ -103,10 +87,10 @@
 2. O mesmo pode excluir obras da lista a qualquer momento.
 
 **Fluxo Alternativo:**
-1. Caso a lista esteja vazia, uma mensagem sinalizará esta condição.
+1. Caso a lista esteja vazia, nenhuma obra aparecerá na tela.
 
 
-### CDU 08 - Alteração de Perfil
+### CDU 07 - Alteração de Perfil
 
 **Atores:** Usuários e Moderadores
 
@@ -115,7 +99,7 @@
 **Fluxo Principal:**
 1. O usuário/moderador acessa o gênero informado no cadastro de seu perfil e o altera
 
-### CDU 09 - Gerenciamento do Acervo
+### CDU 08 - Gerenciamento do Acervo
 
 **Atores:** Moderadores
 
@@ -126,7 +110,7 @@
 2. O moderador tem as opções de adicionar ou alterar informações de livros já cadastrados no banco de dados, assim como excluir títulos.
 
 
-### CDU 10 - Adição de Títulos
+### CDU 09 - Adição de Títulos
 
 **Atores:** Moderadores
 
@@ -137,7 +121,7 @@
 2. O mesmo informa nome, autor, data de lançamento, o gênero e uma breve sinopse da obra, além de adicionar a capa;
 3. Após esse processo, os usuários ficam disponíveis para visualizar o livro e adicioná-lo à lista de interesses.
 
-### CDU 11 - Remoção de Títulos
+### CDU 10 - Remoção de Títulos
 
 **Atores:** Moderadores
 
