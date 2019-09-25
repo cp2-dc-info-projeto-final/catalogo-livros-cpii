@@ -7,7 +7,6 @@
 - [RNF 04](#rnf-04)
 - [RNF 05](#rnf-05)
 - [RNF 06](#rnf-06)
-- [RNF 07](#rnf-07)
 
 ### RNF 01    
 + O software deve conter as linguagens: HTML, CSS, JavaScript, PHP e SQL;
@@ -25,10 +24,7 @@
 + Deve possuir suporte para plataformas Web;
 
 ### RNF 06
-+ Deve suportar o armazenamento de ao menos 5 mil livros;
-
-### RNF 07
-+ Deve rodar em tempo integral;
++ Deve suportar o armazenamento de ao menos 250 livros;
 
 ## Requisitos Funcionais
 - [RF 01](#rf-01)
@@ -39,8 +35,6 @@
 - [RF 06](#rf-06)
 - [RF 07](#rf-07)
 - [RF 08](#rf-08)
-- [RF 09](#rf-09)
-- [RF 10](#rf-10)
 
 ### RF 01
 O sistema gerencia cadastro e informações dos livros, de usuários e moderadores.
@@ -52,8 +46,7 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
   	        1. Título;
   	        2. Autor;
   	        3. Sinopse;
-  	        4. Edição;
-  	        5. Editora;
+  	        4. Editora;
 
 
     + Informações do Usuário:
@@ -67,38 +60,31 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 
     + Informações do sistema quanto ao moderador:
 
-        * Inf
-
   	        1. Nome;
   	        2. E-mail;
   	        3. Senha.
 
-### RF 02
-+ O Moderador tem acesso a várias informações, para visualização, de todos os usuários, menos à senha.
 
-### RF 03
+### RF 02
 + O Usuário terá acesso somente a suas respectivas informações, informando e-mail e senha.
 
-### RF 04
+### RF 03
 + O Moderador poderá ter acesso ao sistema informando e-mail e senha. 
 
-### RF 05
+### RF 04
 + Livros
 
     * O Moderador gerencia os livros contidos na biblioteca catalogando-os, alterando suas informações ou excluindo-os dos registros;
     * O Moderador cadastra os livros da biblioteca e as informações são armazenadas em um banco de dados.
 
-### RF 06
-+ Os livros, após cadastrados no sistema, possuirão suas informações parcialmente disponibilizadas aos Usuários.
+### RF 05
++ Os livros, após cadastrados no sistema, possuirão suas informações disponibilizadas aos Usuários.
 
-### RF 07
+### RF 06
 + Os livros serão divididos em categorias.
 
+### RF 07
++ O algoritmo fará recomendações por conteúdo baseada em preferências de gênero
+
 ### RF 08
-+ O algoritmo fará recomendações por conteúdo baseada em leituras passadas.
-
-### RF 09
 + O moderador poderá cadastrar outros moderadores.
-
-### RF 10
-+ O limite máximo de moderadores cadastrados no banco de dados é 2 pessoas ou 5% dos usuários.
