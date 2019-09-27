@@ -69,7 +69,7 @@
         </div>
         <div class=\"gui-card__details\">
           <div class=\"gui-card__title\">
-            Ação Humana
+            ".$livro['titulo']."
           </div>
         </div>
       </div>");

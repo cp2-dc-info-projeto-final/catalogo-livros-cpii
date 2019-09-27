@@ -6,9 +6,10 @@ function organiza_home(){
     $livros_por_genero=[];
     foreach($generos as $genero){
         $livros=organiza_livros_generos($genero['id']);
+        $livros["genero"]=$genero['nome'];
         array_push($livros_por_genero, $livros);
-
+        
     }
-    
+
 }
 
