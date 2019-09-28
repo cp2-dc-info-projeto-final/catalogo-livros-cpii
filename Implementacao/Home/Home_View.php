@@ -28,7 +28,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Pesquisar
+            <a class="nav-link" href="../Pesquisa_de_livros/Pesquisa_View.php">Pesquisar
               <span class="sr-only">(current)</span>
             </a>
           </li>
