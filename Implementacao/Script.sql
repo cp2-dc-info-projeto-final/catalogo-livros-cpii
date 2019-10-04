@@ -167,9 +167,3 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (30, 13);
 
 
-
-
-
-
-
-
