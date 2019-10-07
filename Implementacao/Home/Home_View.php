@@ -62,6 +62,7 @@
       require "Home_Model.php";
       $id_genero=12;
       $livros=organiza_livros_generos($id_genero);
+      shuffle($livros);
       foreach($livros as $livro){
         echo("<div class=\"gui-card\">
         <div class=\"gui-card__media\">
