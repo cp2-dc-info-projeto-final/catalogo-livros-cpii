@@ -125,7 +125,9 @@ VALUES
 ('Filosofia medieval', 'Alfredo Storck', 'Jorge Zahar', 'Imagens_Livros/41/filosofiamedieval.jpg', 'Esse livro oferece um panorama da filosofia no período medieval e analisa sua transmissão, principais características e formas literárias de expressão, mostrando que ela não se resume à filosofia cristã.' ),
 ('Wolverine', 'Len Wein', 'Abril Jovem', 'Imagens_Livros/42/wolverine.jpg', 'Wolverine (nascido James Howlett, conhecido como Logan e às vezes como Arma X) é um personagem fictício que aparece em quadrinhos americanos publicados pela Marvel Comics, principalmente em associação com os X-Men. Ele é um mutante que possui sentidos afiados, capacidades físicas aprimoradas, habilidade regenerativa poderosa conhecida como fator de cura e três garras retratáveis ​​de osso em cada mão. Wolverine foi retratado de forma variada como membro do X-Men, Tropa Alfa e Vingadores.'),
 ('Zero Hora', ' Dan Jurgens', 'Abril Jovem', 'Imagens_Livros/43/horazero.jpg', 'A história começa quando personagens de realidades alternativas como o Centurião Alfa e uma versão alternativa da Batgirl, subitamente aparecem no Universo principal, para confusão de todos; os acontecimentos são causados por um fenômeno chamado "compressão" do tempo. É descoberta uma onda de apagamento (entropia) se movendo em direção ao final dos tempos, eliminando as diferentes eras da história num efeito similar ao da onda de anti-matéria que destruiu os universos na Crise nas Infinitas Terras.' ),
-('Capitão América', 'Joe Simon', 'Abril Jovem', 'Imagens_Livros/44/capamerica.jpg', 'filho de um casal pobre de imigrantes irlandeses, Sarah e Joseph Rogers (mortos em sua adolescência), Steve Rogers era um rapaz com problemas de saúde que desejava, de qualquer forma, participar dos esforços estadunidenses para vencer a Segunda Guerra Mundial. Ao ter seu alistamento recusado por sua saúde debilitada, ele deixa claro estar disposto a fazer qualquer coisa para ajudar na guerra. Esse "qualquer coisa" é tão literal que ele se torna parte de um experimento para a criação de soldados superficiais a alguém: o "projeto supersoldado", que consistia em um soro especial criado pelo Dr. Josef Reinstein.'),
+('Capitão América', 'Joe Simon', 'Abril Jovem', 'Imagens_Livros/44/capamerica.jpg', 'Filho de um casal pobre de imigrantes irlandeses, Steve Rogers era um rapaz com problemas de saúde que desejava, de qualquer forma, participar dos esforços estadunidenses para vencer a Segunda Guerra Mundial. Ao ter seu alistamento recusado por sua saúde debilitada, ele deixa claro estar disposto a fazer qualquer coisa para ajudar na guerra. Esse "qualquer coisa" é tão literal que ele se torna parte de um experimento para a criação de soldados superficiais a alguém: o "projeto supersoldado", que consistia em um soro especial criado pelo Dr. Josef Reinstein.'),
+('Naruto', 'Masashi Kishimoto', 'Panini Comics', 'Imagens_Livros/45/naruto.jpg', 'Naruto é um jovem órfão habitante da Vila da Folha que sonha se tornar o quinto Hokage, o maior guerreiro e governante da vila. Ao se graduar como ninja, descobre que tem um demônio raposa selado dentro de si. Seu pai, o quarto Hokage, aprisionou a raposa no próprio filho quando a raposa ameaçava destruir a Vila da Folha, sacrificando assim a própria vida. Agora Naruto vai contar com a ajuda dos colegas Sakura e Sasuke e do professor dos três, Kakashi Hatake, para perseguir seu sonho e deter os ninjas que planejam fazer mal á sua cidade.');
+
 
 
 INSERT INTO genero_livro (id_livro, id_genero) VALUES 
@@ -201,6 +203,7 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (42, 12),
 (43, 12),
 (44, 12),
+(45, 14);
 
 
 
