@@ -64,6 +64,7 @@ a:hover {
   position: absolute;
   top: 22px;
   z-index: 30;
+  left: 4%;
 }
 
 .slider .handle.handlePrev {

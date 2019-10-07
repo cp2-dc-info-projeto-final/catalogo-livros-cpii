@@ -84,6 +84,91 @@
           </span>
         </div>
 
+        <br><br>
+
+        <div class="slider">
+          <h3>HQ's</h3>
+          <span onmouseover="scrollEsquerda2()" onmouseout="clearScroll2()" class="handle handlePrev active">
+            <i class="fa fa-caret-left" aria-hidden="true"></i>
+          </span>
+    
+          <div id="scroller2" class="row">
+            <div class="row__inner">
+            <?php
+      $id_genero=12;
+      $livros=organiza_livros_generos($id_genero);
+      shuffle($livros);
+      foreach($livros as $livro){
+        echo("<div class=\"gui-card\">
+        <div class=\"gui-card__media\">
+          <img class=\"gui-card__img\" src=\"../".$livro["imagem"]."\" alt=\"\"  />
+        </div>
+        <div class=\"gui-card__details\">
+          <div class=\"gui-card__title\">
+            ".$livro['titulo']."
+          </div>
+        </div>
+      </div>");
+      }
+      ?>                                                            
+            </div>
+    
+          </div>
+          
+          <span onmouseover="scrollDireita2()" onmouseout="clearScroll2()"  class="handle handleNext active" >         
+            <i class="fa fa-caret-right" aria-hidden="true" ></i>         
+          </span>
+
+
+        </div>
+
+        <br><br>
+
+        <div class="slider">
+          <h3>HQ's</h3>
+          <span onmouseover="scrollEsquerda3()" onmouseout="clearScroll3()" class="handle handlePrev active">
+            <i class="fa fa-caret-left" aria-hidden="true"></i>
+          </span>
+    
+          <div id="scroller3" class="row">
+            <div class="row__inner">
+            <?php
+      $id_genero=12;
+      $livros=organiza_livros_generos($id_genero);
+      shuffle($livros);
+      foreach($livros as $livro){
+        echo("<div class=\"gui-card\">
+        <div class=\"gui-card__media\">
+          <img class=\"gui-card__img\" src=\"../".$livro["imagem"]."\" alt=\"\"  />
+        </div>
+        <div class=\"gui-card__details\">
+          <div class=\"gui-card__title\">
+            ".$livro['titulo']."
+          </div>
+        </div>
+      </div>");
+      }
+      ?>                                                            
+            </div>
+    
+          </div>
+          
+          <span onmouseover="scrollDireita3()" onmouseout="clearScroll3()"  class="handle handleNext active" >         
+            <i class="fa fa-caret-right" aria-hidden="true" ></i>         
+          </span>
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
