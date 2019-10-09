@@ -46,18 +46,11 @@
     </div>
   </nav>
 
-<<<<<<< HEAD
+
   
   <div class="contain">
         <div class="slider">
-=======
 
-    <div class="contain">
-
-    
-
-          <div class="slider">
->>>>>>> b7ebc88f4e9a92040d4dcac31ccf7c0603e85f5f
           <h3>HQ's</h3>
           <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
             <i class="fa fa-caret-left" aria-hidden="true"></i>
@@ -90,43 +83,10 @@
             <i class="fa fa-caret-right" aria-hidden="true"></i>
           </span>
         </div>
-    </div>
-    
-    <div class="slider">
-          <h3>HQ's</h3>
-          <span onmouseover="scrollEsquerda2()" onmouseout="clearScroll2()" class="handle handlePrev active">
-            <i class="fa fa-caret-left" aria-hidden="true"></i>
-          </span>
-    
-          <div id="scroller" class="row">
-            <div class="row__inner">
-            
-        <div class=gui-card>
-        <div class=gui-card__media>
-          <img class=gui-card__img src="aa.jpeg" alt=""/>
-        </div>
-        <div class=gui-card__details>
-          <div class=gui-card__title>
-            
-          </div>
-        </div>
-      </div>
 
-<<<<<<< HEAD
-      <div class=gui-card>
-        <div class=gui-card__media>
-          <img class=gui-card__img src="aa.jpeg" alt=""/>
-        </div>
-        <div class=gui-card__details>
-          <div class=gui-card__title>
-            
-          </div>
-        </div>
-      </div>
-=======
-        <br><br>
 
-        <div class="slider">
+<div class="slider">
+
           <h3>HQ's</h3>
           <span onmouseover="scrollEsquerda2()" onmouseout="clearScroll2()" class="handle handlePrev active">
             <i class="fa fa-caret-left" aria-hidden="true"></i>
@@ -154,91 +114,17 @@
             </div>
     
           </div>
-          
-          <span onmouseover="scrollDireita2()" onmouseout="clearScroll2()"  class="handle handleNext active" >         
-            <i class="fa fa-caret-right" aria-hidden="true" ></i>         
-          </span>
-
-
-        </div>
-
-        <br><br>
-
-        <div class="slider">
-          <h3>HQ's</h3>
-          <span onmouseover="scrollEsquerda3()" onmouseout="clearScroll3()" class="handle handlePrev active">
-            <i class="fa fa-caret-left" aria-hidden="true"></i>
-          </span>
-    
-          <div id="scroller3" class="row">
-            <div class="row__inner">
-            <?php
-      $id_genero=12;
-      $livros=organiza_livros_generos($id_genero);
-      shuffle($livros);
-      foreach($livros as $livro){
-        echo("<div class=\"gui-card\">
-        <div class=\"gui-card__media\">
-          <img class=\"gui-card__img\" src=\"../".$livro["imagem"]."\" alt=\"\"  />
-        </div>
-        <div class=\"gui-card__details\">
-          <div class=\"gui-card__title\">
-            ".$livro['titulo']."
-          </div>
-        </div>
-      </div>");
-      }
-      ?>                                                            
-            </div>
-    
-          </div>
-          
-          <span onmouseover="scrollDireita3()" onmouseout="clearScroll3()"  class="handle handleNext active" >         
-            <i class="fa fa-caret-right" aria-hidden="true" ></i>         
-          </span>
-
-
-        </div>
-
-
-
-
-
-
-
-
-
-
->>>>>>> b7ebc88f4e9a92040d4dcac31ccf7c0603e85f5f
-
-      <div class=gui-card>
-        <div class=gui-card__media>
-          <img class=gui-card__img src="aa.jpeg" alt=""/>
-        </div>
-        <div class=gui-card__details>
-          <div class=gui-card__title>
-            
-          </div>
-        </div>
-      </div>
-                                                                  
-            </div>
-    
-          </div>
           <span onmouseover="scrollDireita2()" onmouseout="clearScroll2()"  class="handle handleNext active">
             <i class="fa fa-caret-right" aria-hidden="true"></i>
           </span>
         </div>
-    </div>    
-</div>
-
-
-     
-
-  
 
 
 
+
+
+
+    </div>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

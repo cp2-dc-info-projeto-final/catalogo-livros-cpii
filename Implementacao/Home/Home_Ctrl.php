@@ -1,7 +1,7 @@
 <?php 
 require "../Adicao_de_livros/AdLivro_Model.php";
 require "Home_Model.php";
-function organiza_home(){
+
     $generos=mostra_generos();
     $livros_por_genero=[];
     $livros=[];
@@ -11,5 +11,5 @@ function organiza_home(){
         array_push($livros_por_genero, $livros);
         
     }
-        return $livros_por_genero;
-}
+        
+
