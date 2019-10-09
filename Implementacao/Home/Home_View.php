@@ -46,11 +46,9 @@
     </div>
   </nav>
 
-    <div class="contain">
-
-    
-
-          <div class="slider">
+  
+  <div class="contain">
+        <div class="slider">
           <h3>HQ's</h3>
           <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
             <i class="fa fa-caret-left" aria-hidden="true"></i>
@@ -82,13 +80,67 @@
             <i class="fa fa-caret-right" aria-hidden="true"></i>
           </span>
         </div>
+    </div>
+    
+    <div class="slider">
+          <h3>HQ's</h3>
+          <span onmouseover="scrollEsquerda2()" onmouseout="clearScroll2()" class="handle handlePrev active">
+            <i class="fa fa-caret-left" aria-hidden="true"></i>
+          </span>
+    
+          <div id="scroller" class="row">
+            <div class="row__inner">
+            
+        <div class=gui-card>
+        <div class=gui-card__media>
+          <img class=gui-card__img src="aa.jpeg" alt=""/>
+        </div>
+        <div class=gui-card__details>
+          <div class=gui-card__title>
+            
+          </div>
+        </div>
+      </div>
 
+      <div class=gui-card>
+        <div class=gui-card__media>
+          <img class=gui-card__img src="aa.jpeg" alt=""/>
+        </div>
+        <div class=gui-card__details>
+          <div class=gui-card__title>
+            
+          </div>
+        </div>
+      </div>
 
-
-
-
-
+      <div class=gui-card>
+        <div class=gui-card__media>
+          <img class=gui-card__img src="aa.jpeg" alt=""/>
+        </div>
+        <div class=gui-card__details>
+          <div class=gui-card__title>
+            
+          </div>
+        </div>
+      </div>
+                                                                  
+            </div>
+    
+          </div>
+          <span onmouseover="scrollDireita2()" onmouseout="clearScroll2()"  class="handle handleNext active">
+            <i class="fa fa-caret-right" aria-hidden="true"></i>
+          </span>
+        </div>
+    </div>    
 </div>
+
+
+     
+
+  
+
+
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
