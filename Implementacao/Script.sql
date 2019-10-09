@@ -56,26 +56,26 @@ FOREIGN KEY (id_livro) REFERENCES livro(id)
 );
 
 INSERT INTO genero (nome) VALUES
-('Biografia'), /*1*/
-('Clássicos'), /*2*/
-('Suspense'),  /*3*/
-('Conto'),     /*4*/
+('Biografia'), /*1*/ $
+('Clássicos'), /*2*/ $
+('Suspense'),  /*3*/ $
+('Conto'),     /*4*/ $
 ('Drama'),     /*5*/
-('Economia'),  /*6*/
+('Economia'),  /*6*/ $$$$$$
 ('Fantasia'),  /*7*/
 ('Ficção'),    /*8*/
 ('Didático'),  /*9*/
 ('Filosofia'), /*10*/
-('Horror'),    /*11*/
+('Horror'),    /*11*/ $
 ('HQs'),       /*12*/
-('Humor'),     /*13*/
+('Humor'),     /*13*/ $$$
 ('Mangá'),     /*14*/
 ('Romance'),   /*15*/
 ('Ciências'),  /*16*/
 ('História'),  /*17*/
 ('Matemática'),/*18*/
 ('Geografia'), /*19*/
-('Poesia'),    /*20*/
+('Poesia'),    /*20*/ $$$$$
 ('Sociologia'),/*21*/
 ('Línguas');   /*22*/
 
@@ -138,7 +138,8 @@ VALUES
 ('Dos deveres', 'Cícero', 'Martin Claret', 'Imagens_Livros/54/deveres.jpg', 'Este livro aborda o assunto moral. É um estudo sobre o dever que envolve o dever do homem a honra a ética a riqueza o poder. Apesar de ter vivido há mais de vinte séculos atrás sua obra resiste ao tempo pois conduz à verdade universal e à questionamentos intrínsecos à alma humana. Cícero sempre foi um idealista um homem que lutou pela liberdade dos outros homens.' ),
 ('Ética a Nicômaco', 'Aristóteles', 'Martin Claret', 'Imagens_Livros/55/etica.jpg', 'Um dos mais cultuados trabalhos de Aristóteles, Ética a Nicômaco ocupa um lugar fundamental na base do pensamento humano. Nesta obra Aristóteles expõe seu entendimento sobre virtude e suas considerações acerca do papel do hábito e da prudência, além de criar uma intuição moral completamente nova.'),
 ('Auto da Compadecida', 'Ariano Suassuna', 'Agir', 'Imagens_Livros/56/autodacompadecida.jpg', 'O "Auto da Compadecida" consegue o equilíbrio perfeito entre a tradição popular e a elaboração literária ao recriar para o teatro episódios registrados na tradição popular do cordel. É uma peça teatral em forma de Auto em 3 atos, escrita em 1955 pelo autor paraibano Ariano Suassuna. Sendo um drama do Nordeste brasileiro, mescla elementos como a tradição da literatura de cordel, a comédia, traços do barroco católico brasileiro e, ainda, cultura popular e tradições religiosas. Apresenta na escrita traços de linguagem oral [demonstrando, na fala do personagem, sua classe social] e apresenta também regionalismos relativos ao Nordeste. Esta peça projetou Suassuna em todo o país e foi considerada, em 1962, por Sábato Magaldi "o texto mais popular do moderno teatro brasileiro".'),
-('Confissões', 'Santo Agostinho', 'Nova Cultural', 'Imagens_Livros/57/confissoes.jpg', 'Escritas dez anos após sua conversão (397-400), as Confissões são, ainda hoje, modelo de narração autobiográfica. Escritura serrada, densa, nutrida de citações meditadas das Escrituras e de reflexões filosóficas são um grande espelho da alma inquieta e perturbadora de Agostinho. Revelam uma vontade intensa de encontrar a verdade definitiva, absoluta, que satisfaça sua imensa sede de saber, de crer, de ser perdoado. Livro único, as Confissões revelam os dotes, o impulso da vida, a sensibilidade aos problemas da existência humana. Referem à vida humana como exemplo do que é para o ser humano a procura de Deus. O título, Confissões, indica o propósito da obra. A palavra significa simultaneamente confissão dos erros, das falhas, dos pecados e louvor a Deus. O próprio Agostinho, nas Retractationes II, 6, referindo-se a esta obra revela: "Os treze livros das minhas Confissões louvam o Deus justo e bom por meus males e bens, e elevam até ele a mente e o coração dos homens; senti esse efeito enquanto as escrevia, e torno a senti-lo cada vez que as leio". As Confissões estimulam o espírito e o coração do homem para Deus.');
+('Confissões', 'Santo Agostinho', 'Nova Cultural', 'Imagens_Livros/57/confissoes.jpg', 'Escritas dez anos após sua conversão (397-400), as Confissões são, ainda hoje, modelo de narração autobiográfica. Escritura serrada, densa, nutrida de citações meditadas das Escrituras e de reflexões filosóficas são um grande espelho da alma inquieta e perturbadora de Agostinho. Revelam uma vontade intensa de encontrar a verdade definitiva, absoluta, que satisfaça sua imensa sede de saber, de crer, de ser perdoado. Livro único, as Confissões revelam os dotes, o impulso da vida, a sensibilidade aos problemas da existência humana. Referem à vida humana como exemplo do que é para o ser humano a procura de Deus. O título, Confissões, indica o propósito da obra. A palavra significa simultaneamente confissão dos erros, das falhas, dos pecados e louvor a Deus. O próprio Agostinho, nas Retractationes II, 6, referindo-se a esta obra revela: "Os treze livros das minhas Confissões louvam o Deus justo e bom por meus males e bens, e elevam até ele a mente e o coração dos homens; senti esse efeito enquanto as escrevia, e torno a senti-lo cada vez que as leio". As Confissões estimulam o espírito e o coração do homem para Deus.'),
+('A arte da guerra','Sunzi','Record','Imagens_Livros/58/artedaguerra.jpg','O que faz de um tratado militar, escrito por volta de 500 a.C., manter-se atual a ponto de ser publicado praticamente no mundo todo até os dias de hoje? Você verá que, em A arte da guerra, as estratégias transmitidas pelo general chinês Sun Tzu carregam um profundo conhecimento da natureza humana. Elas transcendem os limites dos campos de batalha e alcançam o contexto das pequenas ou grandes lutas cotidianas, sejam em ambientes competitivos – como os do mundo corporativo – sejam nos desafios internos, em que temos de encarar nossas próprias dificuldades. Se você não conhece a si mesmo nem o inimigo, sucumbirá a todas as batalhas. Sun Tzu');
 
 
 
@@ -240,7 +241,9 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (55, 10),
 (56, 2),
 (57, 10),
-(57, 1);
+(57, 1),
+(58, 6),
+(),
 
 
 
