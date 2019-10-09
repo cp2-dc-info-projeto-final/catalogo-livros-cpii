@@ -56,26 +56,26 @@ FOREIGN KEY (id_livro) REFERENCES livro(id)
 );
 
 INSERT INTO genero (nome) VALUES
-('Biografia'), /*1*/ $
-('Clássicos'), /*2*/ $
-('Suspense'),  /*3*/ $
-('Conto'),     /*4*/ $
+('Biografia'), /*1$   */  
+('Clássicos'), /*2$   */ 
+('Suspense'),  /*3$   */ 
+('Conto'),     /*4$   */ 
 ('Drama'),     /*5*/
-('Economia'),  /*6*/ $$$$$$
+('Economia'),  /*6$   */
 ('Fantasia'),  /*7*/
 ('Ficção'),    /*8*/
 ('Didático'),  /*9*/
 ('Filosofia'), /*10*/
-('Horror'),    /*11*/ $
+('Horror'),    /*11$   */ 
 ('HQs'),       /*12*/
-('Humor'),     /*13*/ $$$
+('Humor'),     /*13$   */
 ('Mangá'),     /*14*/
 ('Romance'),   /*15*/
 ('Ciências'),  /*16*/
 ('História'),  /*17*/
 ('Matemática'),/*18*/
 ('Geografia'), /*19*/
-('Poesia'),    /*20*/ $$$$$
+('Poesia'),    /*20$   */ 
 ('Sociologia'),/*21*/
 ('Línguas');   /*22*/
 
@@ -139,9 +139,15 @@ VALUES
 ('Ética a Nicômaco', 'Aristóteles', 'Martin Claret', 'Imagens_Livros/55/etica.jpg', 'Um dos mais cultuados trabalhos de Aristóteles, Ética a Nicômaco ocupa um lugar fundamental na base do pensamento humano. Nesta obra Aristóteles expõe seu entendimento sobre virtude e suas considerações acerca do papel do hábito e da prudência, além de criar uma intuição moral completamente nova.'),
 ('Auto da Compadecida', 'Ariano Suassuna', 'Agir', 'Imagens_Livros/56/autodacompadecida.jpg', 'O "Auto da Compadecida" consegue o equilíbrio perfeito entre a tradição popular e a elaboração literária ao recriar para o teatro episódios registrados na tradição popular do cordel. É uma peça teatral em forma de Auto em 3 atos, escrita em 1955 pelo autor paraibano Ariano Suassuna. Sendo um drama do Nordeste brasileiro, mescla elementos como a tradição da literatura de cordel, a comédia, traços do barroco católico brasileiro e, ainda, cultura popular e tradições religiosas. Apresenta na escrita traços de linguagem oral [demonstrando, na fala do personagem, sua classe social] e apresenta também regionalismos relativos ao Nordeste. Esta peça projetou Suassuna em todo o país e foi considerada, em 1962, por Sábato Magaldi "o texto mais popular do moderno teatro brasileiro".'),
 ('Confissões', 'Santo Agostinho', 'Nova Cultural', 'Imagens_Livros/57/confissoes.jpg', 'Escritas dez anos após sua conversão (397-400), as Confissões são, ainda hoje, modelo de narração autobiográfica. Escritura serrada, densa, nutrida de citações meditadas das Escrituras e de reflexões filosóficas são um grande espelho da alma inquieta e perturbadora de Agostinho. Revelam uma vontade intensa de encontrar a verdade definitiva, absoluta, que satisfaça sua imensa sede de saber, de crer, de ser perdoado. Livro único, as Confissões revelam os dotes, o impulso da vida, a sensibilidade aos problemas da existência humana. Referem à vida humana como exemplo do que é para o ser humano a procura de Deus. O título, Confissões, indica o propósito da obra. A palavra significa simultaneamente confissão dos erros, das falhas, dos pecados e louvor a Deus. O próprio Agostinho, nas Retractationes II, 6, referindo-se a esta obra revela: "Os treze livros das minhas Confissões louvam o Deus justo e bom por meus males e bens, e elevam até ele a mente e o coração dos homens; senti esse efeito enquanto as escrevia, e torno a senti-lo cada vez que as leio". As Confissões estimulam o espírito e o coração do homem para Deus.'),
-('A arte da guerra','Sunzi','Record','Imagens_Livros/58/artedaguerra.jpg','O que faz de um tratado militar, escrito por volta de 500 a.C., manter-se atual a ponto de ser publicado praticamente no mundo todo até os dias de hoje? Você verá que, em A arte da guerra, as estratégias transmitidas pelo general chinês Sun Tzu carregam um profundo conhecimento da natureza humana. Elas transcendem os limites dos campos de batalha e alcançam o contexto das pequenas ou grandes lutas cotidianas, sejam em ambientes competitivos – como os do mundo corporativo – sejam nos desafios internos, em que temos de encarar nossas próprias dificuldades. Se você não conhece a si mesmo nem o inimigo, sucumbirá a todas as batalhas. Sun Tzu');
-
-
+('A arte da guerra','Sunzi','Record','Imagens_Livros/58/artedaguerra.jpg','O que faz de um tratado militar, escrito por volta de 500 a.C., manter-se atual a ponto de ser publicado praticamente no mundo todo até os dias de hoje? Você verá que, em A arte da guerra, as estratégias transmitidas pelo general chinês Sun Tzu carregam um profundo conhecimento da natureza humana. Elas transcendem os limites dos campos de batalha e alcançam o contexto das pequenas ou grandes lutas cotidianas, sejam em ambientes competitivos – como os do mundo corporativo – sejam nos desafios internos, em que temos de encarar nossas próprias dificuldades. Se você não conhece a si mesmo nem o inimigo, sucumbirá a todas as batalhas. Sun Tzu'),
+('Hora de alimentar serpentes', 'Marina Colasanti', 'Global', 'Imagens_Livros/59/serpentes.jpg', 'Nesta obra Marina Colasanti nos tira a todo instante de nossa zona de conforto e nos lança em zonas de confronto, por meio de narrativas breves, alternadas com textos mais longos. Tendo publicado anteriormente vários livros de minicontos a autora volta ao gênero com este livro que reúne 206 contos. Embora pertencendo à literatura fantástica, os relatos ignoram fronteiras e se lançam com a mesma intimidade dentro e fora da realidade guiados pelo olhar irreverente e crítico da autora. Ironia e doçura constroem personagens que, por mais imprevisíveis ou erráticos, nos soam admiravelmente familiares. Nesta obra o leitor encontrará formas diversas – o roteiro, a história em quadrinhos – usadas não só para dar suporte ao olhar diversificado da autora, mas para remeter à multiplicidade do nosso tempo. Contos na medida certa para ler, sentir e despertar para o encantamento provocado por suas palavras.'),
+('Eu sei por que o pássaro canta na gaiola', 'Maya Angelou', 'Astral Cultural', 'Imagens_Livros/60/passaronagaiola.jpg', 'RACISMO. ABUSO. LIBERTAÇÃO. A vida de Marguerite Ann Johnson foi marcada por essas três palavras. A garota negra, criada no sul por sua avó paterna, carregou consigo um enorme fardo que foi aliviado apenas pela literatura e por tudo aquilo que ela pôde lhe trazer: conforto através das palavras. Dessa forma, Maya, como era carinhosamente chamada, escreve para exibir sua voz e libertar-se das grades que foram colocadas em sua vida. As lembranças dolorosas e as descobertas de Angelou estão contidas e eternizadas nas páginas desta obra densa e necessária, dando voz aos jovens que um dia foram, assim como ela, fadados a uma vida dura e cheia de preconceitos. Com uma escrita poética e poderosa, a obra toca, emociona e transforma profundamente o espírito e o pensamento de quem a lê.'),
+('It a coisa', 'Stephen King', 'Suma', 'Imagens_Livros/61/it.jpg', 'Durante as férias escolares de 1958, em Derry, pacata cidadezinha do Maine, Bill, Richie, Stan, Mike, Eddie, Ben e Beverly aprenderam o real sentido da amizade, do amor, da confiança e... do medo. O mais profundo e tenebroso medo. Naquele verão, eles enfrentaram pela primeira vez a Coisa, um ser sobrenatural e maligno que deixou terríveis marcas de sangue em Derry. Quase trinta anos depois, os amigos voltam a se encontrar. Uma nova onda de terror tomou a pequena cidade. Mike Hanlon, o único que permanece em Derry, dá o sinal. Precisam unir forças novamente. A Coisa volta a atacar e eles devem cumprir a promessa selada com sangue que fizeram quando crianças. Só eles têm a chave do enigma. Só eles sabem o que se esconde nas entranhas de Derry. O tempo é curto, mas somente eles podem vencer a Coisa. Em "It - A Coisa", clássico de Stephen King em nova edição, os amigos irão até o fim, mesmo que isso signifique ultrapassar os próprios limites.'),
+('Crash: uma breve história da economia', 'Alexandre Versignassi', 'Leya', 'Imagens_Livros/62/crash.jpg', 'Couro, peixe seco, sal grosso, pinga, tabaco. Tudo isso já foi moeda. Mas a que deu certo mesmo foi outra: o dinheiro falso – uma criação da Grécia antiga que você carrega hoje na carteira. Dinheiro falso que movimenta um mercado financeiro insano, cheio de períodos de euforia e depressão. Só que foi justamente essa loucura que deu à luz o mundo mais rico de todos os tempos - o nosso mundo. Este livro mostra por quê. E diz como a história, a psicologia e até a biologia explicam as finanças - do sobe e desce das bolsas de valores ao perigo da inflação. Crash, enfim, decifra os enigmas da economia – a mais perturbada, intensa e genial das criações humanas. Tudo em linguagem clara e 100% livre de jargões. Sobre o autor: Alexandre Versignassi é jornalista e editor da revista da Editora Abril. Foi finalista do Prêmio Esso em 2010 e ganhou duas vezes o Prêmio Abril de Jornalismo. Especializado em jornalismo científico, iniciou a carreira como repórter e colunista da Folha de S.Paulo e foi editor das revistas Sapiens e Flashback, também da Abril. Nos últimos anos, passou a aplicar o maior conceito que aprendeu com a divulgação científica ao jornalismo econômico: tornar interessante aquilo que é relevante e mostrar a relevância do que parece meramente interessante. Crash segue essa premissa. E busca levá-la ao extremo.'),
+('O médico e o monstro', 'Robert Louis Stevenson', 'Hedra', 'Imagens_Livros/63/medicoeomonstro.jpg', 'Poucos clássicos da literatura são tão conhecidos e adorados como O médico e o monstro. Escrito quando o autor tinha trinta e cinco anos de idade, em 1885, o romance foi um sucesso imediato de público e inseriu Robert Louis Stevenson no grupo seleto dos grandes escritores da literatura universal. Ao narrar as experiências de um médico que, numa “noite maldita”, tomou uma poção fumegante de coloração avermelhada e descobriu “a dualidade absoluta e primordial do homem”, o autor escocês criou uma história de suspense e horror, em que o perigo iminente não está do lado de fora, mas do lado de dentro, na parte obscura da alma. Esta edição, além de uma introdução de Robert Mighall, Ph.D. em ficção gótica e ciência médico-legal vitoriana na Universidade de Wales, conta com um prefácio do escritor Luiz Alfredo Garcia-Roza, que define o romance como “um dos mais perfeitos e provavelmente o mais famoso romance de mistério da literatura de língua inglesa”.'), 
+('Microfísica do poder', 'Michel Foucault', 'Paz e Terra', 'Imagens_Livros/64/microfisica.jpg', 'Microfísica do poder é uma coletânea de artigos, cursos, entrevistas e debates, em que Foucault analisa questões relacionadas à medicina, à psiquiatria, à geografia, à economia, mas também ao hospital, à prisão, à justiça, ao Estado, ao papel do intelectual, à sexualidade, dentro outros temas. Esses textos têm como tema central o poder nas sociedades modernas - sua configuração, sua difusão no corpo social, seu exercício em instituições, sua relação com a produção da verdade, as resistências que suscita. Além disso, eles explicitam o método genealógico elaborado por Foucault para analisar como e por que os saberes se constituem a partir de práticas políticas e econômicas.'),
+('Vagão descarrilhado : o Brasil e o futuro da economia global', 'Reinaldo Gonçalves', 'Record', 'Imagens_Livros/65/vagao.jpg', 'Em Vagão Descarrilhado, o premiado economista Reinaldo Gonçalves - professor titular da Universidade Federal do Rio de Janeiro e ganhador do Prêmio Jabuti em 2001 na área de Economia, Direito e Administração - discute o capitalismo atual e suas tendências futuras tanto no Brasil quanto no mundo. Sob a ótica da Economia Política Internacional, o autor analisa, de forma crítica, a necessidade de uma mudança na natureza do modelo de inserção internacional usado pela equipe econômica brasileira. VAGÃO DESCARRILHADO toma como referência os conflitos entre as classes em cada sociedade, os conflitos entre os estados nacionais e os três principais fenômenos da economia mundial: a hegemonia dos EUA, a financeirização e a globalização. A ligação entre as economias de diferentes países tem conseqüências sérias. Se o cenário internacional se agrava, a situação brasileira sai de prumo. O país atrelou sua economia à dos Estados Unidos, que entrou no século XX como um trem veloz - e saiu do mesmo com sua locomotiva enferrujada. Para Reinaldo Gonçalves, as saídas para a crise do capitalismo são limitadas. O Brasil é o vagão descarrilhado da economia mundial. Desde 1995, o país sofre de uma grave crise sistêmica, com a simultânea ocorrência de cinco processos: desestabilização macroeconômica, desmonte do aparelho produtivo, esgarçamento do tecido social, deteriorização política e institucional e perda de governança. VAGÃO DESCARRILHADO mostra que sem uma estratégia ativa de inserção na economia global, a trajetória do Brasil - e suas associações financeiras - será medíocre. Reinaldo Gonçalves é economista, professor titular da Universidade Federal do Rio de Janeiro, ganhador do Prêmio Jabuti em 2001 na área de Economia, Direito e Administração e autor de mais de duas centenas de trabalhos, publicados em 18 países.'),
+('Economia brasileira contemporânea', 'Cyro de Barros Rezende Filho', 'Contexto', 'Imagens_Livros/66/economiacont.jpg', 'Os diferentes regimes políticos, a construção de instituições, os variados enfoques de políticas econômicas e sociais, as crises geradas endogenamente ou importadas da economia mundial, moldaram historicamente o que hoje constituem a economia e a sociedade brasileiras. É esse processo histórico, desde o pós-Guerra até o presente, que norteia a análise lúcida desenvolvida neste livro.'),
 
 
 
@@ -240,10 +246,27 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (55, 9),
 (55, 10),
 (56, 2),
+(56, 13),
 (57, 10),
 (57, 1),
 (58, 6),
-(),
+(59, 4),
+(60, 1),
+(61, 8),
+(61, 11),
+(62, 6),
+(63, 2),
+(63, 8),
+(64, 19),
+(64, 6),
+(64, 9),
+(65, 6),
+(65, 9),
+(66, 6),
+(66, 17),
+
+
+
 
 
 
