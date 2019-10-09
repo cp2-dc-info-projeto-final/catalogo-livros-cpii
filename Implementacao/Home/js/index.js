@@ -34,6 +34,17 @@ function clearScroll3(){
   clearInterval(intervalo3);
 };
 
+var intervalo4;
+
+function scrollDireita4(){
+  intervalo4 = setInterval(function(){ document.getElementById('scroller4').scrollLeft += 1 }  , 5);
+};
+function scrollEsquerda4(){
+  intervalo4 = setInterval(function(){ document.getElementById('scroller4').scrollLeft -= 1 }  , 5);
+};
+function clearScroll4(){
+  clearInterval(intervalo4);
+};
 
 
 
