@@ -27,7 +27,7 @@ function organiza_livros_generos($id_genero){
         die("Falha na conexão". mysqli_connect_error());
  }
     $sql="SELECT id_livro, autor, titulo, editora, sinopse, imagem FROM livro AS l JOIN genero_livro AS k 
-    ON l.id=k.id_livro JOIN genero AS g ON k.id_genero=g.id WHERE id_genero=$id_genero";
+    ON l.id=k.id_livro WHERE id_genero=$id_genero";
     $result=mysqli_query($conn, $sql);
     $livros= [];
 

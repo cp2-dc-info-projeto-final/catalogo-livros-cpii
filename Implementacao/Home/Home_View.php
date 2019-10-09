@@ -49,82 +49,55 @@
 
   
   <div class="contain">
-        <div class="slider">
 
-          <h3>HQ's</h3>
-          <span onmouseover="scrollEsquerda()" onmouseout="clearScroll()" class="handle handlePrev active">
-            <i class="fa fa-caret-left" aria-hidden="true"></i>
-          </span>
-    
-          <div id="scroller" class="row">
-            <div class="row__inner">
-            <?php
-      require "Home_Model.php";
-      $id_genero=12;
-      $livros=organiza_livros_generos($id_genero);
-      shuffle($livros);
-      foreach($livros as $livro){
-        echo("<div class=\"gui-card\">
-        <div class=\"gui-card__media\">
-          <img class=\"gui-card__img\" src=\"../".$livro["imagem"]."\" alt=\"\"  />
+    <?php
+      require "Home_Ctrl.php";
+      $generos=mostra_generos();
+      foreach($generos as $genero) {
+    ?>
+    <div class="slider">
+      <h3><?php echo $genero['nome']?></h3>
+      <span onmouseover="scrollEsquerda(<?php echo $genero['id']?>)" onmouseout="clearScroll(<?php echo $genero['id']?>)" class="handle handlePrev active">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+      </span>
+
+      <div id="<?php echo 'scroller-'.$genero['id']?>" class="row">
+        <div class="row__inner">
+          <?php
+            
+            $livros=organiza_livros_generos($genero['id']);
+            shuffle($livros);
+            foreach($livros as $livro){
+
+          ?>
+              
+              <div class="gui-card" onclick="window.open('detalhaLivro.php?id=<?php echo $livro['id']?>')">
+                <div class="gui-card__media">
+                  <img class="gui-card__img" src="../<?php echo $livro['imagem']?>" alt=""  />
+                </div>
+                <div class="gui-card__details">
+                  <div class="gui-card__title">
+                    <?php echo $genero['nome']?>
+                  </div>
+                </div>
+              </div>
+          <?php    
+            }
+          
+          ?>     
+
+                                                                 
         </div>
-        <div class=\"gui-card__details\">
-          <div class=\"gui-card__title\">
-            ".$livro['titulo']."
-          </div>
-        </div>
-      </div>");
-      }
-      ?>                                                            
-            </div>
-    
-          </div>
-          <span onmouseover="scrollDireita()" onmouseout="clearScroll()"  class="handle handleNext active">
-            <i class="fa fa-caret-right" aria-hidden="true"></i>
-          </span>
-        </div>
-
-
-<div class="slider">
-
-          <h3>Biografia</h3>
-          <span onmouseover="scrollEsquerda2()" onmouseout="clearScroll2()" class="handle handlePrev active">
-            <i class="fa fa-caret-left" aria-hidden="true"></i>
-          </span>
-    
-          <div id="scroller2" class="row">
-            <div class="row__inner">
-            <?php
-      $id_genero=1;
-      $livros=organiza_livros_generos($id_genero);
-      shuffle($livros);
-      foreach($livros as $livro){
-        echo("<div class=\"gui-card\">
-        <div class=\"gui-card__media\">
-          <img class=\"gui-card__img\" src=\"../".$livro["imagem"]."\" alt=\"\"  />
-        </div>
-        <div class=\"gui-card__details\">
-          <div class=\"gui-card__title\">
-            ".$livro['titulo']."
-          </div>
-        </div>
-      </div>");
-      }
-      ?>                                                            
-            </div>
-    
-          </div>
-          <span onmouseover="scrollDireita2()" onmouseout="clearScroll2()"  class="handle handleNext active">
-            <i class="fa fa-caret-right" aria-hidden="true"></i>
-          </span>
-        </div>
-
-
-
-
-
-
+      </div>
+      <span onmouseover="scrollDireita(<?php echo $genero['id']?>)" onmouseout="clearScroll()"  class="handle handleNext active">
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </span>
     </div>
+    <?php
+      }
+    ?>
+
+  </div>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

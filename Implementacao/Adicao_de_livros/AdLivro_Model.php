@@ -50,7 +50,7 @@ function mostra_generos(){
     
     mysqli_close($conn);
     return $generos;
-    }
+}
 function associa_genero($livro_id, $genero_id){
     include_once "../conexao.php";
     $conn = get_connection();
