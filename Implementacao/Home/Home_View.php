@@ -87,7 +87,7 @@
 
 <div class="slider">
 
-          <h3>HQ's</h3>
+          <h3>Biografia</h3>
           <span onmouseover="scrollEsquerda2()" onmouseout="clearScroll2()" class="handle handlePrev active">
             <i class="fa fa-caret-left" aria-hidden="true"></i>
           </span>
@@ -95,7 +95,7 @@
           <div id="scroller2" class="row">
             <div class="row__inner">
             <?php
-      $id_genero=12;
+      $id_genero=1;
       $livros=organiza_livros_generos($id_genero);
       shuffle($livros);
       foreach($livros as $livro){
