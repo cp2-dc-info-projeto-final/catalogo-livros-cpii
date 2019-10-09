@@ -77,7 +77,7 @@
                 </div>
                 <div class="gui-card__details">
                   <div class="gui-card__title">
-                    <?php echo $genero['nome']?>
+                    <?php echo $livro['titulo']?>
                   </div>
                 </div>
               </div>
