@@ -26,7 +26,7 @@ function organiza_livros_generos($id_genero){
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
  }
-    $sql="SELECT id_livro, autor, titulo, editora, sinopse, imagem FROM livro AS l JOIN genero_livro AS k 
+    $sql="SELECT id_livro, titulo, imagem FROM livro AS l JOIN genero_livro AS k 
     ON l.id=k.id_livro WHERE id_genero=$id_genero";
     $result=mysqli_query($conn, $sql);
     $livros= [];
@@ -34,11 +34,8 @@ function organiza_livros_generos($id_genero){
     while($row=mysqli_fetch_assoc($result)){
         $livro['id']=$row['id_livro'];
         $livro["titulo"]=$row['titulo'];
-          $livro["autor"]=$row['autor'];
-          $livro["sinopse"]=$row['sinopse'];
-          $livro["imagem"]=$row['imagem'];
-          $livro["editora"]=$row['editora'];
-          array_push($livros, $livro);   
+        $livro["imagem"]=$row['imagem'];
+        array_push($livros, $livro);   
     }
     return $livros;
     mysqli_close($conn);
