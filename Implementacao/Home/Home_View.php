@@ -1,5 +1,8 @@
 <html>
-
+<?php
+      require "Home_Ctrl.php";
+      //require "../Login/Login_Ctrl.php";
+?>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
@@ -27,6 +30,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+          <?php
+          //if (isset($moderador) && $moderador==1){
+          ?>
         <li class="nav-item">
             <a class="nav-link" href="#">Página do Moderador</a>
           </li>
@@ -38,6 +44,7 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
+          <?php //} ?>
           <li class="nav-item">
             <a class="nav-link" href="#">Editar Perfil</a>
           </li>
@@ -57,7 +64,6 @@
   <div class="contain">
 
     <?php
-      require "Home_Ctrl.php";
       $generos=mostra_generos();
       foreach($generos as $genero) {
     ?>
