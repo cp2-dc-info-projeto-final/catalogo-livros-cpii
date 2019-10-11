@@ -27,13 +27,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Página do Moderador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Adicionar Livro</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="../Pesquisa_de_livros/Pesquisa_View.php">Pesquisar
               <span class="sr-only">(current)</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Editar Informações</a>
+            <a class="nav-link" href="#">Editar Perfil</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Livros Salvos</a>

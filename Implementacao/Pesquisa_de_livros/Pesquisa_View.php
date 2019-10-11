@@ -44,6 +44,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="#">Página do Moderador</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Adicionar Livro</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href="../Home/Home_View.php">Home
               <span class="sr-only">(current)</span>
