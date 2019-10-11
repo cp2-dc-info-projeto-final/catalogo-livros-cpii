@@ -23,10 +23,10 @@
    </script> --->
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Pesquisa de livros</title> <!-- nome na aba da página -->
-    <link rel="stylesheet" type="text/css" href="pesquisa_style.css"> <!-- hyperlink para a conexão com o CSS-->
     <meta charset="utf-8">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="botaopesquisastyle.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pesquisa_style.css">
 
 
   </head>
@@ -68,8 +68,6 @@
       </div>
     </div>
   </nav>
-        </p>
-
      <br>
      
   <!-- <input type="checkbox" name="Biografia" value="c1" /> Biografia
@@ -98,32 +96,40 @@
    
      
   
-     <div class="botao_pesquisa" >       
-<form>
-	<input type="search" class="form-control" id="$palavra" name ="chave" placeholder="Buscar por...">
-</form>
-</div>
+  <div class="botao_pesquisa" >       
+	  <input type="search" class="form-control" id="$palavra" name ="chave" placeholder="Buscar por...">
+  </div>
   
   
   
   
   
   
-     <div id="resultado">
+     
     <?php 
       require "Pesquisa_Ctrl.php";
 
       if (isset($_GET["chave"])) {
-        $chave = $_GET["chave"];
-
+        $chave = $_GET["chave"]; ?>
+        <div class="resultado">
+          <?php
         $resultado = buscar_livros($chave);
         foreach ($resultado as $livro) {
-          echo $livro['titulo'] . "<br>";
-          echo "<img src='../".$livro['imagem']."'/><br>";
-        }
-      }
-    ?>
-   </div>
+          ?>
+          <div class="resultado__detalis">
+            <div class=resultado__title><?php echo $livro['titulo'] ?> <br>
+            </div>
+          </div>
+            <div class="resultado__img"> <img src='../<?php echo $livro['imagem']?>'><br>
+            </div>
+        
+       <?php }
+       ?>
+       </div>
+<?php
+      } ?>
+    
    
+    
   </body><!-- fechamento da tag body --> 
 </html>
