@@ -56,26 +56,26 @@ FOREIGN KEY (id_livro) REFERENCES livro(id)
 );
 
 INSERT INTO genero (nome) VALUES
-('Biografia'), /*1$   */  
-('Clássicos'), /*2$   */ 
-('Suspense'),  /*3$   */ 
-('Conto'),     /*4$   */ 
+('Biografia'), /*1*/
+('Clássicos'), /*2*/
+('Suspense'),  /*3*/
+('Conto'),     /*4*/
 ('Drama'),     /*5*/
-('Economia'),  /*6$   */
+('Economia'),  /*6*/
 ('Fantasia'),  /*7*/
 ('Ficção'),    /*8*/
 ('Didático'),  /*9*/
 ('Filosofia'), /*10*/
-('Horror'),    /*11$   */ 
+('Horror'),    /*11*/
 ('HQs'),       /*12*/
-('Humor'),     /*13$   */
+('Humor'),     /*13*/
 ('Mangá'),     /*14*/
 ('Romance'),   /*15*/
 ('Ciências'),  /*16*/
 ('História'),  /*17*/
 ('Matemática'),/*18*/
 ('Geografia'), /*19*/
-('Poesia'),    /*20$   */ 
+('Poesia'),    /*20*/
 ('Sociologia'),/*21*/
 ('Línguas');   /*22*/
 
@@ -148,6 +148,9 @@ VALUES
 ('Microfísica do poder', 'Michel Foucault', 'Paz e Terra', 'Imagens_Livros/64/microfisica.jpg', 'Microfísica do poder é uma coletânea de artigos, cursos, entrevistas e debates, em que Foucault analisa questões relacionadas à medicina, à psiquiatria, à geografia, à economia, mas também ao hospital, à prisão, à justiça, ao Estado, ao papel do intelectual, à sexualidade, dentro outros temas. Esses textos têm como tema central o poder nas sociedades modernas - sua configuração, sua difusão no corpo social, seu exercício em instituições, sua relação com a produção da verdade, as resistências que suscita. Além disso, eles explicitam o método genealógico elaborado por Foucault para analisar como e por que os saberes se constituem a partir de práticas políticas e econômicas.'),
 ('Vagão descarrilhado : o Brasil e o futuro da economia global', 'Reinaldo Gonçalves', 'Record', 'Imagens_Livros/65/vagao.jpg', 'Em Vagão Descarrilhado, o premiado economista Reinaldo Gonçalves - professor titular da Universidade Federal do Rio de Janeiro e ganhador do Prêmio Jabuti em 2001 na área de Economia, Direito e Administração - discute o capitalismo atual e suas tendências futuras tanto no Brasil quanto no mundo. Sob a ótica da Economia Política Internacional, o autor analisa, de forma crítica, a necessidade de uma mudança na natureza do modelo de inserção internacional usado pela equipe econômica brasileira. VAGÃO DESCARRILHADO toma como referência os conflitos entre as classes em cada sociedade, os conflitos entre os estados nacionais e os três principais fenômenos da economia mundial: a hegemonia dos EUA, a financeirização e a globalização. A ligação entre as economias de diferentes países tem conseqüências sérias. Se o cenário internacional se agrava, a situação brasileira sai de prumo. O país atrelou sua economia à dos Estados Unidos, que entrou no século XX como um trem veloz - e saiu do mesmo com sua locomotiva enferrujada. Para Reinaldo Gonçalves, as saídas para a crise do capitalismo são limitadas. O Brasil é o vagão descarrilhado da economia mundial. Desde 1995, o país sofre de uma grave crise sistêmica, com a simultânea ocorrência de cinco processos: desestabilização macroeconômica, desmonte do aparelho produtivo, esgarçamento do tecido social, deteriorização política e institucional e perda de governança. VAGÃO DESCARRILHADO mostra que sem uma estratégia ativa de inserção na economia global, a trajetória do Brasil - e suas associações financeiras - será medíocre. Reinaldo Gonçalves é economista, professor titular da Universidade Federal do Rio de Janeiro, ganhador do Prêmio Jabuti em 2001 na área de Economia, Direito e Administração e autor de mais de duas centenas de trabalhos, publicados em 18 países.'),
 ('Economia brasileira contemporânea', 'Cyro de Barros Rezende Filho', 'Contexto', 'Imagens_Livros/66/economiacont.jpg', 'Os diferentes regimes políticos, a construção de instituições, os variados enfoques de políticas econômicas e sociais, as crises geradas endogenamente ou importadas da economia mundial, moldaram historicamente o que hoje constituem a economia e a sociedade brasileiras. É esse processo histórico, desde o pós-Guerra até o presente, que norteia a análise lúcida desenvolvida neste livro.'),
+('O gênio em todos nós','David Shenk','Zahar','Imagens_Livros/67/genioemtodosnos.jpg','Por que, entre tantos músicos, atletas, cientistas, poucos alcançam aquilo que costumamos chamar de “genialidade”? O que diferencia Mozart, Albert Einstein e Michael Jordan de tantos que, na mesma época, compunham, desenvolviam teorias científicas ou jogavam basquete? Quem aposta que é alguma qualidade genética, ainda não conhece as teorias defendidas por esse livro. Em contestação à tendência de explicar o surgimento desses indivíduos excepcionais por meio de um determinismo genético, David Shenk desenvolve, em O gênio em todos nós, um brilhante argumento a favor da capacidade humana de moldar suas próprias habilidades. Segundo o autor, os genes apenas desenham as possibilidades de cada pessoa, que serão impulsionadas ou desestimuladas pelo meio em que vive e pelo trabalho individual. O resultado é uma visão otimista do ser humano, não mais destinado à grandeza ou à mediocridade por fatores que não pode controlar. De maneira clara e persuasiva, Shenk faz um apanhado dos mais recentes estudos científicos que explicam como desenvolvemos nossas habilidades e como os genes interagem com o ambiente para nos tornar quem somos. Demonstra também como podemos cultivar nossos potenciais — ou arruiná-los.'),
+('História da guerra do Paraguai','Max von Versen','EDUSP','Imagens_Livros/68/historiadoparaguai.jpg','História da Guerra do Paraguai traz uma versão de particular interesse sobre o episódio para os brasileiros, já que o autor manifesta uma absoluta parcialidade pelos paraguais, assim como sua declarada aversão aos brasileiros. No entanto, apesar da paixão que transparece em seus julgamentos, deles acaba resultando um depoimento altamente favorável à conduta dos nossos durante a campanha. Dá-lhe excepcional valor o fato de ser o testemunho de um militar experiente, provado nos campos de batalha e com assinalada atuação na guerra austro-prussiana de 1866. Se bem que preocupado principalmente com os episódios militares da campanha, não faltam ao livro de von Versen outros motivos de interesse. Entre eles o fato de ser o primeiro depoimento isento de exageros demagógicos de enaltecimento ou ataque, que se faz com relação à fascinante personalidade de Mme. Lynch, a companheira de Lopez.'),
+('Revolução Russa','S. A. Smith','L&PM','Imagens_Livros/69/revolucaorussa.jpg','A Revolução Russa foi uma das primeiras manifestações populares do século XX e culminou na renúncia de um monarca e no surgimento do primeiro Estado socialista do mundo. Dividida em duas partes, a Revolução de Fevereiro e a Revolução de Outubro de 1917, derrubou a autocracia e levou ao poder Lenin e seu Partido Bolchevique. A ruína da autocracia teve suas raízes em uma crise em meio à modernização, quando trabalhadores começaram a sair às ruas reivindicando melhores condições de trabalho e renda na esperança de derrubar uma estrutura de dominação. S. A. Smith faz um relato do que foi a revolução, dos impactos que causou e de como até hoje influencia a forma de vermos a política.');
 
 
 
@@ -264,6 +267,11 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (65, 9),
 (66, 6),
 (66, 17),
+(67, 9),
+(67, 16),
+(68, 17),
+(69, 17)
+
 
 
 
