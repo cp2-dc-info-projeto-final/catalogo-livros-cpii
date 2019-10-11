@@ -23,7 +23,11 @@
    </script> --->
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Pesquisa de livros</title> <!-- nome na aba da página -->
-      <link rel="stylesheet" type="text/css" href="pesquisa_style.css"> <!-- hyperlink para a conexão com o CSS-->
+    <link rel="stylesheet" type="text/css" href="pesquisa_style.css"> <!-- hyperlink para a conexão com o CSS-->
+    <meta charset="utf-8">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="botaopesquisastyle.css" rel="stylesheet">
+
 
   </head>
 
@@ -32,9 +36,32 @@
 
    <form action="Pesquisa_View.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
     
-     <h1>Pesquisa de livros</h1>
-     <br><br>
-     
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Catálogo de Livros</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../Home/Home_View.php">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Editar Informações</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Livros Salvos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sair</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
         </p>
 
      <br>
@@ -62,15 +89,21 @@
    <input type="checkbox" name="Sociologia" value="c21" /> Sociologia
    <input type="checkbox" name="Línguas" value="c22" /> Línguas -->
 
-   <div class="titulo_pesquisado">
-         <input type="text" class="form-control" id="$palavra" name="chave" placeholder="Buscar por...">
-         <span class="input-group-btn">
-               <input type="submit" value="Pesquisar">
-         </span>
-   </div>
-     </p>
+   
      
-   <div id="resultado">
+  
+     <div class="botao_pesquisa" >       
+<form>
+	<input type="search" class="form-control" id="$palavra" name ="chave" placeholder="Buscar por...">
+</form>
+</div>
+  
+  
+  
+  
+  
+  
+     <div id="resultado">
     <?php 
       require "Pesquisa_Ctrl.php";
 

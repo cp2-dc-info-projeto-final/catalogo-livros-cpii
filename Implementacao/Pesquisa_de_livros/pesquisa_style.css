@@ -1,14 +1,28 @@
-body /* estilização do corpo do site como um todo */
-    { 
-        background-color: rgba(28,28,28,0.8); /* imagem de fundo da tela de pesquisa */
-        background-repeat: no-repeat; /* função para não repetir a imagem */
-        background-size: 100% 100%;  /* função que preenche a imagem por toda a tela */
-        margin: 0;
-        
-    }
-    h1 /* estilização do título do form (Pesquisa) */
-    {
-        color: #000000; /* cor da palavra */
-        opacity:1; /* opacidade do título */
-        font-family: Arial, Helvetica, sans-serif; /* fontes para o título, em ordem de preferência */
-    }
+.resultado {
+
+    position: relative;
+    display: inline-block;
+    width: 250px;
+    align-content: left;
+    height: 140.625px;
+    margin-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-transition: 450ms all;
+    transition: 450ms all;
+    -webkit-transform-origin: center left;
+            transform-origin: center left;
+  }
+
+  .resultado_img {
+    width: 250px;
+    height: 140.625px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
+  .resultado_title {
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+  }

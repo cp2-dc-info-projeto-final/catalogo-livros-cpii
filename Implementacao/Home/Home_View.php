@@ -27,7 +27,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
+          <li class="nav-item">
             <a class="nav-link" href="../Pesquisa_de_livros/Pesquisa_View.php">Pesquisar
               <span class="sr-only">(current)</span>
             </a>
