@@ -1,7 +1,7 @@
 <html>
 <?php
       require "Home_Ctrl.php";
-      //require "../Login/Login_Ctrl.php";
+      require "../Login/Login_Ctrl2.php";
 ?>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -31,7 +31,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <?php
-          //if (isset($moderador) && $moderador==1){
+          if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
           ?>
         <li class="nav-item">
             <a class="nav-link" href="#">Página do Moderador</a>
@@ -44,7 +44,7 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <?php //} ?>
+          <?php } ?>
           <li class="nav-item">
             <a class="nav-link" href="#">Editar Perfil</a>
           </li>
