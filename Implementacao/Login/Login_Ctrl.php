@@ -6,6 +6,8 @@
     $_SESSION['email']= $email;
     session_unset();
     if (autentica($email, $senha)== true){
+        session_start();
+        $_SESSION['email']= $email;
         header("Location:../Home/Home_View.php");
         exit();
     } else{
