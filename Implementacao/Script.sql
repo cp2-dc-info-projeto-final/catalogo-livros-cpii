@@ -1,13 +1,13 @@
-use catalogo_de_livros;
+USE catalogo_de_livros;
 
-drop table if exists genero;
+DROP TABLE IF EXISTS genero;
  create table genero(
  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nome VARCHAR (20) NOT NULL
  );
 
-drop table if exists livro;
-create table livro(
+DROP TABLE IF EXISTS livro;
+CREATE TABLE livro(
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 autor VARCHAR(80)  NOT NULL,
 titulo VARCHAR(30)  NOT NULL,
@@ -16,36 +16,42 @@ sinopse VARCHAR(700) NOT NULL,
 imagem VARCHAR(400)
 );
 
-drop table if exists genero_livro;
-create table genero_livro(
+DROP TABLE IF EXISTS genero_livro;
+CREATE TABLE genero_livro(
     id_livro INT,
     id_genero INT,
     FOREIGN KEY (id_livro) REFERENCES livro(id),
     FOREIGN KEY (id_genero) REFERENCES genero(id)
 );
 
-drop table if exists usuario;
- create table usuario(
+DROP TABLE IF EXISTS usuario;
+ CREATE TABLE usuario(
  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
  nome VARCHAR(50)  NOT NULL,
  email VARCHAR (60)  NOT NULL,
  senha VARCHAR (250) NOT NULL,
- moderador BOOLEAN NOT NULL,
- id_genero INT,
- FOREIGN KEY (id_genero) REFERENCES genero(id)
+ moderador BOOLEAN NOT NULL
 );
 
-drop table if exists lista_usuario;
- create table lista_usuario (
+DROP TABLE IF EXISTS genero_usuario;
+CREATE TABLE genero_usuario(
+    id_usuario INT,
+    id_genero INT,
+    FOREIGN KEY (id_usuario) REFERENCES usuario(id),
+    FOREIGN KEY (id_genero) REFERENCES genero(id)
+);
+
+DROP TABLE IF EXISTS lista_usuario;
+ CREATE TABLE lista_usuario (
  
- idlivro INT,
- idusuario INT,
- FOREIGN KEY (idusuario) REFERENCES usuario(id),
- FOREIGN KEY (idlivro) REFERENCES livro(id)
+ id_livro INT,
+ id_usuario INT,
+ FOREIGN KEY (id_usuario) REFERENCES usuario(id),
+ FOREIGN KEY (id_livro) REFERENCES livro(id)
  );
  
 drop table if exists acao;
-create table acao (
+CREATE TABLE acao (
 id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 datahorario DATETIME,
 descricao VARCHAR (100) ,

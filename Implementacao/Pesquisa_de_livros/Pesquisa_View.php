@@ -44,12 +44,16 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+        <?php
+          if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
+          ?>
         <li class="nav-item">
             <a class="nav-link" href="#">Página do Moderador</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Adicionar Livro</a>
           </li>
+          <?php } ?>
           <li class="nav-item">
             <a class="nav-link" href="../Home/Home_View.php">Home
               <span class="sr-only">(current)</span>
@@ -62,38 +66,13 @@
             <a class="nav-link" href="#">Livros Salvos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sair</a>
+            <a class="nav-link" href="../Sair_Ctrl.php">Sair</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
      <br>
-     
-  <!-- <input type="checkbox" name="Biografia" value="c1" /> Biografia
-   <input type="checkbox" name="Clássicos" value="c2" /> Clássicos
-   <input type="checkbox" name="Suspense" value="c3" /> Suspense
-   <input type="checkbox" name="Conto" value="c4" /> Conto
-   <input type="checkbox" name="Drama" value="c5" /> Drama
-   <input type="checkbox" name="Economia" value="c6" /> Economia
-   <input type="checkbox" name="Fantasia" value="c7" /> Fantasia
-   <input type="checkbox" name="Ficção" value="c8" /> Ficção
-   <input type="checkbox" name="Didático" value="c9" /> Didático
-   <input type="checkbox" name="Filosofia" value="c10" /> Filosofia
-   <input type="checkbox" name="Horror" value="c11" /> Horror
-   <input type="checkbox" name="HQs" value="c12" /> HQs
-   <input type="checkbox" name="Humor" value="c13" /> Humor
-   <input type="checkbox" name="Mangá" value="c14" /> Mangá
-   <input type="checkbox" name="Romance" value="c15" /> Romance
-   <input type="checkbox" name="Ciências" value="c16" /> Ciências
-   <input type="checkbox" name="História" value="c17" /> História
-   <input type="checkbox" name="Matemática" value="c18" /> Matemática
-   <input type="checkbox" name="Geografia" value="c19" /> Geografia
-   <input type="checkbox" name="Poesia" value="c20" /> Poesia
-   <input type="checkbox" name="Sociologia" value="c21" /> Sociologia
-   <input type="checkbox" name="Línguas" value="c22" /> Línguas -->
-
-   
      
   
   <div class="botao_pesquisa" >       

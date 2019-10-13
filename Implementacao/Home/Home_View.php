@@ -52,7 +52,7 @@
             <a class="nav-link" href="#">Livros Salvos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Sair</a>
+            <a class="nav-link" href="../Sair_Ctrl.php">Sair</a>
           </li>
         </ul>
       </div>
