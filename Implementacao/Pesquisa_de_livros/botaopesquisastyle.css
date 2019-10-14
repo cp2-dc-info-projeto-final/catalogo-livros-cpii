@@ -1,9 +1,7 @@
 body {
     background-color: black;
     color: white;
-	font: 90%/180% Arial, Helvetica, sans-serif;
-	width: 800px;
-	max-width: 96%;
+	
 	margin: 0 auto;
 }
 
@@ -11,7 +9,7 @@ body {
 .botao_pesquisa{
     position: absolute;
     margin-top: 4%;
-    left: 2%;;
+    left: 2%;
 }
 
 

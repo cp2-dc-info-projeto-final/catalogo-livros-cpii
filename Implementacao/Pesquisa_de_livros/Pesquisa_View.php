@@ -34,7 +34,7 @@
   <body> <!-- tag pra início do corpo do site -->
   
 
-   <form action="Pesquisa_View.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
+   <form class="pesquisa" action="Pesquisa_View.php" method="get"> <!-- estrutura form que agrupa todo o forumulário -->
     
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -84,27 +84,27 @@
   
   
   
-     
+  <div class="resultado"> 
     <?php 
       require "Pesquisa_Ctrl.php";
 
       if (isset($_GET["chave"])) {
         $chave = $_GET["chave"]; ?>
-        <div class="resultado">
+        
           <?php
         $resultado = buscar_livros($chave);
         foreach ($resultado as $livro) {
           ?>
-          <div class="resultado__detalis">
-            <div class=resultado__title><?php echo $livro['titulo'] ?> <br>
-            </div>
+          
+          <div class="images">
+            <img src='../<?php echo $livro['imagem']?>'><br>
           </div>
-            <div class="resultado__img"> <img src='../<?php echo $livro['imagem']?>'><br>
-            </div>
         
+        
+    </div>                 
        <?php }
        ?>
-       </div>
+       <div></div>
 <?php
       } ?>
     
