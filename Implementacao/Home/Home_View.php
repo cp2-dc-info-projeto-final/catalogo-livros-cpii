@@ -39,12 +39,12 @@
           <li class="nav-item">
             <a class="nav-link" href="#">Adicionar Livro</a>
           </li>
+          <?php } ?>
           <li class="nav-item">
             <a class="nav-link" href="../Pesquisa_de_livros/Pesquisa_View.php">Pesquisar
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <?php } ?>
           <li class="nav-item">
             <a class="nav-link" href="#">Editar Perfil</a>
           </li>
