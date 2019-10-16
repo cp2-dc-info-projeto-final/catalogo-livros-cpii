@@ -18,8 +18,8 @@ imagem VARCHAR(400)
 
 DROP TABLE IF EXISTS genero_livro;
 CREATE TABLE genero_livro(
-    id_livro INT,
-    id_genero INT,
+    id_livro INT NOT NULL,
+    id_genero INT NOT NULL,
     FOREIGN KEY (id_livro) REFERENCES livro(id),
     FOREIGN KEY (id_genero) REFERENCES genero(id)
 );
@@ -35,8 +35,8 @@ DROP TABLE IF EXISTS usuario;
 
 DROP TABLE IF EXISTS genero_usuario;
 CREATE TABLE genero_usuario(
-    id_usuario INT,
-    id_genero INT,
+    id_usuario INT NOT NULL,
+    id_genero INT NOT NULL,
     FOREIGN KEY (id_usuario) REFERENCES usuario(id),
     FOREIGN KEY (id_genero) REFERENCES genero(id)
 );
@@ -44,8 +44,8 @@ CREATE TABLE genero_usuario(
 DROP TABLE IF EXISTS lista_usuario;
  CREATE TABLE lista_usuario (
  
- id_livro INT,
- id_usuario INT,
+ id_livro INT NOT NULL,
+ id_usuario INT NOT NULL,
  FOREIGN KEY (id_usuario) REFERENCES usuario(id),
  FOREIGN KEY (id_livro) REFERENCES livro(id)
  );

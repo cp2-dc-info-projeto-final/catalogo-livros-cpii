@@ -40,11 +40,11 @@
       session_start();
       if(array_key_exists('erro', $_SESSION) == true){
           $erro = $_SESSION["erro"];
-          echo "<br><b>$erro</b>";
-          session_unset();
+          echo "<br>".$erro;
       }
+      session_unset();
       ?>
-      <br>
+      
 
       <p class="nome"> <!-- classe referente ao campo do nome no formulário -->
         <input type="text" placeholder="Nome completo:" name="nome" required="required"> <!-- caixa para inserção do nome -->
@@ -65,21 +65,36 @@
       </p>
 
 
+          <h5>Escolha 3 Gêneros Favoritos:</h5>
 
       <div class ="select">
-           
-            <option value="valor2" selected>Valor 2</option>
 
-          <select name="select2">
-            <option value="valor2" selected>Valor 2</option>
+      <?php require "../Adicao_de_livros/Gen_Ctrl.php"; ?>
+
+          <select name="select1" style="font-size:12px" >
+            <?php
+            foreach($generos as $select){
+            echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+      } ?>
+          </select>
+
+          <select name="select2" style="font-size:12px">
+            <?php
+            foreach($generos as $select){
+              echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+            } ?>
 
           </select>
 
-          <select name="select3">
-            <option value="valor2" selected>Valor 2</option>
+          <select name="select3" style="font-size:12px">
+            <?php  
+            foreach($generos as $select){
+              echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+            }
+            ?>
           </select>
 
-        <br>
+        <br><br>
         <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
           <input type="submit" name="enviar" value="Prosseguir"> <!-- botão para prosseguir para a próxima fase do cadastro -->
         </p>

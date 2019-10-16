@@ -11,8 +11,6 @@ session_start();
     $insert_id = cadastra_livro($titulo, $autor, $editora, $imagem, $sinopse);
     if (!is_null($insert_id))
     {
-        $generos = mostra_generos();
-
         foreach ($generos as $genero) {
             if (isset($_POST[$genero['nome']])) {
                 associa_genero($insert_id, $genero['id']);

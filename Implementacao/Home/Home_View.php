@@ -1,7 +1,6 @@
 <html>
 <?php
       require "Home_Ctrl.php";
-      require "../Login/Login_Ctrl2.php";
 ?>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -64,8 +63,7 @@
   <div class="contain">
 
     <?php
-      $generos=mostra_generos();
-      foreach($generos as $genero) {
+      foreach($ordem as $genero) {
     ?>
     <div class="slider">
       <h3><?php echo $genero['nome']?></h3>

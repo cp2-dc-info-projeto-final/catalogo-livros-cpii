@@ -5,14 +5,12 @@
  $conn=get_connection();
 
     if($conn===false){
-        die("Falha na conexão". mysqli_connect_error());
+        die("Falha na conexão". mysqli_connect_error($conn));
  }
 
     $sql="SELECT id FROM usuario WHERE email='$email'";
 
     $result=mysqli_query($conn, $sql);
-
-    $erro="";
     
     $hash= password_hash($senha, PASSWORD_DEFAULT);
 
@@ -21,13 +19,29 @@
     } 
 
     $sql="INSERT INTO usuario (nome, email, senha, moderador) VALUES ('$nome', '$email', '$hash', false)";
-    if (mysqli_query($conn, $sql)){
-        return true;
-
-    } else{
+    if (!mysqli_query($conn, $sql)) {
         die("Erro ao efetuar o cadastro" . mysqli_error($conn));
+        
+    } else {
+        $id=mysqli_insert_id($conn);
+        mysqli_close($conn);
+        return $id;
     }
-    mysqli_close($conn);
+    
   
+ }
+
+ function Usuario_Genero($id_usuario, $id_genero){
+    include_once "../conexao.php";
+    $conn=get_connection();
+   
+       if($conn===false){
+           die("Falha na conexão". mysqli_connect_error($conn));
+    }
+    $sql="INSERT INTO genero_usuario(id_usuario, id_genero) VALUES ($id_usuario, $id_genero)";
+    if(!mysqli_query($conn, $sql)){
+        die("Falha na conexão". mysqli_connect_error($conn));
+    };
+    mysqli_close($conn);
  }
  ?>
