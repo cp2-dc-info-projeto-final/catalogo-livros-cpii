@@ -1,0 +1,36 @@
+body{
+
+    background-color: black;
+}
+
+h3{
+    color: white;
+}
+
+.descricao{
+    color: rgba(211,211,211);
+}
+
+ #autor{
+
+    color: white;    
+}
+
+
+#editora{
+
+    color: white;    
+}
+
+.admin-profile{
+    color: rgba(211,211,211);
+
+}
+
+#about{
+    margin-top: 5%;
+}
+
+.menu{
+    font: white;
+}
