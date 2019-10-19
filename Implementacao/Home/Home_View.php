@@ -81,7 +81,7 @@
 
           ?>
               
-              <div class="gui-card" onclick="window.open('detalhaLivro.php?id=<?php echo $livro['id']?>')">
+              <div class="gui-card" onclick="window.open('../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>')">
                 <div class="gui-card__media">
                   <img class="gui-card__img" src="../<?php echo $livro['imagem']?>" alt=""  />
                 </div>

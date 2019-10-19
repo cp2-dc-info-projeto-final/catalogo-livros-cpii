@@ -1,11 +1,18 @@
 
+<?php
+  require 'Livro_Ctrl.php';
+  if($livro===false){
+    echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Livro não encontrado na base de dados!!!</p></h1></html>';
+  } else{
+  ?> 
+
 <html>
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Livro - Puxar Nome do Banco de Dados</title>
+    <title><?php echo $livro['titulo'] ?></title>
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" >
@@ -86,17 +93,17 @@
         <div class="row">
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="img-thumb wow fadeInLeft" data-wow-delay="0.3s">
-              <img class="img-fluid" src="naruto.jpg" alt="">
+              <img class="img-fluid" src="../<?php echo $livro['imagem']?>" alt="">
             </div>
           </div> 
           <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
             <div class="profile-wrapper wow fadeInRight" data-wow-delay="0.3s">
-              <h3>Naruto</h3>
-              <p class="descricao">O garoto que queria ser um ninja, mas era um maluco com uma raposa dentro dele.</p>
+              <h3><?php echo $livro['titulo']?></h3>
+              <p class="descricao"><?php echo $livro['sinopse']?></p>
               <div class="about-profile">
                 <ul class="admin-profile">
-                  <li><span class="pro-title" id="autor"> Autor: </span> <span class="pro-detail">Masashi Kishimoto</span></li>
-                  <li><span class="pro-title" id="editora"> Editora: </span> <span class="pro-detail">Shonen Jump</span></li>
+                  <li><span class="pro-title" id="autor"> Autor: </span> <span class="pro-detail"><?php echo $livro['autor']?></span></li>
+                  <li><span class="pro-title" id="editora"> Editora: </span> <span class="pro-detail"><?php echo $livro['editora']?></span></li>
                 </ul>
               </div>
               <a href="#" class="btn btn-common">Salvar Livro</a>
@@ -114,3 +121,4 @@
       
   </body>
 </html>
+          <?php } ?>

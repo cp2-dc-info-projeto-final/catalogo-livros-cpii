@@ -15,5 +15,5 @@ foreach($generos as $genero){
 } else{
     foreach($generos as $genero){
         array_push($ordem, $genero);
-}
+    }
 }

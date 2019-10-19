@@ -1,23 +1,6 @@
 <?php
 require "../conexao.php";
 
-function getGeneros($id_livro){
-    $conn=get_connection();
-
-    if($conn===false){
-        die("Falha na conexão". mysqli_connect_error());
-}
-$generos=[];
-$sql="SELECT nome FROM livro AS l JOIN genero_livro AS k ON l.id=k.id_livro 
-JOIN genero AS g ON k.id_genero=g.id WHERE id_livro=$id_livro";
-$result=mysqli_query($conn, $sql);
-while($row=mysqli_fetch_assoc($result)){
-    $genero=$row['nome'];
-    array_push($generos, $genero);
-}
-mysqli_close($conn);
-return $generos;
-}
 
 function Preferencia_Usuario($email){
     $conn=get_connection();
