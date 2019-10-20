@@ -76,7 +76,7 @@
           <?php
             
             $livros=organiza_livros_generos($genero['id']);
-            shuffle($livros);
+           array_reverse($livros);
             foreach($livros as $livro){
 
           ?>

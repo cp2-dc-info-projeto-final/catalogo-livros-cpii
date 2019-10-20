@@ -107,8 +107,13 @@
                 </ul>
               </div>
               <a href="#" class="btn btn-common">Salvar Livro</a>
-              <a href="#" class="btn btn-danger"> Editar Livro</a>
+              <?php
+              if (isset($_SESSION['email']) && $_SESSION['moderador']==1) {
+              ?>
               <a href="#" class="btn btn-danger"> Remover Livro</a>
+              <?php
+              }
+              ?>
             </div>
           </div>   
         </div>

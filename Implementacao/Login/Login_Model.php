@@ -31,10 +31,11 @@
     if ($conn===false){
         die("Erro de conexão".mysqli_connect_error());
     }
-    $sql="SELECT moderador FROM usuario WHERE email='$email'";
+    $sql="SELECT id, moderador FROM usuario WHERE email='$email'";
         while($row=mysqli_fetch_assoc(mysqli_query($conn, $sql))){
-            $moderador=$row["moderador"];
-            return $moderador; 
+            $usuario['id']=$row['id'];
+            $usuario['moderador']=$row["moderador"];
+            return $usuario; 
     } 
     mysqli_close($conn);
     }
