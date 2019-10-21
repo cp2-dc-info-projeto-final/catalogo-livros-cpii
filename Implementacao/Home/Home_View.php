@@ -14,6 +14,9 @@
 
   <!-- Custom styles for this template -->
   <link href="css/heroic-features.css" rel="stylesheet">
+      <!-- Main Style -->
+      <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+      <!-- Responsive Style -->
   
   <title>
     Home
