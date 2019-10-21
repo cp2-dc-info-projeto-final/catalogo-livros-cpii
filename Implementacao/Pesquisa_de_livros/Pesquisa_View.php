@@ -96,8 +96,8 @@
         foreach ($resultado as $livro) {
           ?>
           
-          <div class="images">
-            <img src='../<?php echo $livro['imagem']?>'><br>
+          <div class="images" onclick="window.open('../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>')">
+            <img src='../<?php echo $livro['imagem']  ?>'><br>
           </div>
         
         

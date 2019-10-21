@@ -6,7 +6,7 @@ body {
     border-collapse: collapse;
     width: 50em;
     border: 2.5px solid rgb(141, 0, 0);
-    margin: 0 auto;
+    margin-left: 5%;
     margin-top: 10%;
     background-color: rgb(10, 10, 10);
     color: white;
@@ -31,3 +31,4 @@ body {
   th, td {
     padding: 0.1em 1em;
   }
+

@@ -7,7 +7,7 @@
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
     }
-    $sql = "SELECT titulo, autor, imagem, editora, sinopse FROM livro WHERE 
+    $sql = "SELECT id, imagem FROM livro WHERE 
     titulo LIKE '%$chave%'
     OR autor LIKE '%$chave%'
     OR editora LIKE '%$chave%'";
@@ -18,11 +18,8 @@
     {
       if (mysqli_num_rows($query) > 0) {
         while ($row=mysqli_fetch_assoc($query)){
-          $livro["titulo"]=$row['titulo'];
-          $livro["autor"]=$row['autor'];
-          $livro["sinopse"]=$row['sinopse'];
+          $livro["id"]=$row['id'];
           $livro["imagem"]=$row['imagem'];
-          $livro["editora"]=$row['editora'];
           array_push($livros, $livro);
         }
       }
