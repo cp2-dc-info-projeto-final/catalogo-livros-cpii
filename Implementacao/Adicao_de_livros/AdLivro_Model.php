@@ -38,7 +38,7 @@ function mostra_generos(){
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
     }
-    $sql="SELECT id, nome FROM genero";
+    $sql="SELECT * FROM genero ORDER BY nome ASC";
     $result=mysqli_query($conn, $sql);
     $generos = [];
     while ($dados=mysqli_fetch_array($result)){
