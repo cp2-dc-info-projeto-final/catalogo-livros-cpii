@@ -15,7 +15,7 @@
     
     <script>
 
-      $( function() {
+      $(document).ready( function() {
 
       // Single Select
       $( "#busca" ).autocomplete({
@@ -23,20 +23,17 @@
           // Fetch data
           $.ajax({
           url: "Pesquisa_autocomplete.php",
-          type: 'get',
+          type: 'post',
           dataType: "json",
-          data: {
-            search: request.term
-          },
+          data: request,
           success: function( data ) {
             response( data );
+          },
+          error: function(jqXHR, textStatus, errorThrown){
+                     console.log( textStatus);          
+                     console.log(jqXHR.responseText)        
           }
           });
-        },
-        select: function (event, ui) {
-          // Set selection
-          $('#busca').val(ui.item.titulo); // display the selected text
-          return false;
         }
       });
 

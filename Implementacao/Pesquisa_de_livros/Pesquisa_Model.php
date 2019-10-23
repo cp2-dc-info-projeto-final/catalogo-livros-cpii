@@ -49,8 +49,8 @@
     {
       if (mysqli_num_rows($query) > 0) {
         while ($row=mysqli_fetch_assoc($query)){
-          $livro["titulo"]=$row['titulo'];
-          array_push($livros, $livro);
+          $titulo=$row['titulo'];
+          array_push($livros, $titulo);
         }
       }
     } else {
