@@ -32,3 +32,10 @@ body {
     padding: 0.1em 1em;
   }
 
+  .grafico{
+    height:750px;
+    width: 750px;
+    float: right;
+    margin-top: 10%;
+    color: white
+  }

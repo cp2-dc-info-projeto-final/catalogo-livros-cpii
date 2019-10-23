@@ -28,6 +28,7 @@
       <link rel="stylesheet" href="css/style.css">
       <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
+
             <title>
                 Página do Administrador
             </title>
@@ -77,7 +78,34 @@
 
 
 
+  <div class="grafico">    
+<canvas id="myChart"></canvas>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.js"></script>
+    <script>
+        let ctx = document.getElementById("myChart");
 
+        let dados = {
+            datasets: [{
+                data: [10, 20, 30, 30, 47, 34, 12],
+                backgroundColor: ['red', 'yellow', 'purple', 'white', 'gray', 'green', 'orange']
+            }],
+
+            labels: ['Ficção', 'Fantasia', 'Economia', 'Drama', 'Mangá', 'HQs', 'Romance']      };
+
+        let opcoes = {
+            cutoutPercentage: 40
+        };
+
+
+        let meuDonutChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: dados,
+            options: opcoes
+        });
+
+    </script>
+    
+  </div>
 
 
 
@@ -197,14 +225,11 @@
 </table>
     
     
+  
     
     
     
-    
-    
-    
-    
-    
+
     </body>
 
 
