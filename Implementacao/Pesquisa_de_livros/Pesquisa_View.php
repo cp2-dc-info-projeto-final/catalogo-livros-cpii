@@ -3,31 +3,46 @@
      <meta http-equiv="Content-Type" charset="UTF-8" content="text/html; charset=UTF-8"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
      
    <head>
-   <!-- <script scr="js/jquery.js">
-    $('#buscar').click(function () (
-      buscar($("$palavra").val())
-      $.ajax
-          ({
-            type: "POST"
-            dataType:"html"
-            url: page
-            beforeSend: function(){
-                        $("#dados").html("Carregando...");
-            },
-            data: (palavra:palavra),
-            success: function(msg)
-            {
-               $("#dados").html(msg);
-            }
-    });
-   </script> --->
+ 
    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
    <title>Pesquisa de livros</title> <!-- nome na aba da página -->
     <meta charset="utf-8">
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="botaopesquisastyle.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="pesquisa_style.css">
+    <script src="../js/external/jquery/jquery.js"></script>
+    <script src="../js/jquery-ui.min.js"></script>
+    
+    <script>
 
+      $( function() {
+
+      // Single Select
+      $( "#busca" ).autocomplete({
+        source: function( request, response ) {
+          // Fetch data
+          $.ajax({
+          url: "Pesquisa_autocomplete.php",
+          type: 'get',
+          dataType: "json",
+          data: {
+            search: request.term
+          },
+          success: function( data ) {
+            response( data );
+          }
+          });
+        },
+        select: function (event, ui) {
+          // Set selection
+          $('#busca').val(ui.item.titulo); // display the selected text
+          return false;
+        }
+      });
+
+    });
+      
+   </script>
 
   </head>
 
@@ -76,7 +91,7 @@
      
   
   <div class="botao_pesquisa" >       
-	  <input type="search" class="form-control" id="$palavra" name ="chave" placeholder="Buscar por...">
+	  <input type="search" class="form-control" id="busca" name="chave" placeholder="Buscar por...">
   </div>
   
   

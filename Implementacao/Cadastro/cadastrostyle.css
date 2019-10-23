@@ -1,6 +1,6 @@
 body /* estilização do corpo do site como um todo */
     { 
-        background-image: url("backgroundcadastro.png"); /* imagem de fundo da tela de cadastro */       
+         /* imagem de fundo da tela de cadastro */       
         background-size: 100% 100%; /* função que preenche a imagem por toda a tela */
         margin: 0;
     }
@@ -112,3 +112,5 @@ input, textarea /* estilização das textareas do formulário */
     {
         color: gray;
     }
+
+    
