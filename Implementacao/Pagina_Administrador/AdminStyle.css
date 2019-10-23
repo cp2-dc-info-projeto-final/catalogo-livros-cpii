@@ -39,3 +39,28 @@ body {
     margin-top: 10%;
     color: white
   }
+
+
+  button.css3button {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #ffffff;
+    padding: 5px 10px;
+    background: -webkit-gradient(
+      linear, left top, left bottom,
+      from(#6e6e6e),
+      to(#464647));
+    background: linear-gradient(
+      top,
+      #6e6e6e 0%,
+      #464647);
+    border-radius: 0px;
+    border: 1px solid #000000;
+    box-shadow:
+      0px 1px 3px rgba(000,000,000,0),
+      inset 0px 0px 1px rgba(255,255,255,1);
+    text-shadow:
+      0px -1px 0px rgba(0,0,0,1),
+      0px 1px 0px rgba(255,255,255,0.3);
+  }
+  

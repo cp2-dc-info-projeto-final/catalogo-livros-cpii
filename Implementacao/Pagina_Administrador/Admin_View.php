@@ -128,98 +128,98 @@
       
       <td>Hide You</td>
       <td>Kosheen</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>.38.45</td>
       <td>Thievery Corporation</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Fix You</td>
       <td>Coldplay</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Maps</td>
       <td>Yeah Yeah Yeahs</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Ask me how I am</td>
       <td>Snow Patrol</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>PMT</td>
       <td>Deeper Water</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Four Kicks</td>
       <td>Kings of Leon</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Gravity</td>
       <td>Embrace</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Lyla</td>
       <td>Oasis</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Look What You've Done</td>
       <td>Jet</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Chicken Payback</td>
       <td>The Bees</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Walkabout</td>
       <td>Blue States</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
      
       <td>Oh My God</td>
       <td>Kaiser Chiefs</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
 
     <tr>
       
       <td>Rock Scene</td>
       <td>Athlete</td>
-      <td>Tornar Administrador</td>
+      <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
     </tr>
   </tbody>
 </table>
