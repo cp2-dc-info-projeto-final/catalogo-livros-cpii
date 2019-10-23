@@ -3,8 +3,8 @@
       require "Home_Ctrl.php";
 ?>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />  <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
+ 
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta charset="utf-8">
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -17,6 +17,9 @@
       <!-- Main Style -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css">
       <!-- Responsive Style -->
+
+      <link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   
   <title>
     Home
@@ -60,6 +63,14 @@
       </div>
     </div>
   </nav>
+
+
+
+              
+
+
+
+
 
 
   
