@@ -46,6 +46,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
         <?php
+        require 'Admin_Ctrl.php';
           if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
           ?>
         <li class="nav-item">
@@ -67,7 +68,7 @@
             <a class="nav-link" href="#">Livros Salvos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="../Sair_Ctrl.php">Sair</a>
+            <a class="nav-link" href="../Sair.php">Sair</a>
           </li>
         </ul>
       </div>
@@ -86,11 +87,11 @@
 
         let dados = {
             datasets: [{
-                data: [10, 20, 30, 30, 47, 34, 12],
-                backgroundColor: ['red', 'yellow', 'purple', 'white', 'gray', 'green', 'orange']
+                data: [<?php foreach ($Maiores_generos as $genero){ echo $genero['qtd'].','; } ?>],
+                backgroundColor: ['red', 'yellow', 'purple', 'white', 'gray', 'green', 'orange',]
             }],
 
-            labels: ['Ficção', 'Fantasia', 'Economia', 'Drama', 'Mangá', 'HQs', 'Romance']      };
+            labels: [<?php foreach ($Maiores_generos as $genero){ echo '\''.$genero['nome'].'\', '; } ?>]      };
 
         let opcoes = {
             cutoutPercentage: 40
