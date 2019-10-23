@@ -84,7 +84,6 @@ a:hover {
 }
 
 .slider .handle {
-    background: rgba(20, 20, 20, 0.26);
     position: absolute;
     top: 0;
     height: 251px;
