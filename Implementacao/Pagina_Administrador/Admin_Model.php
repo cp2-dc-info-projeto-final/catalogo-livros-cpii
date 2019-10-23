@@ -30,6 +30,9 @@ function Generos(){
         if($id!=$maiorgenero1){
         $sql="SELECT COUNT(id_usuario) FROM genero_usuario WHERE id_genero=$id";
         $result=mysqli_query($conn, $sql);
+        if ($result==false){
+            die(mysqli_error($conn));
+        }
         while($row=mysqli_fetch_assoc($result)){
             $qtd=$row['COUNT(id_usuario)'];
 
@@ -73,26 +76,40 @@ function Generos(){
         $outros=$row['COUNT(id_usuario)'];
     }
     $maiores_generos=[];
+    if (isset($nome1)){
     $maiores['qtd']=$maior1;
     $maiores['nome']=$nome1;
     array_push($maiores_generos, $maiores);
+    }
+    if (isset($nome2)){
     $maiores['qtd']=$maior2;
     $maiores['nome']=$nome2;
     array_push($maiores_generos, $maiores);
+    }
+    if (isset($nome3)){
     $maiores['qtd']=$maior3;
     $maiores['nome']=$nome3;
     array_push($maiores_generos, $maiores);
+    }
+    if (isset($nome4)){
     $maiores['qtd']=$maior4;
     $maiores['nome']=$nome4;
     array_push($maiores_generos, $maiores);
+    }
+    if (isset($nome5)){
     $maiores['qtd']=$maior5;
     $maiores['nome']=$nome5;
     array_push($maiores_generos, $maiores);
+    }
+    if (isset($nome6)){
     $maiores['qtd']=$maior6;
     $maiores['nome']=$nome6;
     array_push($maiores_generos, $maiores);
+    }
+    if (isset($outros)){
     $maiores['qtd']=$outros;
     $maiores['nome']='Outros';
     array_push($maiores_generos, $maiores);
+    }
     return($maiores_generos);
 } 
