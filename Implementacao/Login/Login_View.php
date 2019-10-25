@@ -46,7 +46,8 @@
       session_start();
       if (array_key_exists('erro', $_SESSION) == true){
         $erro = $_SESSION["erro"];
-        echo "$erro";
+				echo "$erro";
+				session_unset();
         }
     ?>
 
