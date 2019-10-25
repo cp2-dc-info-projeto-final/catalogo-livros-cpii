@@ -121,6 +121,7 @@
       <th>Nome</th>
       <th>Status</th>
       <th>Ação</th>
+      <th>Id</th>
     </tr>
   </thead>
 
@@ -130,6 +131,7 @@
       <td>Hide You</td>
       <td>Kosheen</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -137,6 +139,7 @@
       <td>.38.45</td>
       <td>Thievery Corporation</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -144,6 +147,7 @@
       <td>Fix You</td>
       <td>Coldplay</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -151,6 +155,7 @@
       <td>Maps</td>
       <td>Yeah Yeah Yeahs</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -158,6 +163,7 @@
       <td>Ask me how I am</td>
       <td>Snow Patrol</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -165,6 +171,7 @@
       <td>PMT</td>
       <td>Deeper Water</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -172,6 +179,7 @@
       <td>Four Kicks</td>
       <td>Kings of Leon</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -179,6 +187,7 @@
       <td>Gravity</td>
       <td>Embrace</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -186,6 +195,7 @@
       <td>Lyla</td>
       <td>Oasis</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -193,6 +203,7 @@
       <td>Look What You've Done</td>
       <td>Jet</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -200,6 +211,7 @@
       <td>Chicken Payback</td>
       <td>The Bees</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -207,6 +219,7 @@
       <td>Walkabout</td>
       <td>Blue States</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -214,6 +227,7 @@
       <td>Oh My God</td>
       <td>Kaiser Chiefs</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
 
     <tr>
@@ -221,6 +235,7 @@
       <td>Rock Scene</td>
       <td>Athlete</td>
       <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
