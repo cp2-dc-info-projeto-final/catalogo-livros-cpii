@@ -113,3 +113,27 @@ function Generos(){
     }
     return($maiores_generos);
 } 
+
+function Tipo_Usuarios(){
+    $conn=get_connection();
+    if($conn===false){
+        die("Falha na conexão". mysqli_connect_error());
+ }
+ $usuarios=[];
+ if (isset($_SESSION['id'])){
+$dif=$_SESSION['id'];
+ $sql="SELECT * FROM usuario WHERE id!=$dif";}
+ else{  
+     $sql="SELECT * FROM usuario" ;
+      }
+ $result=mysqli_query($conn, $sql);
+ while($row=mysqli_fetch_assoc($result)){
+     $usuario['id']=$row['id'];
+     $usuario['email']=$row['email'];
+     $usuario['nome']=$row['nome'];
+     $usuario['moderador']=$row['moderador'];
+     array_push($usuarios, $usuario);
+ 
+}
+ return $usuarios;
+}
