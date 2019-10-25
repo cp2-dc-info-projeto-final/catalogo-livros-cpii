@@ -73,6 +73,8 @@
 						<input class="input100" type="password" name="senha" placeholder="Digite sua senha" required="required">
 						<span class="focus-input100" data-symbol="&#xf190;"></span>
 					</div>
+
+					<br>
 					
 					
 					<div class="container-login100-form-btn">
