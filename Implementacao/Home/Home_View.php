@@ -90,7 +90,7 @@
           <?php
             
             $livros=organiza_livros_generos($genero['id']);
-           array_reverse($livros);
+            shuffle($livros);
             foreach($livros as $livro){
 
           ?>
