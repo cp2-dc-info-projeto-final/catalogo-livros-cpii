@@ -39,7 +39,7 @@
           if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
           ?>
         <li class="nav-item">
-            <a class="nav-link" href="#">Página do Moderador</a>
+            <a class="nav-link" href="../Pagina_Administrador/Admin_View.php">Página do Moderador</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Adicionar Livro</a>

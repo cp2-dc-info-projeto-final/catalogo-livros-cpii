@@ -120,9 +120,9 @@ function Tipo_Usuarios(){
         die("Falha na conexão". mysqli_connect_error());
  }
  $usuarios=[];
- if (isset($_SESSION['id'])){
-$dif=$_SESSION['id'];
- $sql="SELECT * FROM usuario WHERE id!=$dif";}
+  if (isset($_SESSION['id'])){
+  $dif=$_SESSION['id'];
+  $sql="SELECT * FROM usuario WHERE id!=$dif";}
  else{  
      $sql="SELECT * FROM usuario" ;
       }
@@ -143,10 +143,11 @@ function muda_usuario($id, $tipo){
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
  }
+ if ($tipo==1 || $tipo==0){
  if ($tipo==1){
-  $sql="UPDATE FROM usuario SET moderador=0 WHERE id=$id";
- } else $sql= "UPDATE usuario SET moderador=1 WHERE id=$id ";
- if (!mysqli_query($conn, $sql)){
-     die(mysqli_error($conn));
- }
+  $sql="UPDATE usuario SET moderador=0 WHERE id=$id";
+ } else { $sql= "UPDATE usuario SET moderador=1 WHERE id=$id ";}
+ mysqli_query($conn, $sql);
+} else {die('<html><title>ERRO!</title><h1><p style=\'color:red;\'>ERRO!!!</p></h1></html>');}
+ 
 }
