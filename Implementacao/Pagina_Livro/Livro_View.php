@@ -1,5 +1,5 @@
 
-<?php
+<<?php
   require 'Livro_Ctrl.php';
   if($livro===false){
     echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Livro não encontrado na base de dados!!!</p></h1></html>';
@@ -106,11 +106,11 @@
                   <li><span class="pro-title" id="editora"> Editora: </span> <span class="pro-detail"><?php echo $livro['editora']?></span></li>
                 </ul>
               </div>
-              <a href="#" class="btn btn-common">Salvar Livro</a>
+              <a href="Livro_Ctrl2.php?id1=<?php echo $_GET['id']?>" class="btn btn-common"><?php if ($verifica==true){?>Remover da Lista<?php } else if($verifica==false){?>Salvar Livro<?php } ?></a>
               <?php
               if (isset($_SESSION['email']) && $_SESSION['moderador']==1) {
               ?>
-              <a href="#" class="btn btn-danger"> Remover Livro</a>
+              <a href="Livro_Ctrl3.php?id1=<?php echo $_GET['id']?>" class="btn btn-danger"> Remover Livro</a>
               <?php
               }
               ?>
@@ -127,3 +127,5 @@
   </body>
 </html>
           <?php } ?>
+              
+              

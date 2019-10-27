@@ -65,7 +65,46 @@
   </nav>
 
 
+  <?php if (isset($lista) && count($lista)>0){ ?>
+  
+  <div class="contain">
+    <div class="slider">
+      <h3>Minha Lista</h3>
+      <span onmouseover="scrollEsquerda(23)" onmouseout="clearScroll(23)" class="handle handlePrev active">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+      </span>
 
+      <div id=" echo 'scroller-'23" class="row">
+        <div class="row__inner">
+          <?php
+            shuffle($lista);
+            foreach($lista as $livro){
+
+          ?>
+              
+          <div class="gui-card" onclick="window.location.href='../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>'">
+            <div class="gui-card__media">
+                  <img class="gui-card__img" src="../<?php echo $livro['imagem']?>" alt=""  />
+            </div>
+              <div class="gui-card__details">
+                <div class="gui-card__title">
+                    <?php echo $livro['titulo']?>
+                </div>
+              </div>
+            </div>
+              <?php    
+            }
+          
+          ?>     
+
+                                                                 
+        </div>
+      </div>
+      <span onmouseover="scrollDireita(23)" onmouseout="clearScroll()"  class="handle handleNext active">
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </span>
+    </div>
+          <?php } ?>
               
 
 
@@ -95,7 +134,7 @@
 
           ?>
               
-              <div class="gui-card" onclick="window.open('../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>')">
+              <div class="gui-card" onclick="window.location.href='../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>'">
                 <div class="gui-card__media">
                   <img class="gui-card__img" src="../<?php echo $livro['imagem']?>" alt=""  />
                 </div>
