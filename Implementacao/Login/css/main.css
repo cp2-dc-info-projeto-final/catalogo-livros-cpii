@@ -62,7 +62,7 @@ a:focus {
 
 a:hover {
 	text-decoration: none;
-  color: #a64bf4;
+  color: black;
 }
 
 /*---------------------------------------------*/
@@ -295,11 +295,11 @@ iframe {
 }
 
 .input100:focus + .focus-input100::after {
-  color: #a64bf4;
+  color: black;
 }
 
 .has-val.input100 + .focus-input100::after {
-  color: #a64bf4;
+  color: black;
 }
 
 

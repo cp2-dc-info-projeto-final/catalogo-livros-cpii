@@ -10,8 +10,9 @@
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="selectstyle.css">
+  
   <script src="js/index.js"></script>
-  <script src="select.js"></script>
 
   <!-- Custom styles for this template -->
   <link href="css/heroic-features.css" rel="stylesheet">
@@ -67,6 +68,49 @@
 
 
 
+  
+
+
+  <?php if (isset($lista) && count($lista)>0){ ?>
+  
+  <div class="contain">
+    <div class="slider">
+      <h3>Minha Lista</h3>
+      <span onmouseover="scrollEsquerda(23)" onmouseout="clearScroll(23)" class="handle handlePrev active">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+      </span>
+
+      <div id=" echo 'scroller-'23" class="row">
+        <div class="row__inner">
+          <?php
+            shuffle($lista);
+            foreach($lista as $livro){
+
+          ?>
+              
+          <div class="gui-card" onclick="window.location.href='../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>'">
+            <div class="gui-card__media">
+                  <img class="gui-card__img" src="../<?php echo $livro['imagem']?>" alt=""  />
+            </div>
+              <div class="gui-card__details">
+                <div class="gui-card__title">
+                    <?php echo $livro['titulo']?>
+                </div>
+              </div>
+            </div>
+              <?php    
+            }
+          
+          ?>     
+
+                                                                 
+        </div>
+      </div>
+      <span onmouseover="scrollDireita(23)" onmouseout="clearScroll()"  class="handle handleNext active">
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </span>
+    </div>
+          <?php } ?>
               
 
 
@@ -96,7 +140,7 @@
 
           ?>
               
-              <div class="gui-card" onclick="window.open('../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>')">
+              <div class="gui-card" onclick="window.location.href='../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>'">
                 <div class="gui-card__media">
                   <img class="gui-card__img" src="../<?php echo $livro['imagem']?>" alt=""  />
                 </div>
@@ -122,26 +166,38 @@
       }
     ?>
 <br><br><br><br>
-    <p><strong>Selecione 3 opções:</strong></p>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 1<br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 2 <br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 3 <br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 4 <br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 5 <br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 6<br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 7 <br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 8 <br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 9 <br>
-      <input class='checkbox_genero' type='checkbox'/> Gênero 10 <br>
-
-  </div>
 
  
+<div class="selectforms">
+<h4>Altere seus gêneros favoritos!</h4>
+<form>
+ 
+  <select name="select-simples-grande-sem-busca" class="ls-select" style="width:170px" data-search="false">
+    <option value="ac">Acre</option>
+    <option value="al">Alagoas</option>
+    ...
+  </select>
+</form>
+
+<form>
+  <select name="select-simples-grande-sem-busca" class="ls-select" style="width:170px" data-search="false">
+    <option value="ac">Acre</option>
+    <option value="al">Alagoas</option>
+    ...
+  </select>
+</form>
+
+<form>
+  <select name="select-simples-grande-sem-busca" class="ls-select" style="width:170px" data-search="false">
+    <option value="ac">Acre</option>
+    <option value="al">Alagoas</option>
+    ...
+  </select>
+</form>
+</div>
 
 
-
-
-
+<script src="select.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
