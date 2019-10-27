@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/index.js"></script>
+  <script src="select.js"></script>
 
   <!-- Custom styles for this template -->
   <link href="css/heroic-features.css" rel="stylesheet">
@@ -39,7 +40,7 @@
           if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
           ?>
         <li class="nav-item">
-            <a class="nav-link" href="#">Página do Moderador</a>
+            <a class="nav-link" href="../Pagina_Administrador/Admin_View.php">Página do Moderador</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Adicionar Livro</a>
@@ -120,8 +121,27 @@
     <?php
       }
     ?>
+<br><br><br><br>
+    <p><strong>Selecione 3 opções:</strong></p>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 1<br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 2 <br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 3 <br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 4 <br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 5 <br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 6<br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 7 <br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 8 <br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 9 <br>
+      <input class='checkbox_genero' type='checkbox'/> Gênero 10 <br>
 
   </div>
+
+ 
+
+
+
+
+
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>

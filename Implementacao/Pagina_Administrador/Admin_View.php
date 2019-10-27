@@ -1,4 +1,7 @@
-<?php //if (isset($_SESSION['email']) && $_SESSION['moderador']==1){ ?>
+<?php 
+session_start();
+//if (isset($_SESSION['email']) && $_SESSION['moderador']==1){ 
+  require 'Admin_Ctrl.php' ?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -46,17 +49,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-        <?php
-        require 'Admin_Ctrl.php';
-          if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
-          ?>
         <li class="nav-item">
             <a class="nav-link" href="#">Página do Moderador</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Adicionar Livro</a>
           </li>
-          <?php } ?>
           <li class="nav-item">
             <a class="nav-link" href="../Home/Home_View.php">Home
               <span class="sr-only">(current)</span>
@@ -129,11 +127,11 @@
   <tbody>
     <tr>
       
-    <?php foreach($usuarios as $usuario) { ?>
+    <?php  foreach($usuarios as $usuario) { ?>
       <td><?php echo $usuario['nome'];  ?></td>
       <td><?php echo $usuario['email'];  ?></td>
       <?php if ($usuario['moderador']==1) { ?>
-      <td><button type="button" name="" value="" class="css3button" onclick="window.location.href'Admin_Ctrl2.php?id=<?php echo $usuario['id']?>&moderador=1'">Rebaixar</button></td>
+      <td><button type="button" name="" value="" class="css3button" onclick="window.location.href='Admin_Ctrl2.php?id=<?php echo $usuario['id']?>&moderador=1'">Rebaixar</button></td>
       <?php } else { ?>
         <td><button type="button" name="" value="" class="css3button" onclick="window.location.href='Admin_Ctrl2.php?id=<?php echo $usuario['id']?>&moderador=0'">Tornar Administrador</button></td>
       <?php } ?>
@@ -158,4 +156,4 @@
 
 </html>
 
-      <?php// } else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
+      <?php //} else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
