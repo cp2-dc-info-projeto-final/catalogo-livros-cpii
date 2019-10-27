@@ -27,13 +27,7 @@ session_start();
         
         
         
-    } else {
-        $msg="<p style='color:red;'>Já existe um livro com esta classificação</p>";
-        $_SESSION["msg"]= $msg;
-        header("Location: AdLivro_View.php");
-        exit();
-        
-    }
+    } 
 
     session_unsset();
     

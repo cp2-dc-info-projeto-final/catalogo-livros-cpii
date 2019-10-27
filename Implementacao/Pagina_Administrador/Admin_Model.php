@@ -145,6 +145,8 @@ function muda_usuario($id, $tipo){
  }
  if ($tipo==1){
   $sql="UPDATE FROM usuario SET moderador=0 WHERE id=$id";
- } else $sql= "UPDATE FROM usuario SET moderador=1 WHERE id=$id";
- mysqli_query($conn, $sql);
+ } else $sql= "UPDATE usuario SET moderador=1 WHERE id=$id ";
+ if (!mysqli_query($conn, $sql)){
+     die(mysqli_error($conn));
+ }
 }

@@ -133,9 +133,9 @@
       <td><?php echo $usuario['nome'];  ?></td>
       <td><?php echo $usuario['email'];  ?></td>
       <?php if ($usuario['moderador']==1) { ?>
-      <td><button type="button" name="" value="" class="css3button" onclick="window.location('Admin_Ctrl2.php?id=<?php echo $usuario['id']?>?moderador=1')">Rebaixar</button></td>
+      <td><button type="button" name="" value="" class="css3button" onclick="window.location.href'Admin_Ctrl2.php?id=<?php echo $usuario['id']?>&moderador=1'">Rebaixar</button></td>
       <?php } else { ?>
-        <td><button type="button" name="" value="" class="css3button" onclick="window.location('Admin_Ctrl2.php?id=<?php echo $usuario['id']?>?moderador=0')">Tornar Administrador</button></td>
+        <td><button type="button" name="" value="" class="css3button" onclick="window.location.href='Admin_Ctrl2.php?id=<?php echo $usuario['id']?>&moderador=0'">Tornar Administrador</button></td>
       <?php } ?>
       <td><?php echo $usuario['id'];  ?></td>
       </tr>
