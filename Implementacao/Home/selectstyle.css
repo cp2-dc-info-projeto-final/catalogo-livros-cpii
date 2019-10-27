@@ -1,0 +1,22 @@
+form{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    background-color: black;
+}
+
+.selectforms{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+select.items{
+    background-color: black;
+    color: white;
+}
+
+select{
+    border: 2px;
+    border-color: rgb(31, 31, 31); 
+}

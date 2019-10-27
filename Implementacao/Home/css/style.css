@@ -70,6 +70,7 @@ a:hover {
 .contain {
   width: 100%;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .slider {
@@ -232,6 +233,7 @@ a:hover {
   -webkit-transform: translate3d(125px, 0, 0);
           transform: translate3d(125px, 0, 0);
 }
+
 
 
 
