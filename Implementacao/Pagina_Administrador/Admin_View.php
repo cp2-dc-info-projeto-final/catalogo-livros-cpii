@@ -1,3 +1,4 @@
+<?php //if (isset($_SESSION['email']) && $_SESSION['moderador']==1){ ?>
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -132,9 +133,9 @@
       <td><?php echo $usuario['nome'];  ?></td>
       <td><?php echo $usuario['email'];  ?></td>
       <?php if ($usuario['moderador']==1) { ?>
-      <td><button type="button" name="" value="" class="css3button">Rebaixar</button></td>
+      <td><button type="button" name="" value="" class="css3button" onclick="window.location('Admin_Ctrl2.php?id=<?php echo $usuario['id']?>?moderador=1')">Rebaixar</button></td>
       <?php } else { ?>
-        <td><button type="button" name="" value="" class="css3button">Tornar Administrador</button></td>
+        <td><button type="button" name="" value="" class="css3button" onclick="window.location('Admin_Ctrl2.php?id=<?php echo $usuario['id']?>?moderador=0')">Tornar Administrador</button></td>
       <?php } ?>
       <td><?php echo $usuario['id'];  ?></td>
       </tr>
@@ -156,3 +157,5 @@
 
 
 </html>
+
+      <?php// } else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>

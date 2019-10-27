@@ -137,3 +137,14 @@ $dif=$_SESSION['id'];
 }
  return $usuarios;
 }
+
+function muda_usuario($id, $tipo){
+    $conn=get_connection();
+    if($conn===false){
+        die("Falha na conexão". mysqli_connect_error());
+ }
+ if ($tipo==1){
+  $sql="UPDATE FROM usuario SET moderador=0 WHERE id=$id";
+ } else $sql= "UPDATE FROM usuario SET moderador=1 WHERE id=$id";
+ mysqli_query($conn, $sql);
+}
