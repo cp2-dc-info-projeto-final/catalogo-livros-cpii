@@ -58,7 +58,7 @@ function associa_genero($livro_id, $genero_id){
         die("Falha na conexão". mysqli_connect_error());
     }
     
-    $sql= "INSERT INTO genero_livro(idlivro, idgenero) VALUES ($livro_id, $genero_id )";
+    $sql= "INSERT INTO genero_livro(id_livro, id_genero) VALUES ($livro_id, $genero_id )";
     if (!mysqli_query($conn, $sql))
     {
         die("Erro ao associar gênero" . mysqli_error($conn));

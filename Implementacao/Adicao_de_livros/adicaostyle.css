@@ -1,37 +1,55 @@
-body /* estilização do corpo do site como um todo */
-    { 
-        background-image: url("backgroundlivros.jpg"); /* imagem de fundo da tela de cadastro */       
-        ; /* função para não repetir a imagem */
-        background-size: 100% 100%  /* função que preenche a imagem por toda a tela */
-    }
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); 
+  }
+  
+  @font-face {
+    font-family: Poppins-SemiBold;
+    src: url('../fonts/poppins/Poppins-SemiBold.ttf'); 
+  }
+  
+
+body{
+    background-color: black
+}
 
 form /* estilização da tag form do formulário */
     {
         font-size: 16px; /* tamanho padrão da fonte */
         max-width: 500px; /* largura do conteúdo no geral */
-        margin: 10px; /* margem da tag */
-        background: rgba(0,0,0,0.9); /* a cor do formulário em formato RGBA e a opacidade (0.7) */
+        margin: 0 auto; /* margem da tag */
+        background: white; /* a cor do formulário em formato RGBA e a opacidade (0.7) */
         padding: 10px 10px 10px 20px; /* preenchimento do conteúdo do form */
-        border-radius: 3px; /* forma arredondada da borda e seu tamanho */
+        border-radius:10px; /* forma arredondada da borda e seu tamanho */
         text-align: left; 
         margin-top: 5%; /* distância do form para o topo da página */
-        
+    
 
     } 
 
 h1 /* estilização do título do form (Cadastro) */
     {
-        color: #FFFFFF; /* cor da palavra */
+        color: black; /* cor da palavra */
         opacity:1; /* opacidade do título */
-        font-family: Arial, Helvetica, sans-serif; /* fontes para o título, em ordem de preferência */
+        /* fontes para o título, em ordem de preferência */
     }
 
 input /* estilização das textareas do formulário */
     {
         background-color: #808080; /* cor de fundo do input */
-        color: #FFFFFF; /* cor do texto do input */
+        color: black; /* cor do texto do input */
         font-size: 15px; /* tamanho da fonte do input */
-        font-family: Arial, Helvetica, sans-serif;
+       
         width: 350px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
@@ -44,9 +62,9 @@ input /* estilização das textareas do formulário */
     .autor input /* estilização das textareas do formulário */
     {
         background-color: #808080; /* cor de fundo do input */
-        color: #FFFFFF; /* cor do texto do input */
+        color: black; /* cor do texto do input */
         font-size: 15px; /* tamanho da fonte do input */
-        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do input, por ordem de preferência */
+       
         width: 350px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
@@ -57,9 +75,9 @@ input /* estilização das textareas do formulário */
     .editora input /* estilização das textareas do formulário */
     {
         background-color: #808080; /* cor de fundo do input */
-        color: #FFFFFF; /* cor do texto do input */
+        color: black; /* cor do texto do input */
         font-size: 15px; /* tamanho da fonte do input */
-        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do input, por ordem de preferência */
+     
         width: 350px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
@@ -71,15 +89,16 @@ input /* estilização das textareas do formulário */
     {
         
         background-color: #808080; /* cor de fundo da textarea*/
-        color: #FFFFFF; /* cor do texto da textarea*/
+        color: black; /* cor do texto da textarea*/
         font-size: 15px; /* tamanho da fonte da textarea*/
-        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte da textarea, por ordem de preferência*/
+         /* tipo de fonte da textarea, por ordem de preferência*/
         height: 170px; /* altura da textarea */
-        width: 480px; /* largura das textareas */
+        width: 450px; /* largura das textareas */
         padding: 10px; /* preenchimento das textareas */
         opacity: 1; /* opacidade do campo referente às textareas */
         border-radius: 5px; /* forma arredondada e tamanho das bordas das textareas */
-        border-color: #808080;
+        
+       
         
     }   
     
@@ -90,15 +109,16 @@ input /* estilização das textareas do formulário */
 
 .enviar input, .btn /* estilização do botão prosseguir */
     {
-        background-color: #B22222; /* cor de fundo do botão */
+        background-color: black; /* cor de fundo do botão */
         opacity: 1; /* opacidade do botão */
         height: 43px; /* altura do botão */
         width: 200px; /* largura do botão */
         margin-left: 56%; /* margem para a esquerda do botão */       
         font-weight: bold; /* característica da fonte */
-        border-radius: 5px; /* forma arredondada e tamanho da borda do botão */
+        border-radius: 19px; /* forma arredondada e tamanho da borda do botão */
         color: #FFFFFF; /* cor da fonte do botão */
-        font-family: Arial, Helvetica, sans-serif; /* tipo de fonte do botão, por ordem de preferência*/
+        margin-bottom: 7%
+    
 
     }
     .div-genero
