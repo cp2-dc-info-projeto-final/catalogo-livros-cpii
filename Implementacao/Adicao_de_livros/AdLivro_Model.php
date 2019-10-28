@@ -7,7 +7,6 @@ function cadastra_livro($titulo, $autor, $editora, $imagem, $sinopse){
         die("Falha na conexão". mysqli_connect_error());
     }
 
-        
             $sql="INSERT INTO livro (titulo, autor, editora, imagem, sinopse) VALUES
             ('$titulo', '$autor', '$editora', '$imagem', '$sinopse')";
     
