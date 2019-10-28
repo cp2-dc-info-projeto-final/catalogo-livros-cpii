@@ -68,10 +68,9 @@
           </li>
           <?php } ?>
           <li class="nav-item">
-            <a class="nav-link" href="#">Editar Perfil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Livros Salvos</a>
+            <a class="nav-link" href="../Home/Home_View.php">Home
+              <span class="sr-only">(current)</span>
+            </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../Sair.php">Sair</a>

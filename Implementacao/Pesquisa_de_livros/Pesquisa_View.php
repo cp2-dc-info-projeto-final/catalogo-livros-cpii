@@ -12,6 +12,12 @@
     <link rel="stylesheet" type="text/css" href="pesquisa_style.css">
     <script src="../js/external/jquery/jquery.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
+  
+    
+    <!-- Main Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
     
     <script>
 
@@ -70,12 +76,6 @@
             <a class="nav-link" href="../Home/Home_View.php">Home
               <span class="sr-only">(current)</span>
             </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Editar Informações</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Livros Salvos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../Sair.php">Sair</a>

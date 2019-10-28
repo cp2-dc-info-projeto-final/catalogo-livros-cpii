@@ -6,36 +6,46 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Cadastro</title> <!-- nome na aba da página -->
-      <link rel="stylesheet" type="text/css" href="cadastrostyle.css"> <!-- hyperlink para a conexão com o CSS-->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
   </head>
   
-    <body> <!-- tag pra início do corpo do site -->
-
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Catálogo de Livros</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="../Login/Login_View.php">Login</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+  <body style="background-color: black;"> <!-- tag pra início do corpo do site -->
 
 
 
 
     <form action="Cadastro_Ctrl.php" method="post"> <!-- estrutura form que agrupa todo o forumulário -->
 
-      <h1>Cadastro</h1> <!-- título no topo do formulário -->
+    <div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form validate-form">
+					<span class="login100-form-title p-b-59">
+						Cadastro
+					</span>
       <?php
       session_start();
       if(array_key_exists('erro', $_SESSION) == true){
@@ -46,23 +56,30 @@
       ?>
       
 
-      <p class="nome"> <!-- classe referente ao campo do nome no formulário -->
-        <input type="text" placeholder="Nome completo:" name="nome" required="required"> <!-- caixa para inserção do nome -->
-      </p>
+      <div class="wrap-input100 validate-input" data-validate="Name is required">
+						<span class="label-input100">Nome</span>
+						<input class="input100" type="text" name="name" placeholder="Digite seu nome">
+						<span class="focus-input100"></span>
+					</div>
 
 
-      <p class="email"> <!-- classe referente ao campo do e-mail no formulário -->
-        <input type="email" placeholder="E-mail:" name="email" required="required"> <!-- caixa para receber o e-mail do usuário a ser cadastrado -->
-      </p>
+          <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<span class="label-input100">E-mail</span>
+						<input class="input100" type="text" name="email" placeholder="Insira seu e-mail">
+						<span class="focus-input100"></span>
      
 
-      <p class="senha"> <!-- classe referente à senha no formulário -->
-        <input type="password" placeholder="Senha:" name="senha" required="required"> <!-- campo para colocar a senha do usuário -->
-        </p>
-        
-      <p class="confirmasenha">  
-        <input type="password" placeholder="Confirmar senha:" name="confirmasenha" required="required"> <!-- campo para a confirmação de senha no cadastro -->
-      </p>
+      <div class="wrap-input100 validate-input">
+						<span class="label-input100">Senha</span>
+						<input class="input100" type="password" name="senha"  required="required" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" required="required">
+						<span class="label-input100">Confirmar Senha</span>
+						<input class="input100" type="password" name="confirmasenha" required="required" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
 
 
           <h5>Escolha 3 Gêneros Favoritos:</h5>
@@ -94,12 +111,24 @@
             ?>
           </select>
 
-        <br><br>
-        <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
-          <input type="submit" name="enviar" value="Prosseguir"> <!-- botão para prosseguir para a próxima fase do cadastro -->
-        </p>
-        <a class="login" href="../Login/Login_View.php">Login</a> 
+          <br><br><br>
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Cadastrar
+							</button>
+						</div>
 
+						<a href="../Login/Login_View.php" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+							Login
+							<i class="fa fa-long-arrow-right m-l-5"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
 
 
         </div>
@@ -108,6 +137,25 @@
     </form> <!-- fechamento da tag form -->
 
 
+
+
+
+    <!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
   </body><!-- fechamento da tag body -->
 </html>
