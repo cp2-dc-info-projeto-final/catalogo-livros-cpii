@@ -1,8 +1,8 @@
 <?php
  require "Login_Model.php";
  session_start();
-    $email=preg_replace('/[^[:alpha:]_]/', '',$_POST['login']);
-    $senha=preg_replace('/[^[:alpha:]_]/', '',$_POST['login']);
+    $email=$_POST['email'];
+    $senha=$_POST['senha'];
 
     $_SESSION['email']= $email;
     session_unset();
