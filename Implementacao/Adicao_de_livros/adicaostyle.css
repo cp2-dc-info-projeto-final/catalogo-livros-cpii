@@ -42,6 +42,7 @@ h1 /* estilização do título do form (Cadastro) */
         color: black; /* cor da palavra */
         opacity:1; /* opacidade do título */
         /* fontes para o título, em ordem de preferência */
+        text-align: center;
     }
 
 input /* estilização das textareas do formulário */
