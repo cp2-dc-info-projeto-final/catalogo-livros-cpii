@@ -42,8 +42,8 @@ function organiza_livros_generos($id_genero){
         $livro["imagem"]=$row['imagem'];
         array_push($livros, $livro);   
     }
-    return $livros;
     mysqli_close($conn);
+    return $livros;
 }
 
 function lista($id_usuario){
@@ -61,5 +61,6 @@ function lista($id_usuario){
      $livro['imagem']=$row['imagem'];
      array_push($lista, $livro);
  }
+ mysqli_close($conn);
  return $lista;
 }

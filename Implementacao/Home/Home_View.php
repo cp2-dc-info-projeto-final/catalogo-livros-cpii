@@ -71,16 +71,16 @@
   
 
 
-  <?php if (isset($lista) && count($lista)>0){ ?>
+  <?php if (isset($lista) && count($lista)>0){ $list=0; ?>
   
   <div class="contain">
     <div class="slider">
       <h3>Minha Lista</h3>
-      <span onmouseover="scrollEsquerda(23)" onmouseout="clearScroll(23)" class="handle handlePrev active">
+      <span onmouseover="scrollEsquerda(<?php echo $list ?>)" onmouseout="clearScroll()" class="handle handlePrev active">
         <i class="fa fa-caret-left" aria-hidden="true"></i>
       </span>
 
-      <div id=" echo 'scroller-'23" class="row">
+      <div id="<?php echo 'scroller-'.$list?>" class="row">
         <div class="row__inner">
           <?php
             shuffle($lista);
@@ -106,7 +106,7 @@
                                                                  
         </div>
       </div>
-      <span onmouseover="scrollDireita(23)" onmouseout="clearScroll()"  class="handle handleNext active">
+      <span onmouseover="scrollDireita(<?php echo $list ?>)" onmouseout="clearScroll(<?php echo $list ?>)"  class="handle handleNext active">
         <i class="fa fa-caret-right" aria-hidden="true"></i>
       </span>
     </div>
@@ -170,29 +170,39 @@
  
 <div class="selectforms">
 <h4>Altere seus gêneros favoritos!</h4>
-<form>
+<?php 
+if (array_key_exists('erro', $_SESSION)){
+  echo $_SESSION['erro'];
+  unset($_SESSION['erro']);
+
+} ?>
+<form action="Home_Ctrl2.php" method="post">
  
-  <select name="select-simples-grande-sem-busca" class="ls-select" style="width:170px" data-search="false">
-    <option value="ac">Acre</option>
-    <option value="al">Alagoas</option>
-    ...
+  <select name="select1" class="ls-select" style="width:170px" data-search="false">
+  <?php
+            foreach($up as $select){
+            echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+      } ?>
   </select>
-</form>
 
-<form>
-  <select name="select-simples-grande-sem-busca" class="ls-select" style="width:170px" data-search="false">
-    <option value="ac">Acre</option>
-    <option value="al">Alagoas</option>
-    ...
-  </select>
-</form>
 
-<form>
-  <select name="select-simples-grande-sem-busca" class="ls-select" style="width:170px" data-search="false">
-    <option value="ac">Acre</option>
-    <option value="al">Alagoas</option>
-    ...
+  <select name="select2" class="ls-select" style="width:170px" data-search="false">
+  <?php
+            foreach($up as $select){
+            echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+      } ?>
   </select>
+
+
+  <select name="select3" class="ls-select" style="width:170px" data-search="false">
+  <?php
+            foreach($up as $select){
+            echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+      } ?>
+  </select>
+  <p class="prosseguir"> <!-- classe referente ao botão de prosseguir no formulário -->
+          <input type="submit" name="enviar" value="Prosseguir"> <!-- botão para prosseguir para a próxima fase do cadastro -->
+        </p>
 </form>
 </div>
 

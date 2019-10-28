@@ -2,11 +2,12 @@
 session_start();
  require ("Gen_ctrl.php");
 
-    $titulo = $_POST["titulo"];
-    $autor = $_POST["autor"];
-    $editora = $_POST["editora"];
-    $sinopse = $_POST["sinopse"];
-    $imagem = $_FILES["arquivo"]["name"];    
+    $titulo=preg_replace('/[^[:alpha:]_]/', '',$_POST['titulo']);
+    $autor = preg_replace('/[^[:alpha:]_]/', '',$_POST['autor']);
+    $editora=preg_replace('/[^[:alpha:]_]/', '',$_POST['editora']);
+    $sinopse = preg_replace('/[^[:alpha:]_]/', '',$_POST['sinopse']);
+    $imagem=preg_replace('/[^[:alpha:]_]/', '',$_FILES["arquivo"]["name"]);
+        
     
     $insert_id = cadastra_livro($titulo, $autor, $editora, $imagem, $sinopse);
     if (!is_null($insert_id))

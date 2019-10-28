@@ -39,9 +39,19 @@
            die("Falha na conexão". mysqli_connect_error($conn));
     }
     $sql="INSERT INTO genero_usuario(id_usuario, id_genero) VALUES ($id_usuario, $id_genero)";
-    if(!mysqli_query($conn, $sql)){
-        die("Falha na conexão". mysqli_connect_error($conn));
-    };
+    mysqli_query($conn, $sql);
+    mysqli_close($conn);
+ }
+
+ function Limpa($id){
+    include_once "../conexao.php";
+    $conn=get_connection();
+   
+       if($conn===false){
+           die("Falha na conexão". mysqli_connect_error($conn));
+    }
+    $sql="DELETE FROM genero_usuario WHERE id_usuario=$id";
+    mysqli_query($conn, $sql);
     mysqli_close($conn);
  }
  ?>
