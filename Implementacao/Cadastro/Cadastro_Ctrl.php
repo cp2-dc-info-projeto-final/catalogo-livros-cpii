@@ -1,10 +1,10 @@
 <?php
 require "../Adicao_de_livros/Gen_Ctrl.php";
 require "Cadastro_Model.php";
-$nome =$_POST["nome"];
-$email =$_POST["email"];
-$senha = $_POST["senha"];
-$confirmasenha=$_POST["confirmasenha"];
+$nome =addslashes($_POST['nome']);
+$email =addslashes($_POST['email']);
+$senha = addslashes($_POST['senha']);
+$confirmasenha=addslashes($_POST['confirmasenha']);
 
 session_start();
 if ($senha != $confirmasenha) {    

@@ -2,13 +2,14 @@
 session_start();
  require ("Gen_ctrl.php");
 
-    $titulo = $_POST["titulo"];
-    $autor = $_POST["autor"];
-    $editora = $_POST["editora"];
-    $sinopse = $_POST["sinopse"];
-    $imagem = $_FILES["arquivo"]["name"];    
+    $titulo=addslashes($_POST['titulo']);
+    $autor = addslashes($_POST['autor']);
+    $editora=addslashes($_POST['editora']);
+    $sinopse =addslashes($_POST['sinopse']);
+    $imagem=$_FILES["arquivo"]["name"];
+        $img=addslashes($imagem);
     
-    $insert_id = cadastra_livro($titulo, $autor, $editora, $imagem, $sinopse);
+    $insert_id = cadastra_livro($titulo, $autor, $editora, $img, $sinopse);
     if (!is_null($insert_id))
     {
         foreach ($generos as $genero) {
