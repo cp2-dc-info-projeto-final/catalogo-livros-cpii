@@ -56,17 +56,18 @@
       ?>
       
 
-      <div class="wrap-input100 validate-input" data-validate="Name is required">
+      <div class="wrap-input100 validate-input" required="required">
 						<span class="label-input100">Nome</span>
 						<input class="input100" type="text" name="name" placeholder="Digite seu nome">
 						<span class="focus-input100"></span>
 					</div>
 
 
-          <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+          <div class="wrap-input100 validate-input" required="required">
 						<span class="label-input100">E-mail</span>
 						<input class="input100" type="text" name="email" placeholder="Insira seu e-mail">
 						<span class="focus-input100"></span>
+					</div>
      
 
       <div class="wrap-input100 validate-input">
