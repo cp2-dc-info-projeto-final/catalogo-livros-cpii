@@ -21,29 +21,29 @@
     
     <script>
 
-      $(document).ready( function() {
+     // $(document).ready( function() {
 
       // Single Select
-      $( "#busca" ).autocomplete({
-        source: function( request, response ) {
+     // $( "#busca" ).autocomplete({
+       // source: function( request, response ) {
           // Fetch data
-          $.ajax({
-          url: "Pesquisa_autocomplete.php",
-          type: 'post',
-          dataType: "json",
-          data: request,
-          success: function( data ) {
-            response( data );
-          },
-          error: function(jqXHR, textStatus, errorThrown){
-                     console.log( textStatus);          
-                     console.log(jqXHR.responseText)        
-          }
-          });
-        }
-      });
+        //  $.ajax({
+        //  url: "Pesquisa_autocomplete.php",
+        //  type: 'post',
+        //  dataType: "json",
+        //  data: request,
+         // success: function( data ) {
+         //   response( data );
+        //  },
+        //  error: function(jqXHR, textStatus, errorThrown){
+        //             console.log( textStatus);          
+        //             console.log(jqXHR.responseText)        
+        //  }
+        //  });
+      //  }
+    //  });
 
-    });
+  //  });
       
    </script>
 
