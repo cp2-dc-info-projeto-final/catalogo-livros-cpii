@@ -58,7 +58,7 @@
 
       <div class="wrap-input100 validate-input" required="required">
 						<span class="label-input100">Nome</span>
-						<input class="input100" type="text" name="name" required="required" placeholder="Digite seu nome">
+						<input class="input100" type="text" name="nome" required="required" placeholder="Digite seu nome">
 						<span class="focus-input100"></span>
 					</div>
 
