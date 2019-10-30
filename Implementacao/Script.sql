@@ -270,8 +270,7 @@ VALUES
 ('Capítulos de História', 'Marcella Lopes Guimarães', 'Aymará', 'Imagens_Livros/180/capdehist.jpg', 'Editado pela Aymará Educação, Capítulos de História: o trabalho com fontes faz parte da Coleção Mundo das Ideias, que tem como objetivo promover estratégias, procedimentos, propostas, informações, ideias relevantes para os professores de diversas áreas e segmentos da educação básica. Para a diretora editorial da Aymará, Ana Paula Piccoli, faltava História para a Coleção, e segundo a autora, que está em seu terceiro livro, a História pode resgatar os laços entre o passado e o presente.'),
 ('Geografia para o ensino médio', 'Demétrio Magnoli', 'Atual', 'Imagens_Livros/181/geoensinomedio.jpg', 'Livro didático direcionado aos alunos do Ensino Médio.'),
 ('Geografia: sociedade e cotidiano', 'Maria Adaiulza Albuquerque', 'Escala Educacional', 'Imagens_Livros/182/geosocio.jpg', 'Oferece ao aluno instrumentos para identificar diferentes realidades e probleamatizá-las; Aplica conceitos da Geografia no estudo de características, processos, dinâmicas e problemas do mundo contemporâneo. Possibilita, ao aluno, a reflexão sobre o contexto geográfico em que está inserido e comparação com outras realidades. Propicia o desenvolvimento de habilidades de leitura e expressão em diferentes linguagens (textual, oral, imagética e cartográfica). Incentiva as abordagens multi, pluri e interdisciplinares no momento de discussão de determinados temas e conteúdos da Geografia, os quais favorecem ou requerem a aproximação com outras disciplinas escolares e áreas do conhecimento. Disponibiliza meios para que alunos e professores ampliem seu universo cultural com sugestões de filmes e leituras pertinentes aos conteúdos desenvolvidos na coleção. Oferece ao professor de Geografia recursos para desenvolver conceitos e conteúdos da disciplina, sem a pretensão de esgotar as discussões da ciência geográfica, tampouco da geografia escolar. Fornece ao professor, por meio do manual, material que contribui para a sua formação continuada e orientações práticas para o uso da coleção em sala de aula.'),
-('Novo olhar: Geografia', 'Rogério Martinez', 'FTD', 'Imagens_Livros/183/geonovoolhar.jpg', 'Livro didático direcionado aos alunos do Ensino Médio.'),
-(''),
+('Novo olhar: Geografia', 'Rogério Martinez', 'FTD', 'Imagens_Livros/183/geonovoolhar.jpg', 'Livro didático direcionado aos alunos do Ensino Médio.');
 
 INSERT INTO genero_livro (id_livro, id_genero) VALUES 
 (1, 15),
@@ -566,5 +565,5 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (182, 9),
 (182, 19),
 (183, 9),
-(183, 19),
+(183, 19);
 
