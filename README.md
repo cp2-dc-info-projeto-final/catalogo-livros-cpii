@@ -14,33 +14,21 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 	- Victor Silva Mello Kallut
 	- Vítor Pacheco de Oliveira
 
-### Proposta do Projeto:
-	
-	- O Catálogo de Livros CPII tem como proposta auxiliar a biblioteca do Campus Duque de Caxias com a consulta de seu acervo por parte dos alunos, assim como ajuda-los com a procura de títulos que mais os agradam.
+### Proposta
+- O Catálogo de Livros CPII tem como proposta auxiliar a biblioteca do Campus Duque de Caxias com a consulta de seu acervo por parte dos alunos, assim como ajuda-los com a procura de títulos que mais os agradam.
+- Stakeholder: Alan Cruz
+[Proposta](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md)
 
-	- Stakeholder: Alan Cruz, bibliotecário.
-	
-	<a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md">Proposta</a>
+### Entrevista
+(https://github.com/cp2-dc-info-projeto-final/bananinhas-receitas/blob/master/Modelo/Entrevista.md)
 
-   
-### Requisitos
+### [Audio da Entrevista](https://github.com/cp2-dc-info-projeto-final/bananinhas-receitas/tree/master/Modelo/AudioEntrevista)
 
-	##### [Requisitos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md) 
+### [Requisitos](https://github.com/cp2-dc-info-projeto-final/bananinhas-receitas/blob/master/Modelo/Requisitos.md) 
 
-	##### [Audio da Entrevista](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3)
+### [CDU](https://github.com/cp2-dc-info-projeto-final/bananinhas-receitas/blob/master/Modelo/Casosdeuso.md)
 
-	##### [Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md)
+### [Casos de Uso] ![Alt Text](https://github.com/cp2-dc-info-projeto-final/bananinhas-receitas/blob/master/Modelo/ImagensModelo/diagrama%20de%20casos%20de%20uso_%20bananinhas.jpeg)
 
-### Casos de Uso
-
-	[Diagrama de Casos de Uso - Editável](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.drawio)
-
-	<a href=”https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.png”> Diagrama de Casos de Uso - Imagem</a>
-
-
-### Modelagem
-
-	(https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/Script.sql)[Script SQL]
-
-### Manual de Utilização
+### [Modelagem] ![Alt Text](https://github.com/cp2-dc-info-projeto-final/bananinhas-receitas/blob/master/Modelo/ImagensModelo/grama_ER_de_banco_de_dados_page-0001.jpeg)
 
