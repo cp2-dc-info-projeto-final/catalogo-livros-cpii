@@ -14,7 +14,7 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 	- Victor Silva Mello Kallut
 	- Vítor Pacheco de Oliveira
 
- Proposta do Projeto:
+### Proposta do Projeto:
 	
 	- O Catálogo de Livros CPII tem como proposta auxiliar a biblioteca do Campus Duque de Caxias com a consulta de seu acervo por parte dos alunos, assim como ajuda-los com a procura de títulos que mais os agradam.
 
@@ -23,24 +23,24 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 	<a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md">Proposta</a>
 
    
-#### Requisitos
+### Requisitos
 
-	[Requisitos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md)
+	##### [Requisitos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md) 
 
-	[Áudio da Entrevista](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3)
+	##### [Audio da Entrevista](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3)
 
-	[Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md)
+	##### [Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md)
 
-#### Casos de Uso
+### Casos de Uso
 
 	[Diagrama de Casos de Uso - Editável](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.drawio)
 
 	<a href=”https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.png”> Diagrama de Casos de Uso - Imagem</a>
 
 
-#### Modelagem
+### Modelagem
 
 	(https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/Script.sql)[Script SQL]
 
-#### Manual de Utilização
+### Manual de Utilização
 
