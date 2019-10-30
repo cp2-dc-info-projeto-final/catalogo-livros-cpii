@@ -20,7 +20,7 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 
 	- Stakeholder: Alan Cruz, bibliotecário.
 	
-	[Proposta do Projeto](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md)
+	<a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md">Proposta</a>
 
    
 #### Requisitos
