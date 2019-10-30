@@ -14,7 +14,7 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 	- Victor Silva Mello Kallut
 	- Vítor Pacheco de Oliveira
 
-#### Proposta do Projeto:
+ Proposta do Projeto:
 	
 	- O Catálogo de Livros CPII tem como proposta auxiliar a biblioteca do Campus Duque de Caxias com a consulta de seu acervo por parte dos alunos, assim como ajuda-los com a procura de títulos que mais os agradam.
 
@@ -43,3 +43,4 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 	(https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/Script.sql)[Script SQL]
 
 #### Manual de Utilização
+
