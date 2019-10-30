@@ -20,26 +20,26 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 
 	- Stakeholder: Alan Cruz, bibliotecário.
 	
-	<a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md">Proposta do Projeto
+	[Proposta do Projeto](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md)
 
    
 #### Requisitos
 
-	<a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md">Requisitos</a>
+	[Requisitos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md)
 
-	<a href=”https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3”>Áudio da Entrevista</a>
+	[Áudio da Entrevista](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3)
 
-	<a href=”https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md”> Entrevista Transcrita</a>
+	[Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md)
 
 #### Casos de Uso
 
-	<a href=”https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.drawio”>Diagrama de Casos de Uso - Editável</a>
+	[Diagrama de Casos de Uso - Editável](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.drawio)
 
 	<a href=”https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.png”> Diagrama de Casos de Uso - Imagem</a>
 
 
 #### Modelagem
 
-	<a href=”https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/Script.sql”>Script SQL</a>
+	(https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/Script.sql)[Script SQL]
 
 #### Manual de Utilização
