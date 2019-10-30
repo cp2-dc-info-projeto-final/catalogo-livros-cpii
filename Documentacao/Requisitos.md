@@ -5,25 +5,17 @@
 - [RNF 02](#rnf-02)
 - [RNF 03](#rnf-03)
 - [RNF 04](#rnf-04)
-- [RNF 05](#rnf-05)
-- [RNF 06](#rnf-06)
 
 ### RNF 01    
 + O software deve conter as linguagens: HTML, CSS, JavaScript, PHP e SQL;
 
 ### RNF 02
-+ Deve possibilitar cadastro de diferentes usuários ao mesmo tempo;
-
-### RNF 03
-+ Deve possibilitar o login de diferentes usuários ao mesmo tempo;
-
-### RNF 04
 + Deve ter ligação com o banco de dados;
 
-### RNF 05
+### RNF 04
 + Deve possuir suporte para plataformas Web;
 
-### RNF 06
+### RNF 04
 + Deve suportar o armazenamento de ao menos 250 livros;
 
 ## Requisitos Funcionais
@@ -47,6 +39,7 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
   	        2. Autor;
   	        3. Sinopse;
   	        4. Editora;
+            5. Imagem de Capa.
 
 
     + Informações do Usuário:
@@ -55,7 +48,7 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 
   	        1. Nome;
   	        2. E-mail;   
-  	        3. Senha;
+  	        3. Senha.
 
 
     + Informações do sistema quanto ao moderador:
@@ -66,25 +59,31 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 
 
 ### RF 02
-+ O Usuário terá acesso somente a suas respectivas informações, informando e-mail e senha.
++ O Usuário terá acesso somente às suas informações, informando e-mail e senha.
 
 ### RF 03
 + O Moderador poderá ter acesso ao sistema informando e-mail e senha. 
 
 ### RF 04
-+ Livros
-
-    * O Moderador gerencia os livros contidos na biblioteca catalogando-os, alterando suas informações ou excluindo-os dos registros;
-    * O Moderador cadastra os livros da biblioteca e as informações são armazenadas em um banco de dados.
++ O Usuário/Moderador poderá alterar os gêneros de seu interesse.
 
 ### RF 05
-+ Os livros, após cadastrados no sistema, possuirão suas informações disponibilizadas aos Usuários.
++ Livros
+
+    * O Moderador gerencia os livros contidos na biblioteca catalogando-os ou excluindo-os dos registros;
+    * O Moderador cadastra os livros da biblioteca e as informações são armazenadas em um banco de dados.
 
 ### RF 06
-+ Os livros serão divididos em categorias.
++ Os livros, após cadastrados no sistema, possuirão suas informações disponibilizadas aos Usuários.
 
 ### RF 07
-+ O algoritmo fará recomendações por conteúdo baseada em preferências de gênero
++ Os livros serão divididos em categorias, baseados em seus gêneros.
 
 ### RF 08
-+ O moderador poderá cadastrar outros moderadores.
++ O algoritmo fará recomendações por conteúdo baseada em preferências de gênero.
+
+### RF 09
++ O moderador poderá tornar outros usuários moderadores.
+
+### RF 010
++ O moderador deverá ter acesso a uma lista de gêneros mais populares no sistema.
