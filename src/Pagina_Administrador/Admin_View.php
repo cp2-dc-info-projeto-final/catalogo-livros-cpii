@@ -113,8 +113,8 @@ session_start();
   <thead>
     <tr>
       
-      <th></th>
       <th>Nome</th>
+      <th>E-mail</th>
       <th>Ação</th>
       <th>Id</th>
     </tr>
