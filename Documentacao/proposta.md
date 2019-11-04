@@ -15,7 +15,7 @@ Criar uma interface amigável e intuitiva, fazendo o usuário acessar todas as f
 - Ser capaz de executar consultas ao acervo do software;   
 
 ### Stakeholder:
-* Nome: Allan
+* Nome: Alan
 * Profissão: Bibliotecário
 * Cargo/Empresa: Bibliotecário no Colégio Pedro II Campus Duque de Caxias
 * Data da Entrevista: 25/04/2019

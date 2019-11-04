@@ -1,29 +1,36 @@
-### README
+# README
 
-##### Integrantes (IN303):
-    * Victor Silva Mello Kallut (Elaborador da Ideia do Projeto/Programador)
-    * César Veríssimo Ferreira Júnior (Designer - Diagrama de Casos de Uso/Programador)
-    * Vítor Pacheco de Oliveira (Entrevistador do Steakholder/Programador)
-    * Luiz Gustavo da Silva Oliveira (Elaborador do Banco de Dados/Programador)
+## Catálogo de Livros CPII
 
-##### Descrição do Projeto:
-    O indicador de livros possui o objetivo de armazenar os títulos presentes na biblioteca do Colégio Pedro II no campus Duque de Caxias — além de outros variados. Além deste, o software fornece indicações de obras com base nas preferências do usuário.
+Projeto Modelo de Projeto Final do Curso Técnico Integrado em Desenvolvimento de Sistemas do Colégio Pedro II - Campus Duque de Caxias.
 
-###### Casos de Uso:
- * <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Casos%20de%20Uso.md">Casos de Uso</a>
- 
- * <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/diagrama%20casos%20de%20uso.png">Diagrama de Casos de Uso</a>
+### Objetivo
 
-###### Requisitos:
-* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md">Requisitos</a>
+O Objetivo deste software é, através de indicações de livros presentes no catálogo da biblioteca do Colégio Pedro II Campus Duque de Caxias, proporcionar aos usuários um contato mais confortável à literatura, bem como enriquecimento cultural.
 
-###### Entrevista:
-* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3">Áudio da Entrevista</a>
-* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md">Ata da Entrevista</a>
+### Integrantes:
+- César Veríssimo Ferreira Junior
+- Luiz Gustavo da Silva Oliveira
+- Victor Silva Mello Kallut
+- Vítor Pacheco de Oliveira
 
-###### Proposta do Projeto:
-* <a href="https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md">Proposta do Projeto</a>
+### Proposta
+- O Catálogo de Livros CPII tem como proposta auxiliar a biblioteca do Campus Duque de Caxias com a consulta de seu acervo por parte dos alunos, assim como ajuda-los com a procura de títulos que mais os agradam.
+- Stakeholder: Alan Cruz
+- [Proposta](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta%20projeto%20final.md)
 
+### Requisitos
+- [Requisitos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md)
+- [Áudio da Entrevista](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/AUDIO-ENTREVISTA.mp3)
+- [Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md)
 
+### Casos de Uso
 
+- [Casos de Uso](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Casos%20de%20Uso.md)
+- [Diagrama de Casos de Uso - Imagem](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.png)
+- [Diagrama de Casos de Uso - Editável](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Diagrama%20Casos%20de%20Uso%20-%20Cat%C3%A1logo%20de%20Livros.drawio)
 
+### Modelagem
+- [Script SQL](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/Script.sql)
+
+### Manual de Utilização
