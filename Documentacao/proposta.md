@@ -12,7 +12,8 @@ Criar uma interface amigável e intuitiva, fazendo o usuário acessar todas as f
 
 - Apresentar uma listagem dos principais livros existentes na biblioteca do Colégio Pedro II Campus Duque de Caxias, tais como outros títulos;  
 - Categorizar os títulos com base em seus gêneros;
-- Ser capaz de executar consultas ao acervo do software;   
+- Mostrar ao usuário livros baseados em gêneros de sua escolha;
+- Ser capaz de executar consultas ao acervo do software.   
 
 ### Stakeholder:
 * Nome: Alan
