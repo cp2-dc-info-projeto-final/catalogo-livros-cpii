@@ -48,7 +48,7 @@ session_start();
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link" href="#">Adicionar Livro</a>
+            <a class="nav-link" href="../Adicao_de_Livros/AdLivro_View.php">Adicionar Livro</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="../Home/Home_View.php">Home
