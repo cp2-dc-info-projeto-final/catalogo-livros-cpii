@@ -71,6 +71,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <?php
+          session_start();
           if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
           ?>
         <div class="menu">
