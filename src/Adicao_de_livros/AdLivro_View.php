@@ -11,9 +11,9 @@
     <!-- Main Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- Responsive Style -->
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+    
 
-    <link rel="stylesheet" type="text/css" href="livrostyle.css">
+    <link rel="stylesheet" type="text/css" href="adicaostyle.css">
     
     <title>Adição de Livros</title> <!-- nome na aba da página -->
       <link rel="stylesheet" type="text/css" href="adicaostyle.css"> <!-- hyperlink para a conexão com o CSS-->
@@ -62,31 +62,29 @@
     <body> <!-- tag pra início do corpo do site -->
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container" id="menusuperior">
-      
+    <div class="container">
       <a class="navbar-brand" href="#">Catálogo de Livros</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+        <!-- código php | oculta o item se não tiver o atributo moderador como = 1 -->
           <?php
           session_start();
           if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
           ?>
-        <div class="menu">
         <li class="nav-item">
-            <a class="nav-link" href="#">Página do Moderador</a>
+            <a class="nav-link" href="../Pagina_Administrador/Admin_View.php">Página do Moderador</a>
           </li>
+          
+          <?php } ?>
+        <!-- fim do if php -->
           <li class="nav-item">
-            <a class="nav-link" href="#">Adicionar Livro</a>
-          </li>
-          <li class="nav-item" >
             <a class="nav-link" href="../Pesquisa_de_livros/Pesquisa_View.php">Pesquisar
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <?php } ?>
           <li class="nav-item">
             <a class="nav-link" href="../Home/Home_View.php">Home
               <span class="sr-only">(current)</span>
@@ -96,18 +94,16 @@
             <a class="nav-link" href="../Sair.php">Sair</a>
           </li>
         </ul>
-          </div>
       </div>
-
     </div>
-
   </nav>
+    
 
     <form action="AdLivro_Ctrl.php" method="POST" enctype="multipart/form-data"> <!-- estrutura form que agrupa todo o forumulário -->
 
       <h1>Adição de Livros</h1> <!-- título no topo do formulário -->
       <?php
-        session_start();
+        
         if(array_key_exists('msg', $_SESSION) == true){
             $msg = $_SESSION["msg"];
             echo "$msg";

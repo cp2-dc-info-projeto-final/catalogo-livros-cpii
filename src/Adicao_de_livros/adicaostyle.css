@@ -20,7 +20,8 @@
   
 
 body{
-    background-color: black
+    background-color: black;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 form /* estilização da tag form do formulário */
@@ -33,6 +34,7 @@ form /* estilização da tag form do formulário */
         border-radius:10px; /* forma arredondada da borda e seu tamanho */
         text-align: left; 
         margin-top: 5%; /* distância do form para o topo da página */
+        
     
 
     } 
@@ -149,7 +151,4 @@ input /* estilização das textareas do formulário */
         margin-left: 2px;
     }
 
-    #generos-selecionados
-    {
-        display: block;
-    }
+   

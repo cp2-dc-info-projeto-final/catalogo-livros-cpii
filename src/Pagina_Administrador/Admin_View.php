@@ -27,9 +27,7 @@ session_start();
       <!-- Main Style -->
       <link rel="stylesheet" type="text/css" href="assets/css/main.css">
       <!-- Responsive Style -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link rel="stylesheet" href="css/bootstrap.min.css">
-      <link rel="stylesheet" href="css/style.css">
+  
       <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
 
 

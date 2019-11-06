@@ -43,30 +43,30 @@
   <body>
 
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container" id="menusuperior">
-      
+    <div class="container">
       <a class="navbar-brand" href="#">Catálogo de Livros</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
+        <!-- código php | oculta o item se não tiver o atributo moderador como = 1 -->
           <?php
           if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
           ?>
-        <div class="menu">
         <li class="nav-item">
-            <a class="nav-link" href="#">Página do Moderador</a>
+            <a class="nav-link" href="../Pagina_Administrador/Admin_View.php">Página do Moderador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Adicionar Livro</a>
+            <a class="nav-link" href="../Adicao_de_Livros/AdLivro_View.php">Adicionar Livro</a>
           </li>
-          <li class="nav-item" >
+          <?php } ?>
+        <!-- fim do if php -->
+          <li class="nav-item">
             <a class="nav-link" href="../Pesquisa_de_livros/Pesquisa_View.php">Pesquisar
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <?php } ?>
           <li class="nav-item">
             <a class="nav-link" href="../Home/Home_View.php">Home
               <span class="sr-only">(current)</span>
@@ -76,11 +76,8 @@
             <a class="nav-link" href="../Sair.php">Sair</a>
           </li>
         </ul>
-          </div>
       </div>
-
     </div>
-
   </nav>
 
     </header>
