@@ -62,16 +62,19 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-        <?php
-          if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
+        <!-- código php | oculta o item se não tiver o atributo moderador como = 1 -->
+          <?php
+          session_start();
+          if (isset($_SESSION['moderador']) && $_SESSION['moderador']==1){
           ?>
         <li class="nav-item">
-            <a class="nav-link" href="#">Página do Moderador</a>
+            <a class="nav-link" href="../Pagina_Administrador/Admin_View.php">Página do Moderador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Adicionar Livro</a>
+            <a class="nav-link" href="../Adicao_de_Livros/AdLivro_View.php">Adicionar Livro</a>
           </li>
           <?php } ?>
+        <!-- fim do if php -->
           <li class="nav-item">
             <a class="nav-link" href="../Home/Home_View.php">Home
               <span class="sr-only">(current)</span>
@@ -84,6 +87,7 @@
       </div>
     </div>
   </nav>
+
      <br>
      
   

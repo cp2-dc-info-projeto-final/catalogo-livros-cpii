@@ -42,7 +42,7 @@
             <a class="nav-link" href="../Pagina_Administrador/Admin_View.php">Página do Moderador</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Adicionar Livro</a>
+            <a class="nav-link" href="../Adicao_de_Livros/AdLivro_View.php">Adicionar Livro</a>
           </li>
           <?php } ?>
         <!-- fim do if php -->
