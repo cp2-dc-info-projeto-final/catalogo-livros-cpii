@@ -195,10 +195,21 @@ if (array_key_exists('erro', $_SESSION)){
             echo "<option value=".$select["id"].">".$select["nome"]."</option>";
       } ?>
   </select>
+
+  <select name="select4" class="ls-select" style="width:170px" data-search="false">
+  <?php
+            foreach($up as $select){
+            echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+      } ?>
+  </select>
+
   <br>
   <p class="prosseguir">
           <input type="submit" name="enviar" value="Confirmar"> 
         </p>
+        
+
+
 </form>
 </div>
 

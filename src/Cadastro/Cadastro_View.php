@@ -83,7 +83,7 @@
 					</div>
 
 
-          <h5>Escolha 3 Gêneros Favoritos:</h5>
+          <h5>Escolha 4 Gêneros Favoritos:</h5>
 
       <div class ="select">
 
@@ -105,6 +105,14 @@
           </select>
 
           <select name="select3" style="font-size:12px">
+            <?php  
+            foreach($generos as $select){
+              echo "<option value=".$select["id"].">".$select["nome"]."</option>";
+            }
+            ?>
+		  </select>
+		  
+		  <select name="select4" style="font-size:12px">
             <?php  
             foreach($generos as $select){
               echo "<option value=".$select["id"].">".$select["nome"]."</option>";

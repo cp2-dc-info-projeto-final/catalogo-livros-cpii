@@ -13,8 +13,9 @@ if ($senha != $confirmasenha) {
    header ("Location:Cadastro_View.php");
     exit();
 }
-if ($_POST['select1']==$_POST['select2'] || $_POST['select2']==$_POST['select3'] || $_POST['select1']==$_POST['select3']){
-    $erro ="<p style='color:red;'>Por favor, insira 3 gêneros diferentes.</p>";
+if ($_POST['select1']==$_POST['select2'] || $_POST['select2']==$_POST['select3'] || $_POST['select1']==$_POST['select3'] 
+|| $_POST['select4']==$_POST['select1'] || $_POST['select4']==$_POST['select2'] || $_POST['select4']==$_POST['select3'] ){
+    $erro ="<p style='color:red;'>Por favor, insira 4 gêneros diferentes.</p>";
     $_SESSION['erro']=$erro;
     header ("Location:Cadastro_View.php");
     exit();
@@ -29,7 +30,7 @@ if ($resposta==false){
 } else {
     session_unset();
     foreach ($generos as $genero) {
-        if ($_POST['select1']==$genero['id'] || $_POST['select2']==$genero['id'] || $_POST['select3']==$genero['id']) {
+        if ($_POST['select1']==$genero['id'] || $_POST['select2']==$genero['id'] || $_POST['select3']==$genero['id'] || $_POST['select4']==$genero['id']) {
                 
             Usuario_Genero($resposta, $genero['id']);
         }

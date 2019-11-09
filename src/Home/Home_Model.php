@@ -8,7 +8,7 @@ function Preferencia_Usuario($email){
     if($conn===false){
         die("Falha na conexão". mysqli_connect_error());
  }
- $sql="SELECT id_genero, g.nome FROM usuario AS u JOIN  genero_usuario AS k ON u.id=k.id_usuario JOIN genero AS g ON k.id_genero=g.id WHERE email='$email' UNION SELECT id, nome FROM genero";
+ $sql="SELECT id_genero, g.nome FROM usuario AS u JOIN  genero_usuario AS k ON u.id=k.id_usuario JOIN genero AS g ON k.id_genero=g.id WHERE email='$email'";
  $result=mysqli_query($conn, $sql);
  if ($result===false){die (mysqli_error($conn));}
  $preferencias=[];
