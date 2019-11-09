@@ -105,7 +105,8 @@
       require "Pesquisa_Ctrl.php";
 
       if (isset($_GET["chave"])) {
-        $chave = $_GET["chave"]; ?>
+        $chave = $_GET["chave"]; }
+        else {$chave='';} ?>
         
           <?php
         $resultado = buscar_livros($chave);
@@ -121,8 +122,6 @@
        <?php }
        ?>
        <div></div>
-<?php
-      } ?>
     
    
     

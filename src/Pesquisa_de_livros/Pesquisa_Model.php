@@ -10,7 +10,7 @@
     $sql = "SELECT id, imagem FROM livro WHERE 
     titulo LIKE '%$chave%'
     OR autor LIKE '%$chave%'
-    OR editora LIKE '%$chave%'";
+    OR editora LIKE '%$chave%' ORDER BY titulo ASC";
     
     $livros = [];
 
