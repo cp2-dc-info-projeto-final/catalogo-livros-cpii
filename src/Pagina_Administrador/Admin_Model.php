@@ -111,6 +111,7 @@ function Generos(){
     $maiores['nome']='Outros';
     array_push($maiores_generos, $maiores);
     }
+    mysqli_close($conn);
     return($maiores_generos);
 } 
 
@@ -135,6 +136,7 @@ function Tipo_Usuarios(){
      array_push($usuarios, $usuario);
  
 }
+mysqli_close($conn);
  return $usuarios;
 }
 
@@ -148,6 +150,7 @@ function muda_usuario($id, $tipo){
   $sql="UPDATE usuario SET moderador=0 WHERE id=$id";
  } else { $sql= "UPDATE usuario SET moderador=1 WHERE id=$id ";}
  mysqli_query($conn, $sql);
+ mysqli_close($conn);
 } else {die('<html><title>ERRO!</title><h1><p style=\'color:red;\'>ERRO!!!</p></h1></html>');}
  
 }

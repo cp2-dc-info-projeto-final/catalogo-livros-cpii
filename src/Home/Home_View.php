@@ -106,6 +106,50 @@
       </span>
     </div>
           <?php } ?>
+
+          <?php if (isset($recomendacao) && count($recomendacao)>0){ $rec=-1; ?>
+  
+  <div class="contain">
+    <div class="slider">
+      <h3>Outras Obras de <?php  echo $_SESSION["autor"]?></h3>
+      <!-- função javascript para rolar os livros horizontalmente/Esquerda --> 
+      <span onmouseover="scrollEsquerda(<?php echo $rec ?>)" onmouseout="clearScroll()" class="handle handlePrev active">
+        <i class="fa fa-caret-left" aria-hidden="true"></i>
+      </span>
+
+      <!-- código para embaralhar a ordem de livros --> 
+      <div id="<?php echo 'scroller-'.$rec?>" class="row">
+        <div class="row__inner">
+          <?php
+            shuffle($recomendacao);
+            foreach($recomendacao as $livro){
+
+          ?>
+
+          <!-- sliders de livros da lista -->    
+          <div class="gui-card" onclick="window.location.href='../Pagina_Livro/Livro_View.php?id=<?php echo $livro['id']?>'"> <!-- direciona para a página do livro ao clicar nele --> 
+            <div class="gui-card__media">
+                  <img class="gui-card__img" src="../<?php echo $livro['imagem']?>" alt=""  /> <!-- puxa a imagem do livro no banco de dados --> 
+            </div>
+              <div class="gui-card__details">
+                <div class="gui-card__title">
+                    <?php echo $livro['titulo']?> <!-- puxa o título do livro no banco de dados --> 
+                </div>
+              </div>
+            </div>
+              <?php    
+            }
+          
+          ?>     
+
+      <!-- função javascript para rolar os livros horizontalmente/Direita -->                                                              
+        </div>
+      </div>
+      <span onmouseover="scrollDireita(<?php echo $rec ?>)" onmouseout="clearScroll(<?php echo $rec ?>)"  class="handle handleNext active">
+        <i class="fa fa-caret-right" aria-hidden="true"></i>
+      </span>
+    </div>
+          <?php unset($_SESSION['autor']);} ?>
               
 
 

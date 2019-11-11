@@ -64,3 +64,24 @@ function lista($id_usuario){
  mysqli_close($conn);
  return $lista;
 }
+
+function Recomenda($autor){
+    $conn=get_connection();
+    
+        if($conn===false){
+            die("Falha na conexão". mysqli_connect_error());
+    }
+    $recomendacao=[];
+    $id=$_SESSION['id'];
+    $sql="SELECT id, titulo, imagem FROM livro WHERE autor='$autor' AND id NOT IN (SELECT id_livro FROM lista_usuario WHERE id_usuario=$id)";
+    $result=mysqli_query($conn, $sql);
+    while($row=mysqli_fetch_assoc($result)){
+        $livro['id']=$row['id'];
+        $livro['titulo']=$row['titulo'];
+        $livro['imagem']=$row['imagem'];
+        array_push($recomendacao, $livro);
+    }
+    mysqli_close($conn);
+    return $recomendacao;
+
+}

@@ -7,4 +7,8 @@ $ordem=Preferencia_Usuario($_SESSION['email']);
 $lista=lista($_SESSION['id']);
 } else {$ordem=mostra_generos();}
 $up=mostra_generos();
+if (isset($_SESSION['autor'])){
+    $recomendacao=Recomenda($_SESSION['autor']);
+}
+
 
