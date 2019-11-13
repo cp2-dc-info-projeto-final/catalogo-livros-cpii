@@ -1,4 +1,8 @@
 <html>
+<?php
+          session_start();
+          if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
+          ?>
 
     <meta http-equiv="Content-Type" charset="UTF-8" content="text/html"/> <!-- tag para colocar adaptar o site para a codificação UTF-8 -->
     
@@ -70,15 +74,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
         <!-- código php | oculta o item se não tiver o atributo moderador como = 1 -->
-          <?php
-          session_start();
-          if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
-          ?>
+          
         <li class="nav-item">
             <a class="nav-link" href="../Pagina_Administrador/Admin_View.php">Página do Moderador</a>
           </li>
-          
-          <?php } ?>
         <!-- fim do if php -->
           <li class="nav-item">
             <a class="nav-link" href="../Pesquisa_de_livros/Pesquisa_View.php">Pesquisar
@@ -161,3 +160,4 @@
 
   </body><!-- fechamento da tag body -->
 </html>
+<?php } else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>

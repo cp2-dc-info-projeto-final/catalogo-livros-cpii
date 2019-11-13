@@ -29,8 +29,6 @@ session_start();
         
         
     } 
-
-    session_unsset();
     
     
 ?>    

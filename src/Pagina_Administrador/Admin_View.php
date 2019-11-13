@@ -1,6 +1,6 @@
 <?php 
 session_start();
-//if (isset($_SESSION['email']) && $_SESSION['moderador']==1){ 
+if (isset($_SESSION['email']) && $_SESSION['moderador']==1){ 
   require 'Admin_Ctrl.php' ?>
 <html>
     <head>
@@ -150,4 +150,4 @@ session_start();
 
 </html>
 
-      <?php //} else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
+      <?php } else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
