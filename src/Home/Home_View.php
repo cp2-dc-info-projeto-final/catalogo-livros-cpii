@@ -246,16 +246,15 @@ if (array_key_exists('erro', $_SESSION)){
             echo "<option value=".$select["id"].">".$select["nome"]."</option>";
       } ?>
   </select>
+  
 
-  <br>
-  <p class="prosseguir">
-          <input type="submit" name="enviar" value="Confirmar"> 
-        </p>
-        
-
-
+  <div class="btnconfirmar">
+    <br>
+          <input class="prosseguir" type="submit" name="enviar" value="Confirmar"> 
+  <div>     
 </form>
 </div>
+
 
 
 <script src="select.js"></script>

@@ -3,6 +3,8 @@ form{
     padding: 20px;
     color: white;
     background-color: black;
+    align-items: center;
+    text-align: center;
 }
 
 .selectforms{
@@ -20,3 +22,9 @@ select{
     border: 2px;
     border-color: rgb(31, 31, 31); 
 }
+
+.prosseguir{
+    font-family: Poppins-Regular, sans-serif;
+    align-items: center;
+    text-align: center;
+  }
