@@ -328,11 +328,11 @@ VALUES
 ('80 anos de poesia', 'Mário Quintana', 'Alfaguara', 'Imagens_Livros/238/80anosdepoesia.jpg', 'Esta antologia foi organizada para homenagear os 80 anos de Mario Quintana, comemorados em 30 de julho de 1986, estão reunidos os principais poemas do poeta gaúcho. Apresentados em ordem cronológica, eles atestam a procura de diferentes maneiras de dizer e indicam como o poeta vai optando por uma expressão próxima do coloquialismo, vizinha da prosa. Isto permite ao leitor uma visão geral do percurso poético de Quintana, mestre do percurso poético de Quintana, mestre em estabelecer uma comunicação imediata e efetiva com quem o lê: ao dizer o humano em suas múltiplas facetas, ele fala a todos nós.'),
 ('A angústia da influência: uma teoria da poesia', 'Harold Bloom', 'Imago', 'Imagens_Livros/239/teoriadapoesia.jpg', 'O principal objetivo desse livro é, necessariamente, apresentar a visão crítica de um leitor, tanto no contexto da crítica e da poesia de sua geração, onde as atuais crises delas mais o tocam, quanto no contexto de suas próprias angústias de influência.'),
 ('Poesia e pintura ou pintura e poesia', 'Adma Muhana', 'Edusp', 'Imagens_Livros/240/poesiaepintura.jpg', 'O tratado pictórico-poético de Manuel Pires de Almeida, datado de 1633, principia com uma afirmação que recusa qualquer visão idealista- Grandes são as proporções que têm a tinta e a cor, a pena e o pincel , porque quando se escreve, se pinta e quando se pinta, se escreve . Adma Muhana entende que essa é a chave de compreensão do tratado, cujos originais estão depositados na Torre do Tombo, em Portugal. Neste livro, a pesquisadora apresenta a transcrição atualizada dos originais, cujos trechos em latim foram traduzidos por João Ângelo Oliva Neto, e um estudo introdutório que contextualiza a obra, relacionando-a com outros autores do período, e traça paralelos com a Poética, de Aristóteles, referência importante da poética ocidental. '),
-('Poesia', 'T. S. Eliot', 'Nova Fronteira', 'Imagens_Livros/241/poesiatseliot.jpg', 'A obra poética de uma das vozes fundamentais do cânone ocidental em nova tradução. O conjunto de poemas reunidos neste volume bilíngue corresponde à poesia completa publicada em livro e em edições independentes lançadas em vida de um dos nomes centrais do modernismo. Entre 1917 — com Prufrock e outras observações — e 1939 — com O livro dos gatos sensatos do Velho Gambá —, T.S. Eliot produziu uma obra densa e profunda que, centrada na musicalidade, no ritmo e na sonoridade, revolucionou definitivamente a paisagem literária do século XX. Em 1948, o autor de A terra devastada, um dos mais célebres poemas da língua inglesa, recebeu o prêmio Nobel em reconhecimento à sua "contribuição excepcional e pioneira para a poesia contemporânea". Com organização, tradução e posfácio de Caetano W. Galindo, este volume traz um Eliot ao mesmo tempo cerebral e erudito, marca de sua primeira produção, e um Eliot divertido e travesso, que já na maturidade dedicou aos seus afilhados a famosa série de poemas sobre gatos.');
-
-    
-    
-
+('Poesia', 'T. S. Eliot', 'Nova Fronteira', 'Imagens_Livros/241/poesiatseliot.jpg', 'A obra poética de uma das vozes fundamentais do cânone ocidental em nova tradução. O conjunto de poemas reunidos neste volume bilíngue corresponde à poesia completa publicada em livro e em edições independentes lançadas em vida de um dos nomes centrais do modernismo. Entre 1917 — com Prufrock e outras observações — e 1939 — com O livro dos gatos sensatos do Velho Gambá —, T.S. Eliot produziu uma obra densa e profunda que, centrada na musicalidade, no ritmo e na sonoridade, revolucionou definitivamente a paisagem literária do século XX. Em 1948, o autor de A terra devastada, um dos mais célebres poemas da língua inglesa, recebeu o prêmio Nobel em reconhecimento à sua "contribuição excepcional e pioneira para a poesia contemporânea". Com organização, tradução e posfácio de Caetano W. Galindo, este volume traz um Eliot ao mesmo tempo cerebral e erudito, marca de sua primeira produção, e um Eliot divertido e travesso, que já na maturidade dedicou aos seus afilhados a famosa série de poemas sobre gatos.'),
+('Sob a Redoma', 'Stephen King', 'Objetiva', 'Imagens_Livros/242/sobaredoma.jpg', 'Em Sob a redoma, em um dia como outro qualquer em Chester’s Mill, no Maine, a pequena cidade é subitamente isolada do resto do mundo por um campo de força invisível. Aviões explodem quando tentam atravessá-lo e pessoas trabalhando em cidades vizinhas são separadas de suas famílias. Ninguém consegue entender o que é essa barreira, de onde ela veio e quando – ou se – ela irá desaparecer. Os moradores de Chester’s Mill percebem que terão de lutar por sua sobrevivência. Pessoas morrem e aparelhos eletrônicos entram em pane ao se aproximar da redoma, e a questão só se agrava quando a cidade se vê exposta às graves consequências ecológicas da barreira. Para piorar a situação, James “Big Jim” Rennie, político dissimulado e um dos três membros do conselho executivo da cidade, usa a redoma como um meio de dominar a cidade. Enquanto isso, o veterano da guerra do Iraque isolado na cidade, Dale Barbara, é reincorporado ao serviço militar e promovido à posição de coronel. Big Jim, insatisfeito com a perda de autoridade que tal manobra pode significar, encoraja um sentimento local de pânico para aumentar seu poder de influência. O veterano se une a um grupo de moradores para manter a situação sob controle e impedir que o caos se instaure. Junto a ele estão a proprietária do jornal local, uma enfermeira, uma vereadora e três crianças destemidas. No entanto, Big Jim está disposto até a matar para continuar no poder, apoiado por seu filho, que guarda um segredo a sete chaves. Mas os efeitos da redoma e das manobras políticas de Jim Rennie não são as únicas preocupações dos habitantes. O isolamento expõe os medos e as ambições de cada um, até os sentimentos mais reprimidos. Assim, enquanto correm contra o pouco tempo que têm para descobrir a origem da redoma e uma forma de desfazê-la, ainda terão de combater a crueldade humana em sua forma mais primitiva.'),
+('A escolha dos três', 'Stephen King', 'Suma de letras', 'Imagens_Livros/243/escolhadostres.jpg', 'As cartas revelam aqueles que Roland deverá escolher para ajudá-lo em sua busca: O Prisioneiro, A Dama das Sombras e A Morte. Roland encontra três portas que o levam do Mundo Médio para três épocas diferentes. A primeira o transporta a 1987 e a Eddie Dean, um viciado em heroína. É O Prisioneiro, refém de seu vício. A segunda o transporta à mesma cidade, à década de 1960. A Dama das Sombras que Roland encontra é Odetta Holmes, uma ativista política cuja dupla identidade corresponde à Detta Walker, rebelde e cleptomaníaca. A terceira porta o leva a 1977, onde encontra Jack Mort, A Morte. Jack é um assassino inescrupuloso, responsável pela primeira morte de Jake. Durante seu domínio sobre Jack, o pistoleiro conseguiu evitar a morte de Jake, criando duas linhas de tempo diferentes em sua cabeça e na do menino. Ambos começam a ser dilacerados por essa dualidade, que será um dos temas principais do próximo livro.'),    
+('Pesadelos e paisagens noturnas', 'Stephen King', 'Suma de letras', 'Imagens_Livros/244/pesadelosnoturnos.jpg', 'Em Pesadelos e paisagens noturnas - livro em dois volumes -, Stephen King reúne suas melhores novelas. Histórias “muito estranhas”, nas palavras do mestre do terror, escritas em diferentes épocas, provando sua maestria também em narrativas curtas. Com um total de vinte e três novelas, a coletânea traz todo tipo de curiosidades. Como um relato de Sherlock Holmes no qual o dr. Watson se adianta para solucionar um caso, e a primeira versão da única obra que King escreveu originalmente para televisão. Nesta coleção de histórias curtas, King conduz o leitor ao mais sobrenatural dos mundos. Considerado pela Biblioteca de Nova York um dos cem maiores autores do século, King nos leva a acreditar piamente em seu universo, onde dedos saem de ralos, e dentes famintos e sapos comedores de gente parecem completamente verossímeis.'),    
+('Novembro de 63', 'Stephen King', 'Suma de letras', 'Imagens_Livros/245/novembrode63.jpg', 'A vida pode mudar num instante, e dar uma guinada extraordinária. É o que acontece com Jake Epping, um professor de inglês de uma cidade do Maine. Enquanto corrigia as redações dos seus alunos do supletivo, Jake se depara com um texto brutal e fascinante, escrito pelo faxineiro Harry Dunning. Cinquenta anos atrás, Harry sobreviveu à noite em que seu pai massacrou toda a família com uma marreta. Jake fica em choque... mas um segredo ainda mais bizarro surge quando Al, dono da lanchonete da cidade, recruta Jake para assumir a missão que se tornou sua obsessão: deter o assassinato de John Kennedy. Al mostra a Jake como isso pode ser possível: entrando por um portal na despensa da lanchonete, assim chegando ao ano de 1958, o tempo de Eisenhower e Elvis, carrões vermelhos, meias soquete e fumaça de cigarro.Após interferir no massacre da família Dunning, Jake inicia uma nova vida na calorosa cidadezinha de Jodie, no Texas. Mas todas as curvas dessa estrada levam ao solitário e problemático Lee Harvey Oswald. O curso da história está prestes a ser desviado... com consequências imprevisíveis.Em "Novembro de 63", livro inédito de Stephen King, a viagem no tempo nunca foi tão plausível... e aterrorizante.');
 
 
 
@@ -514,6 +514,7 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (108, 10),
 (109, 3),
 (109, 20),
+(109, 11),
 (110, 3),
 (110, 8),
 (111, 8),
@@ -558,6 +559,7 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (139, 7),
 (140, 8),
 (140, 3),
+(140, 11),
 (141, 15),
 (141, 5),
 (142, 4),
@@ -633,7 +635,6 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (184, 7),
 (185, 7),
 (186, 7),
-(187, 7),
 (187, 7),
 (188, 7),
 (189, 7),
@@ -731,4 +732,11 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (238, 20),
 (239, 20),
 (240, 20),
-(241, 20);
+(241, 20),
+(242, 3),
+(242, 11),
+(243, 3),
+(243, 11),
+(243, 8),
+(244, 3),
+(244, 11);
