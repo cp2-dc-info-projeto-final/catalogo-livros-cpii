@@ -13,7 +13,7 @@
 ![Lista do Usuario](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/listausuario.jpg "Lista do Usuário")
 - Ao salvar o livro, o usuário é direcionado novamente à página Home, podendo checar sua lista pessoal, além de receber recomendações de mais obras baseadas no autor do título previamente salvo.
 
-![Trocar Generos de Interesse](![Lista do Usuário](hhttps://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/trocargenero.jpg "Lista do Usuário") "Trocar Gêneros de Interesse")
+![Trocar Generos de Interesse](hhttps://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/trocargenero.jpg "Lista do Usuário") "Trocar Gêneros de Interesse")
 - Ao final da página, há um campo onde o usuário pode trocar os gêneros que deseja ver em sua página Home.
 
 ![Mudança de Generos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/mudan%C3%A7agenero.jpg "Mudança de Gêneros")
