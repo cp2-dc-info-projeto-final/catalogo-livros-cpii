@@ -80,7 +80,7 @@ O sistema gerencia cadastro e informações dos livros, de usuários e moderador
 + Os livros serão divididos em categorias, baseados em seus gêneros.
 
 ### RF 08
-+ O algoritmo fará recomendações por conteúdo baseada em preferências de gênero.
++ O algoritmo fará recomendações por conteúdo baseada em preferências de gênero/autor.
 
 ### RF 09
 + O moderador poderá tornar outros usuários moderadores.

@@ -6,13 +6,14 @@
 - [CDU 03](#cdu-03---indicação-de-livros)
 - [CDU 04](#cdu-04---pesquisa-de-livros)
 - [CDU 05](#cdu-05---lista-de-livros-salvos)
-- [CDU 06](#cdu-06---consulta-da-lista-de-livros-salvos)
-- [CDU 07](#cdu-07---alteração-de-gêneros-de-interesse)
-- [CDU 08](#cdu-08---gerenciamento-do-acervo)
-- [CDU 09](#cdu-09---adição-de-títulos)
-- [CDU 10](#cdu-10---remoção-de-títulos)
-- [CDU 11](#cdu-11---gráfico-de-gêneros-mais-populares)
-- [CDU 12](#cdu-12---transformação-de-usuários-em-moderadores)
+- [CDU 06](#cdu-06---indicação-por-autores)
+- [CDU 07](#cdu-06---consulta-da-lista-de-livros-salvos)
+- [CDU 08](#cdu-07---alteração-de-gêneros-de-interesse)
+- [CDU 09](#cdu-08---gerenciamento-do-acervo)
+- [CDU 10](#cdu-09---adição-de-títulos)
+- [CDU 11](#cdu-10---remoção-de-títulos)
+- [CDU 12](#cdu-11---gráfico-de-gêneros-mais-populares)
+- [CDU 13](#cdu-12---transformação-de-usuários-em-moderadores)
 
 
 ### CDU 01 - Cadastro
@@ -76,8 +77,20 @@
 **Fluxo Principal**: 
 1. Ao clicar em um livro, o usuário/moderador tem a opção de enviá-lo a uma lista de livros de seu interesse para futuras consultas pessoais.
   2. Já tendo a obra sido adicionada à lista do usuário/moderador, será mostrada a opção de removê-la.
+  
+  ### CDU 06 - indicação por Autores
 
-### CDU 06 - Consulta da Lista de Livros Salvos
+**Atores:** Usuários e Moderadores
+
+**Pré-condições:** Ter um cadastro no sistema e estar logado.
+
+**Fluxo Principal:**
+1. Após o usuário adicionar um livro em sua lista de livros salvos, mais obras do mesmo autor aparecem em sua página Home.
+
+**Fluxo Alternativo:**
+1. Caso não haja nenhuma outra obra daquele autor que não tenha sido salva, nada de novo aparecerá na tela
+
+### CDU 07 - Consulta da Lista de Livros Salvos
 
 **Atores:** Usuários e Moderadores
 
@@ -91,7 +104,7 @@
 1. Caso a lista esteja vazia, a mesma não aparecerá na tela.
 
 
-### CDU 07 - Alteração de Gêneros de Interesse
+### CDU 08 - Alteração de Gêneros de Interesse
 
 **Atores:** Usuários e Moderadores
 
@@ -100,7 +113,7 @@
 **Fluxo Principal:**
 1. O usuário/moderador, ao final da página Home, possui a opção de alterar os três gêneros que detém afinidade (gêneros esses informados no cadastro).
 
-### CDU 08 - Gerenciamento do Acervo
+### CDU 09 - Gerenciamento do Acervo
 
 **Atores:** Moderadores
 
@@ -111,7 +124,7 @@
 2. O moderador tem as opções de adicionar livros no banco de dados, assim como excluir títulos.
 
 
-### CDU 09 - Adição de Títulos
+### CDU 10 - Adição de Títulos
 
 **Atores:** Moderadores
 
@@ -122,7 +135,7 @@
 2. O mesmo informa nome, autor, editora, o gênero e uma breve sinopse da obra, além de adicionar a capa;
 3. Após esse processo, os usuários ficam disponíveis para visualizar o livro e adicioná-lo à lista de interesses.
 
-### CDU 10 - Remoção de Títulos
+### CDU 11 - Remoção de Títulos
 
 **Atores:** Moderadores
 
@@ -133,7 +146,7 @@
 2. Caso existe algum título com o nome especificado ou o moderador selecione algum da lista, ele pode excluí-lo;
 3. Após a exclusão, a obra é deletada do banco de dados do software, não sendo possível voltar atrás.
 
-### CDU 11 - Gráfico de Gêneros Mais Populares
+### CDU 12 - Gráfico de Gêneros Mais Populares
 
 **Atores:** Moderadores
 
@@ -142,7 +155,7 @@
 **Fluxo Principal:**
 1. O moderador acessa sua página e encontra, na mesma, um gráfico com os gêneros mais escolhidos pelos usuários em geral como seus favoritos.
 
-### CDU 12 - Transformação de Usuários em Moderadores
+### CDU 13 - Transformação de Usuários em Moderadores
 
 **Atores:** Moderadores
 

@@ -34,3 +34,4 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 - [Script SQL](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/schema.sql)
 
 ### Manual de Utilização
+- [Manual do Usuário](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/manual.md)
