@@ -31,7 +31,7 @@
 ![Sair](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/login.jpg "Sair")
 - Ao clicar no botão Sair, o usuário encerra a sessão e é redirecionado para a página de Login.
 
-![HomeAdmin](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/homeadmin.jpg) "Home do Administrador")
+![HomeAdmin](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/homeadmin.jpg "Home do Administrador")
 - Existe também o usuário do tipo administrador, que possui funções exclusivas. Em um primeiro momento, a página Home exibe, em seu menu superior, duas novas opções: a de acessar a página do administrador e a de adicionar novos livros.
 
 ![Pagina do Livro Admin](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/telas/paginalivroadmin.jpg "Página do Livro - Administrador")
