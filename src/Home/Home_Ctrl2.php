@@ -12,7 +12,7 @@ if (isset($_SESSION['id'])){
     Limpa($_SESSION['id']);
     $generos=mostra_generos();
     foreach ($generos as $genero) {
-        if ($_POST['select1']==$genero['id'] || $_POST['select2']==$genero['id'] || $_POST['select3']==$genero['id']) {    
+        if ($_POST['select1']==$genero['id'] || $_POST['select2']==$genero['id'] || $_POST['select3']==$genero['id'] || $_POST['select4']==$genero['id']) {    
             Usuario_Genero($_SESSION['id'], $genero['id']);
         }
     }
