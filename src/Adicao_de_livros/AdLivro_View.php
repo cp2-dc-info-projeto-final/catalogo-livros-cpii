@@ -160,4 +160,4 @@
 
   </body><!-- fechamento da tag body -->
 </html>
-<?php } else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
+<?php } else {echo '<title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
