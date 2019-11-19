@@ -738,3 +738,15 @@ INSERT INTO genero_livro (id_livro, id_genero) VALUES
 (249, 10),
 (250, 9),
 (250, 22);
+
+
+INSERT INTO usuario (id, nome, email, senha, moderador)
+VALUES
+('1','Admin','admin@admin.com','$2y$10$5J2p.cnLdpggVeK56VrqVOK9yW.u2LYe2r7Su72aUOhKP5Q7TSEOC','1');
+
+INSERT INTO genero_usuario(id_usuario, id_genero)
+VALUES
+('1', '15'),
+('1','12'),
+('1', '8'),
+('1', '7');
