@@ -106,7 +106,7 @@
         if(array_key_exists('msg', $_SESSION) == true){
             $msg = $_SESSION["msg"];
             echo "$msg";
-            session_unset();
+            unset($_SESSION["msg"]);
         }
     ?>
       
@@ -160,4 +160,4 @@
 
   </body><!-- fechamento da tag body -->
 </html>
-<?php } else {echo '<html><title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>
+<?php } else {echo '<title>ERRO!</title><h1><p style=\'color:red;\'>Você não possui permissão para acessar esta página!!!</p></h1></html>';} ?>

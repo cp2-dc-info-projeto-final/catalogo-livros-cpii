@@ -3,7 +3,7 @@ USE catalogo_de_livros;
 DROP TABLE IF EXISTS genero;
  create table genero(
  id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
- nome VARCHAR (20) NOT NULL
+ nome VARCHAR (100) NOT NULL
  );
 
 DROP TABLE IF EXISTS livro;
@@ -49,17 +49,6 @@ DROP TABLE IF EXISTS lista_usuario;
  FOREIGN KEY (id_usuario) REFERENCES usuario(id),
  FOREIGN KEY (id_livro) REFERENCES livro(id)
  );
- 
-drop table if exists acao;
-CREATE TABLE acao (
-id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-datahorario DATETIME,
-descricao VARCHAR (100) ,
-id_usuario INT NOT NULL,
-id_livro INT NOT NULL,
-FOREIGN KEY (id_usuario) REFERENCES usuario(id),
-FOREIGN KEY (id_livro) REFERENCES livro(id)
-);
 
 INSERT INTO genero (nome) VALUES
 ('Biografia'), /*1*/
