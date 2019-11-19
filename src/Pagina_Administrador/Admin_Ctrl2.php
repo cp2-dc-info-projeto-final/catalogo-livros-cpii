@@ -1,4 +1,5 @@
 <?php
+session_start();
 require "Admin_Model.php";
 if (isset($_SESSION['email']) && $_SESSION['moderador']==1){
 if (isset($_GET['id']) && isset($_GET['moderador']) && strlen($_GET['id'])==1 && strlen($_GET['moderador'])==1 ){
