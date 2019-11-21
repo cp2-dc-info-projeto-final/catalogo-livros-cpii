@@ -56,21 +56,9 @@ function Generos(){
     $qtd=$row['COUNT(id_usuario)'];}
     if($qtd>$maior4){$maior4=$qtd; $nome4=$genero['nome']; $maiorgenero4=$id;}} }
 
-    $maior5=0; $maiorgenero5=0; foreach($generos as $genero){$id= $genero['id']; if($id!=$maiorgenero1 &&
-        $id!=$maiorgenero2 && $id!=$maiorgenero3 && $id!=$maiorgenero4){$sql = "SELECT COUNT(id_usuario) FROM genero_usuario WHERE id_genero=$id";
-        $result=mysqli_query($conn, $sql); while($row=mysqli_fetch_assoc($result)){
-        $qtd=$row['COUNT(id_usuario)'];}
-        if($qtd>$maior5){$maior5=$qtd; $nome5=$genero['nome']; $maiorgenero5=$id;}} }
-
-        $maior6=0; $maiorgenero6=0; foreach($generos as $genero){$id= $genero['id']; if($id!=$maiorgenero1 &&
-            $id!=$maiorgenero2 && $id!=$maiorgenero3 && $id!=$maiorgenero4 && $id!=$maiorgenero5){$sql = "SELECT COUNT(id_usuario) FROM genero_usuario WHERE id_genero=$id";
-            $result=mysqli_query($conn, $sql); while($row=mysqli_fetch_assoc($result)){
-            $qtd=$row['COUNT(id_usuario)'];}
-            if($qtd>$maior6){$maior6=$qtd; $nome6=$genero['nome']; $maiorgenero6=$id;}} }
 
     $sql="SELECT COUNT(id_usuario) FROM genero_usuario WHERE id_genero!=$maiorgenero1 AND
-    id_genero!=$maiorgenero2 AND id_genero!=$maiorgenero3 AND id_genero!=$maiorgenero4 AND
-    id_genero !=$maiorgenero5 AND id_genero !=$maiorgenero6";
+    id_genero!=$maiorgenero2 AND id_genero!=$maiorgenero3 AND id_genero!=$maiorgenero4";
     $result=mysqli_query($conn, $sql);
     while($row=mysqli_fetch_assoc($result)){
         $outros=$row['COUNT(id_usuario)'];
@@ -94,16 +82,6 @@ function Generos(){
     if (isset($nome4)){
     $maiores['qtd']=$maior4;
     $maiores['nome']=$nome4;
-    array_push($maiores_generos, $maiores);
-    }
-    if (isset($nome5)){
-    $maiores['qtd']=$maior5;
-    $maiores['nome']=$nome5;
-    array_push($maiores_generos, $maiores);
-    }
-    if (isset($nome6)){
-    $maiores['qtd']=$maior6;
-    $maiores['nome']=$nome6;
     array_push($maiores_generos, $maiores);
     }
     if (isset($outros)){
