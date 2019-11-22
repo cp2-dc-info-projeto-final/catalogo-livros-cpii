@@ -20,7 +20,7 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 - [Proposta](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/proposta.md)
 
 ### Requisitos
-- [Requisitos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/Requisitos.md)
+- [Requisitos](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/requisitos.md)
 - [Áudio da Entrevista](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.mp3)
 - [Entrevista Transcrita](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/entrevista.md)
 
