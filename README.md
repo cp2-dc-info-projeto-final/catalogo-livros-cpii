@@ -38,7 +38,7 @@ O Objetivo deste software é, através de indicações de livros presentes no ca
 - [Diagrama do Banco de Dados - Editável](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/diagramaDeBancodeDados.html)
 
 ### Modelagem
-- [Script SQL](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Implementacao/schema.sql)
+- [Script SQL](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/src/schema.sql)
 
 ### Manual de Utilização
 - [Manual do Usuário](https://github.com/cp2-dc-info-projeto-final/catalogo-livros-cpii/blob/master/Documentacao/manual.md)
