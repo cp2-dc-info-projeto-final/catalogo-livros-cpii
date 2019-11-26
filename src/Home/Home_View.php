@@ -209,12 +209,7 @@
  <!-- select para alterar os gêneros favoritos do usuário --> 
 <div class="selectforms">
 <h4>Altere seus gêneros favoritos!</h4>
-<?php 
-if (array_key_exists('erro', $_SESSION)){
-  echo $_SESSION['erro'];
-  unset($_SESSION['erro']);
 
-} ?>
 <form action="Home_Ctrl2.php" method="post">
  
   <select name="select1" class="ls-select" style="width:170px" data-search="false">
@@ -251,7 +246,14 @@ if (array_key_exists('erro', $_SESSION)){
   <div class="btnconfirmar">
     <br>
           <input class="prosseguir" type="submit" name="enviar" value="Confirmar"> 
-  <div>     
+          <?php 
+if (array_key_exists('erro', $_SESSION)){
+  echo $_SESSION['erro'];
+  unset($_SESSION['erro']);
+
+} ?> 
+  <div>
+      
 </form>
 </div>
 

@@ -15,7 +15,7 @@
 				<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
 				<link rel="stylesheet" href="css/bootstrap.min.css">
 				<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> 
-			<!-- css do menu superior --> -->
+			<!-- css do menu superior -->
 			<link rel="stylesheet" type="text/css" href="css/util.css">
 			<link rel="stylesheet" type="text/css" href="css/main.css">
   
@@ -31,14 +31,7 @@
       <form action="Login_Ctrl.php" method="post">
 
       <br>
-      <?php
-      session_start();
-      if (array_key_exists('erro', $_SESSION) == true){
-        $erro = $_SESSION["erro"];
-				echo "$erro";
-				session_unset();
-        }
-    ?>
+     
 
 
      
@@ -51,6 +44,14 @@
 					<span class="login100-form-title p-b-49">
 						Login
 					</span>
+					<?php
+      session_start();
+      if (array_key_exists('erro', $_SESSION) == true){
+        $erro = $_SESSION["erro"];
+				echo "$erro";
+				session_unset();
+        }
+    ?>
 
 					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
 						<span class="label-input100">E-mail</span>

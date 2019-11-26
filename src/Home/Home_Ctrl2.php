@@ -5,7 +5,7 @@ if (isset($_SESSION['id'])){
     require "../Adicao_de_Livros/AdLivro_Model.php";
  if ($_POST['select1']==$_POST['select2'] || $_POST['select2']==$_POST['select3'] || $_POST['select1']==$_POST['select3']
      || $_POST['select1']==$_POST['select4'] || $_POST['select2']==$_POST['select4'] || $_POST['select3']==$_POST['select4']){
-    $erro ="<p style='color:red;'>Por favor, insira 3 gêneros diferentes.</p>";
+    $erro ="<p style='color:red;'>Por favor, insira 4 gêneros diferentes.</p>";
     $_SESSION['erro']=$erro;
     header ("Location: Home_View.php");
     exit(); }
