@@ -1,4 +1,4 @@
-# Requisitos do Indicador de Livros do Colégio Pedro II
+# Requisitos do Catálogo de Livros do Colégio Pedro II
 
 ## Requisitos Não Funcionais
 - [RNF 01](#rnf-01)
@@ -10,7 +10,7 @@
 + O software deve conter as linguagens: HTML, CSS, JavaScript, PHP e SQL;
 
 ### RNF 02
-+ Deve ter ligação com o banco de dados;
++ Deve ter ligação com o banco de dados MySQLi;
 
 ### RNF 04
 + Deve possuir suporte para plataformas Web;
