@@ -1,4 +1,4 @@
-# Indicador de Livros Colégio Pedro II
+# Catálogo de Livros Colégio Pedro II
 
 ### Visão Geral do Projeto:
 
